@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .move {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+        .close{
+            width: 30px;height:30px;
+            border:1px solid #000;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            float: right;
+            margin:10px;
+        }
+    </style>
+    <script>
+
+        window.onload = function () {
+            var div = document.querySelector("div")
+
+
+            var speedx = 10
+            var speedy = 10
+            function move() {
+
+                var lefts=div.offsetLeft+speedx;
+                var tops=div.offsetTop+speedy;
+                if (lefts < 0) {
+                    lefts=0
+                    speedx = -speedx
+                }
+                if (lefts>document.documentElement.clientWidth-div.offsetWidth) {
+                    lefts=document.documentElement.clientWidth-div.offsetWidth
+                    speedx = -speedx
+                }
+
+                if (tops < 0) {
+                    tops=0
+                    speedy = -speedy
+                }
+                if (tops>document.documentElement.clientHeight-div.offsetHeight) {
+                    tops=document.documentElement.clientHeight-div.offsetHeight
+                    speedy = -speedy
+                }
+                div.style.left = lefts+"px"
+                div.style.top =tops + "px"
+            }
+
+            var t=setInterval(move, 40)
+
+            div.onmouseover=function () {
+                clearInterval(t)
+            }
+
+            var flag=true;
+            div.onmouseout=function () {
+                if(flag) {
+                    t = setInterval(move, 40)
+                }
+            }
+            
+            var close=document.querySelector(".close");
+
+            var currentLeft,currentTop
+            close.onclick=function () {
+               if(flag) {
+                   flag=false
+                   div.style.width = "30px"
+                   div.style.height = "30px"
+                   currentLeft=div.offsetLeft
+                   currentTop=div.offsetTop
+                   div.style.left = document.documentElement.clientWidth - div.offsetWidth - 10 + "px"
+                   div.style.top = document.documentElement.clientHeight - div.offsetHeight - 10 + "px";
+                   close.style.margin = 0;
+                   close.innerHTML="口"
+               }else{
+                   flag=true
+                   div.style.width = "200px"
+                   div.style.height = "200px"
+                   div.style.left = currentLeft+"px"
+                   div.style.top = currentTop+"px"
+                   close.style.margin = "10px";
+                   close.innerHTML="X"
+               }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="move">
+
+    <div class="close">X</div>
+
+</div>
+</body>
+</html>
