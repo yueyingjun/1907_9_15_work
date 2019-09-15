@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>携程旅行官网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .nav {
+            width: 100%;
+            height: 30px;
+            background: #f6f6f6;
+            margin: auto;
+
+        }
+
+        .left {
+            float: left;
+
+        }
+
+        .right {
+            float: right;
+        }
+
+        span {
+
+            color: #4e4e4e;
+            float: left;
+            font-family: "Microsoft yahei", arial, Simsun, sans-serif;
+            line-height: 30px;
+            font-size: 12px;
+
+        }
+
+        .txt {
+            margin-left: 10px;
+            margin-right: 40px;
+
+        }
+
+        .logo {
+            width: 14px;
+            height: 14px;
+            margin-top: 10px;
+            margin-right: 5px;
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -8px -8px;
+
+        }
+
+        .logo1 {
+            width: 8px;
+            height: 5px;
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -46px -58px;
+            margin-top: 16px;
+            margin-left: 5px;
+
+        }
+
+        .login {
+            color: #0070c9;
+            margin-right: 20px;
+        }
+
+        .a {
+            margin-left: 10px;
+            margin-right: 10px;;
+            margin-top: 12px;
+            height: 12px;
+            border-left: 1px solid #c9c9c9;
+        }
+
+        .messagelogo {
+            width: 14px;
+            height: 12px;
+            margin-right: 2px;
+            margin-top: 12px;
+
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -8px -66px;
+
+        }
+
+        .logoback {
+            width: 14px;
+            height: 14px;
+            margin-right: 2px;
+            margin-top: 10px;
+
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -98px -38px;
+
+        }
+
+        .phone {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            overflow: hidden;
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -100px -67px;
+
+        }
+
+        .chat {
+            width: 18px;
+            height: 18px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            margin-top: 9px;
+            overflow: hidden;
+            background: url("https://pic.c-ctrip.com/platform/online/home/sprite2019527.png") no-repeat -97px -99px;
+
+        }
+
+        .tt {
+            width: 100%;
+            height: 80px;
+        }
+
+        .biglogo {
+            width: 126px;
+            height: 80px;
+            background: url("https://pic.c-ctrip.com/common/c_logo2013.png") no-repeat center center;
+            background-size: 100% auto;
+            float: left;
+        }
+
+        input {
+            border-radius: 4px;
+            width: 400px;
+            height: 28px;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 0 45px 0 5px;
+            font-size: 12px;
+            font-family: "Microsoft Yahei", Tahoma;
+            border: 1px solid #83befc;
+            box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;
+            outline: 0 none;
+            float: left;
+
+
+        }
+
+        button {
+            width: 43px;
+            height: 28px;
+            border: 0 none;
+            background-color: #a4cbff;
+            background-position: -52px -603px;
+            background-image: url("https://pic.c-ctrip.com/platform/online/home/un_header_footer20160610.png");
+            border-radius: 0;
+            cursor: pointer;
+            margin-top: 30px;
+            float: left;
+
+        }
+
+        .text {
+            position: absolute;
+            top: 10%;
+            left: 80%;
+            float: right;
+        }
+
+        .text > span {
+            height: 20px;
+
+            float: right;
+            line-height: 20px;
+            font-size: 15px;
+        }
+
+
+        .top1 {
+            width: 100%;
+            height: 40px;
+            background: #0070c9;
+            float: left;
+        }
+
+        .top11 {
+            width: 6.25%;
+            text-align: center;
+            font-size: 15px;
+            line-height: 40px;
+            float: left;
+            color: white;
+        }
+
+        .top2 > div {
+            width: 7.69%;
+            height: 30px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            float: left;
+            color: #888888;
+        }
+
+        .lunbopic {
+            width: 100%;
+            height: 340px;
+            background: url("https://dimg04.c-ctrip.com/images/zg0w180000014bbkaC799.jpg") no-repeat center center;
+            float: left;
+            z-index: 1;
+        }
+
+        .tab {
+            width: 580px;
+            height: 300px;
+            background: white;
+            position: relative;
+            top: 25px;
+            left: 50px;
+            overflow: hidden;
+
+        }
+
+
+
+
+        .tabnav {
+            width: 100px;
+            height: 100%;
+            background: white;
+            top: 25px;
+            float: left;
+
+
+        }
+
+        .tabnav > div {
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            height: 41px;
+            width: 100%;
+            background: #0070c9;
+            border-bottom: 2px dashed #888888;
+            list-style: none;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        .con{
+            width: 460px;
+            height: 280px;
+            float: right;
+            left: 98px;
+            background: white;
+            z-index: 2;
+            padding: 10px;
+        }
+        .conb1 > div {
+            text-align: center;
+            line-height: 40px;
+            width: 16.66666%;
+            height: 30px;
+            float: left;
+            font-size: 12px;
+            color:#4e4e4e;
+            cursor: pointer;
+            border-bottom: 3px solid #4e4e4e;
+
+        }
+        #conb11{
+            border: none;
+            width: 100%;
+            height: 250px;
+        }
+        #conb11>input{
+            width: 200px;
+            margin: 0;
+            padding: 0;
+        }
+        .tit{
+            width: 70%;
+            height: 60px;
+            float: left;
+            margin: 10px 15% 0 15%;
+            line-height: 80px;
+            text-align: left;
+            border-bottom: 2px solid #0070c9;
+
+        }
+        .tit>div{
+            float: left;
+            width: 70px;
+        }
+        #smalltext1{
+            float: right;
+            font-size: 10px;
+        }
+        .tit{
+            width: 70%;
+            height: 60px;
+            float: left;
+            margin: 10px 15% 0 15%;
+            line-height: 80px;
+            text-align: left;
+            border-bottom: 2px solid #0070c9;
+
+        }
+        .tit2{
+            width: 70%;
+            height: 375px;
+            float: left;
+            margin: 10px 15% 0 15%;
+            line-height: 80px;
+            text-align: left;
+
+        }
+        .tit2>div{
+            width: 6%;
+            float: left;
+            font-size: 10px;
+            margin:0;
+            height: 15px;
+            line-height: normal;
+        }
+        .tit2>.kuai{
+            width: 220px;
+            height: 160px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="left">
+        <span class="txt">
+            让旅行更幸福
+        </span>
+        <span class="logo">
+
+        </span>
+        <span class="language">
+            Language
+        </span>
+        <span class="logo1">
+
+        </span>
+
+    </div>
+    <div class="right">
+        <span class="login">
+            您好，请登录
+        </span>
+        <span class="reg">
+            免费注册
+        </span>
+        <span class="a"></span>
+        <span class="messagelogo"></span>
+        <span>
+            消息
+        </span>
+        <span class="a"></span>
+
+        <span>我的携程</span>
+        <span class="logo1"></span>
+        <span class="a"></span>
+        <span>我的订单</span>
+        <span class="logo1"></span>
+        <span class="a"></span>
+        <span>客服中心</span>
+        <span class="a"></span>
+        <span class="logoback"></span>
+        <span>携程商旅</span>
+        <span class="logo1"></span>
+        <span class="a"></span>
+        <span class="phone"></span>
+        <span class="chat"></span>
+    </div>
+</div>
+<div class="tt">
+    <div class="biglogo"></div>
+    <input class="fiexd">
+    <button class="buttom"></button>
+    <div class="text">
+        <span>境内:95010</span>
+        <br>
+        <span>(或) 400-830-6666</span>
+    </div>
+</div>
+
+<div class="top1">
+    <div class="top11">首页</div>
+    <div class="top11">酒店</div>
+    <div class="top11">旅游</div>
+    <div class="top11">跟团游</div>
+    <div class="top11">自由行</div>
+    <div class="top11">机票</div>
+    <div class="top11">火车</div>
+    <div class="top11">汽车·船</div>
+    <div class="top11">用车</div>
+    <div class="top11">门票</div>
+    <div class="top11">攻略</div>
+    <div class="top11">全球购</div>
+    <div class="top11">礼品</div>
+    <div class="top11">目的地</div>
+    <div class="top11">金融</div>
+    <div class="top11">更多</div>
+
+</div>
+<div class="top2">
+    <div>境外直通车</div>
+    <div>海外酒店</div>
+    <div>国际·港澳台机票</div>
+    <div>境外租车</div>
+    <div>国际·港澳台火车票</div>
+    <div>出境游</div>
+    <div>高端游</div>
+    <div>出境·港澳台门票</div>
+    <div>签证</div>
+    <div>保险</div>
+    <div>WIFI·电话卡</div>
+    <div>境外接送机</div>
+    <div>外币兑换</div>
+</div>
+<div class="lunbopic">
+    <div class="tab">
+        <div class="tabnav">
+            <table>
+                <div>酒店</div>
+                <div>机票</div>
+                <div>旅游</div>
+                <div>跟团游</div>
+                <div>自由行</div>
+                <div>火车</div>
+                <div>用车</div>
+            </table>
+        </div>
+        <div class="con">
+            <div class="conb1">
+                <div>国内酒店</div>
+                <div>海外酒店</div>
+                <div>民宿</div>
+                <div>酒店团购</div>
+                <div>酒店+景点</div>
+                <div>会议·团房</div>
+                <div id="conb11">
+                    <span style="font-size: 15px;padding-right: 10px;padding-left: 20px">目的地</span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb2">
+                <div>国内机票</div>
+                <div>国际港澳台机票</div>
+                <div>发现低价</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb3">
+                <div>全部</div>
+                <div>跟团游</div>
+                <div>自由行</div>
+                <div>周边游</div>
+                <div>门票</div>
+                <div>邮轮</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb4">
+                <div>推荐</div>
+                <div>周边跟团</div>
+                <div>境内跟团</div>
+                <div>出境跟团</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb5">
+                <div>机票＋酒店</div>
+                <div>火车＋酒店</div>
+                <div>酒店＋景点</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb6">
+                <div>国内火车票</div>
+                <div>国际·港澳台火车票</div>
+                <div>国内汽车票</div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="conb7">
+                <div>国内接送机</div>
+                <div>境内接送机</div>
+                <div>国内租车</div>
+                <div>境外租车</div>
+                <div>日租包车</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="tit">
+        <div>热门</div>
+        <div>特价出游</div>
+        <div>出境游</div>
+        <div>境内游</div>
+        <div>周边游</div>
+        <div>邮轮</div>
+        <div>门票</div>
+        <div>当地玩乐</div>
+        <div>主题游</div>
+        <div>高端游</div>
+        <div id="smalltext1">太原出发</div>
+    </div>
+    <div class="product">
+        <div class="tit2">
+            <div>境内</div>
+            <div>日本</div>
+            <div>东南亚</div>
+            <div>欧洲</div>
+            <div>美洲</div>
+            <div>奥中东非</div>
+            <br>
+            <div class="kuai"></div>
+            <div class="kuai"></div>
+            <div clsaa="kuai"></div>
+            <div class="kuai"></div>
+        </div >
+
+    </div>
+
+</body>
+</html>
