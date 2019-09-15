@@ -1,0 +1,1773 @@
+body,p,h1,h2,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+   
+}
+body{
+    background: #f6f6f6;
+    /* padding: 1px 0 40px 0; */
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    font-style: normal;
+    color: #000;
+}
+
+.out{
+    width: 100%;
+}
+
+
+/* ****************************************************** */
+.top_out{
+    height: 36px; 
+    background-color: #F4F4F4;
+}
+.top{
+    width:1180px;
+    height: 36px;       
+    margin: auto;
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #F4F4F4;
+}
+    .top1{
+        height: 12px; 
+        font-size: 12px;
+        color: #666;
+        margin: 10px 0 0 14px;
+        float: left;
+    }
+    .top2{
+        height: 100%;
+        width: 100px;
+        padding: 0px 15px 0px 13px;
+        line-height: 35px;
+        float: left;
+        position: relative;
+        top:0;bottom:0;left: 0;right: 0;
+        margin-left: 20px;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+        .top2 i{
+            display: inline-block;
+            height: 14px;
+            width:14px;
+            background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+            background-position:-8px -8px;
+            vertical-align: middle;
+        }
+        .top2 span{
+            display: inline-block;
+            height: 14px;
+            width:70px;
+            text-align: center;
+            line-height: 5px;
+        }
+        .top2>ul{
+            position: absolute;
+            left:-1px;
+            bottom:-354px;
+            display: block;
+            height: 312px;
+            width:613px;
+            /* border:1px solid red; */
+            
+        }
+            .top2 ul > li{
+                display: inline-block;
+                width: 183px;
+                padding: 5px 7px;
+                margin-bottom: 5px;
+            }
+                .top2 ul > li>a{
+                    font: 12px/20px "Microsoft yahei", tahoma, arial, sans-serif;
+                    color: #4c4c4c;
+                    height: 20px;  
+                    background-image: url(https://pic.c-ctrip.com/platform/online/home/un_header_language_1807.png);
+                    background-repeat: no-repeat;
+                    white-space: nowrap;
+                    display: block;
+                    padding-left: 26px;
+                }
+                .top2 ul > li:nth-child(1) a{
+                    background-position: 0 0;  
+                }
+                .top2 ul > li:nth-child(2) a{
+                    background-position: 0 -300px;  
+                }
+                .top2 ul > li:nth-child(3) a{
+                    background-position: 0 -396px;  
+                }
+
+
+    .top3{
+        width:auto;
+        height: 36px;
+        float: right;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+        .top3>ul>li{
+            display: block;
+            float: left;
+            width: auto;
+            height: 17px;
+            line-height: 12px;
+            margin: 11px 0 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+            .top3>ul>li:nth-child(1) a:nth-child(1){
+                color: #0066CC;   
+                padding: 1px 16px 0px;
+            }
+            .top3>ul>li:nth-child(1) a:nth-child(2){
+                padding: 1px 16px 0px;
+                border-right: 1px solid #DDDDDD;
+            }
+            .top3>ul>li:nth-child(2) a{
+                width: 14px;
+                height: 12px;
+                padding: 1px 16px 0px;
+                box-sizing: border-box;
+                border-right: 1px solid #DDDDDD;
+               
+            }
+            .top3>ul>li:nth-child(2)>a>p{
+                display: inline-block;
+                width: 14px;
+                height: 12px;
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin-right: 2px;
+                overflow: hidden;
+                /* background-size: 14px 12px; */
+                background-position: -8px -66px;
+            }
+            .top3>ul>li:nth-child(3) span{
+                height: 14px;
+                float: left;
+                margin-top: 0;
+                line-height: 12px;
+                padding: 0 16px;
+                box-sizing: border-box;
+                border-right: 1px solid #DDDDDD;
+                cursor:pointer;
+                overflow: hidden;
+            }
+                .top3>ul>li:nth-child(3)>span>p{
+                    display: inline-block;
+                    width: 8px;
+                    height: 5px;
+                    margin-left: 8px;
+                    background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                    background-repeat: no-repeat;
+                    vertical-align: middle; 
+                    overflow: hidden;
+                    /* background-size: 14px 12px; */
+                    background-position:-46px -58px;        
+                }
+
+                .top3>ul>li:nth-child(3)>span>ul{
+                    display: block;
+                    position: absolute;
+                    top:24px;left: 0;  
+                    background: #fff;
+                    border: 1px solid #D9D9D9;
+                    width: 92px;
+                    box-shadow: 0px 6px 8px 0px rgba(0,0,0,.15);
+                } 
+                   
+                    .top3>ul>li:nth-child(3)>span>ul>li{
+                        line-height: 30px;
+                        display: block;
+                        color: #666;
+                        margin: 0 16px;
+                        cursor: pointer;
+                    }
+            
+                    .top3>ul>li:nth-child(4) span{
+                        height: 14px;
+                        float: left;
+                        margin-top: 0;
+                        line-height: 12px;
+                        padding: 0 16px;
+                        box-sizing: border-box;
+                        border-right: 1px solid #DDDDDD;
+                        cursor:pointer;
+                        overflow: hidden;
+                    }
+                        .top3>ul>li:nth-child(4)>span>p{
+                            display: inline-block;
+                            width: 8px;
+                            height: 5px;
+                            margin-left: 8px;
+                            background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                            background-repeat: no-repeat;
+                            vertical-align: middle; 
+                            overflow: hidden;
+                            /* background-size: 14px 12px; */
+                            background-position:-46px -58px;        
+                        }
+        
+                        .top3>ul>li:nth-child(4)>span>ul{
+                            display: block;
+                            position: absolute;
+                            top:24px;left: 0;  
+                            background: #fff;
+                            border: 1px solid #D9D9D9;
+                            width: 92px;
+                            box-shadow: 0px 6px 8px 0px rgba(0,0,0,.15);
+                        } 
+                           
+                            .top3>ul>li:nth-child(4)>span>ul>li{
+                                line-height: 30px;
+                                display: block;
+                                color: #666;
+                                margin: 0 16px;
+                                cursor: pointer;
+                            }
+
+            .top3>ul>li:nth-child(5) a{
+                padding: 1px 16px 0px;
+                box-sizing: border-box;
+                border-right: 1px solid #DDDDDD;
+            }
+
+            .top3>ul>li:nth-child(6) span{
+                padding: 10px 16px 9px;
+                display: inline-block;
+                width: auto;
+                text-align: center;
+                height: 15px;
+                width: 10px;
+                overflow: hidden;
+                background-position: -88px -67px;
+                box-sizing: border-box;
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                background-repeat: no-repeat;
+                vertical-align: middle; 
+                cursor:pointer;
+            }
+
+            .top3>ul>li:nth-child(7) span{
+                padding: 10px 16px 9px;
+                display: inline-block;
+                width: auto;
+                text-align: center;
+                height: 15px;
+                width: 10px;
+                overflow: hidden;
+                background-position: -83px -99px;
+                box-sizing: border-box;
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                background-repeat: no-repeat;
+                vertical-align: middle; 
+                cursor:pointer;
+            }
+
+
+
+        /* .top3 div:nth-child(1){
+            float:left;
+        }
+            .top3 div:nth-child(1) a:nth-child(1){
+                height: 36px;
+                width: auto;   
+                display: inline-block;
+                line-height: 12px;
+                color: #0066CC;
+                margin-left:10px;
+                text-align: center;
+                padding-top: 12px;
+                box-sizing: border-box;
+            }
+            .top3 div:nth-child(1) a:nth-child(2){
+                color: #0066CC;
+                margin-left:10px;
+            }
+        .top3 div:nth-child(2){
+            float:left;      
+        }
+            .top3 div:nth-child(2) a{
+                display: inline-block;
+                line-height: 12px;
+                margin-left:10px;
+                text-align: center;
+                margin-top: 12px;
+                padding-right: 10px;
+                box-sizing: border-box;
+                border-right: 1px solid #DDDDDD;
+            }
+            .top3 div:nth-child(3){
+                float:left;      
+            }
+                .top3 div:nth-child(3) a{
+                    display: inline-block;
+                    line-height: 12px;
+                    margin-left:10px;
+                    text-align: center;
+                    margin-top: 12px;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    border-right: 1px solid #DDDDDD;
+                }
+            .top3 div:nth-child(4){
+                float:left;      
+            }
+                .top3 div:nth-child(4) span{
+                    display: inline-block;
+                    line-height: 12px;
+                    margin-left:10px;
+                    text-align: center;
+                    margin-top: 12px;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    border-right: 1px solid #DDDDDD;
+                }
+            .top3 div:nth-child(5){
+                float:left;      
+            }
+                .top3 div:nth-child(5) span{
+                    display: inline-block;
+                    line-height: 12px;
+                    margin-left:10px;
+                    text-align: center;
+                    margin-top: 12px;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+                    border-right: 1px solid #DDDDDD;
+                } 
+            .top3 div:nth-child(6){
+                float:left;      
+            }
+                    .top3 div:nth-child(6) a{
+                        display: inline-block;
+                        line-height: 12px;
+                        margin-left:10px;
+                        text-align: center;
+                        margin-top: 12px;
+                        padding-right: 10px;
+                        box-sizing: border-box;
+                        border-right: 1px solid #DDDDDD;
+                    }
+            .top_icon{
+                width: auto;height: 36px;
+                float:right; 
+            }
+            .top_icon div:nth-child(1){
+                height: 36px;
+                width: 36px;
+                background-repeat: no-repeat;
+                background-image: url('https://pic.c-ctrip.com/platform/online/home/sprite2019527.png');
+                background-position: -86.4px -59px;
+                background-size: 100%;
+                float: left;
+            }
+            .top_icon div:nth-child(2){
+                height: 36px;
+                width: 36px;
+                background-repeat: no-repeat;
+                background-position: -89px -93px;
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+                float: left;
+            }
+ */
+
+
+/* ****************************************************** */
+
+
+.search_out{
+    width:100%;
+    height: 80px;
+    background-color: white;
+}
+.search{
+    width:1180px;
+    height: 80px;
+    /* border:1px solid red; */
+    margin: auto;
+}
+    .search div:nth-child(1){
+        float: left;
+        width: 126px;
+        height: 43px;
+        margin: 18px 0;
+    }
+        .search div:nth-child(1) a{
+            width: 126px;
+            height: 43px;
+            display: block;
+            background-image: url(https://pic.c-ctrip.com/common/c_logo2013.png);
+        }
+    .search div:nth-child(2){
+        width:28%;
+        height: 30px;
+        margin-top: 25px;
+        float: left;
+        font-size: 12px;
+        font-family: "Microsoft Yahei", Tahoma;
+        border-radius: 4px;
+        border: 1px solid #8ebefc;
+        /* border: 1px solid red; */
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+        left:100px;
+    }
+        .search div:nth-child(2)>input{
+            position: absolute;
+            /* top:-1px; left:-1px; */
+            display:inline-block;
+            width: 85%;
+            height: 24px;
+            /* padding: 0 45px 0 5px; */
+            line-height: 28px;
+            font-size: 12px;
+            font-family: "Microsoft Yahei", Tahoma;
+            border: 1px solid #8ebefc;
+            box-shadow: 2px 2px 1px 0 rgba(164, 203, 255, 0.25) inset;
+        }
+        .search div:nth-child(2) button{
+            position: absolute;
+            top:-1px; right:-1px; 
+            width:14%;
+            height:40px;
+            cursor: pointer;
+            border: 0 none;
+            background-color: #a4cbff;
+            background-image: url(https://pic.c-ctrip.com/platform/online/home/un_header_footer20160610.png);
+            background-repeat: no-repeat;
+            background-position: -52px -603px;
+        }
+    .search div:nth-child(3){
+        position: relative;
+        float: right;
+        margin-top: 2%;
+        width:20%;
+        height: 70%; 
+    }
+    .search div:nth-child(3)>ul{
+        position: absolute;
+        top:0;right:15px;
+    }
+    .search div:nth-child(3)>ul>li{
+        text-align: end;
+    }
+    .search div:nth-child(3)>p{
+        margin-top: 10px;
+        display: block;
+        position: absolute;
+        top:0;right:0;
+        width: 14px;
+        height: 50%;
+        background-image: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+        background-repeat: no-repeat;
+        background-position: -42px -62px;
+    }
+
+
+
+
+    /* ****************************************************** */
+   .nav_out{
+    width:100%;
+    height: 40px;
+    background-color: white;
+   }
+
+    
+.nav{
+    width:1180px;
+    height: 40px;
+    /* border:1px solid red; */
+    margin: auto;
+    background-color: #2577e3;   
+}
+    .nav a{
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        padding: 0 7px;
+    }
+    .nav > a>i{
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+        border-top: 3px solid #fff;
+        border-bottom: 0 none;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+
+
+.nav_bottom_out{
+    width: 100%;
+    height: 22px;
+    padding:10px 0;
+    background-color: white;
+    }
+.nav_bottom{
+    width:1180px;
+    height: 22px;
+    /* border:1px solid red; */
+    height: 22px;
+    margin: 0 auto;
+    line-height: 22px;
+    overflow: hidden;
+}
+.nav_bottom h1{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    padding: 0 5px;
+    background: #74a8ed;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.nav_bottom h1>i{
+    position: absolute;
+    right: -8px;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border: 4px solid #74a8ed;
+    border-color: #fff #fff #fff #74a8ed;
+}
+/* .nav_bottom ul{
+    
+} */
+.nav_bottom ul>li{
+    float: left;
+    margin: 0 13px 0 0;
+    line-height: 22px;
+}
+.nav_bottom>ul>li>i{
+    display: inline-block;
+    background-image: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png);
+    background-repeat: no-repeat;
+    background-position: -26px 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+.nav_bottom>ul>li>span{
+    color: #666;
+    line-height: 22px;
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+}
+
+
+
+
+/* ****************************************************** */
+
+
+.lunbo_out{
+    /* padding-top: 5px; */
+    width: 100%;
+    height: 340px;
+    background-color: white;
+}
+
+.lunbo{
+    width:1920px;
+    height: 340px;
+    /* border:1px solid red; */
+    margin: auto;
+    background-image: url(https://dimg04.c-ctrip.com/images/zg0k1700000130bhaCA00.jpg);
+    position: relative;
+}
+.lunbo>div:nth-child(1){
+    position: absolute;
+    top:0;left:370px;
+    margin: 20px 0;
+    background-color: #fff;
+    width: 580px;
+    height: 300px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.lunbo>div:nth-child(1)>ul{
+    width: 90px;
+    height: 300px;
+    position: absolute;
+    top:0;left:0;
+    background-color: #2577e3;
+}
+.lunbo>div:nth-child(1)>ul>li{
+    color: white;
+    float: left;
+    width: 60px;
+    height: 42px;
+    padding: 0 17px 0 13px;
+    cursor: pointer;
+    font: 16px/42px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    cursor: pointer;
+}
+.lunbo>div:nth-child(1)>ul>li:nth-child(1){
+    color: #2577e3;
+    border-left: 4px solid #ff9915;
+    background: #fff;
+}
+
+
+
+
+.lunbo>div:nth-child(1)>div{
+    position: absolute;
+    right: 0;top:0;
+    width: 450px;
+    height: 275px;
+    background-color: #fff;
+    margin-left: 90px;
+    padding: 20px 20px 5px;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(1){
+    position: relative;
+    font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    height: 27px;
+    line-height: 20px;
+    background-position: 0 -96px;
+    background-repeat: repeat-x;
+    margin-bottom: 8px;
+    background-image: url(https://pic.c-ctrip.com/index/un_bg_line_141218.png);
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    /* border: 1px solid red; */
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2){
+    /* border: 1px solid red; */
+    height: 200px;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1){
+    width: 100%;
+    height: 42px;
+    line-height: 28px;
+    position: relative; 
+    /* border: 1px solid red; */
+    float: left;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    color: #333;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+    width: 190px;
+    height: 42px;
+    /* border: 1px solid blue; */
+    float: left;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) input{
+    width: 123px;
+    height: 28px;
+    background-position: 114px -147px;
+    padding-left: 3px;
+    margin-left: 10px;
+    /* border-color: #bbb #ddd #ddd #bbb; */
+    border: 1px solid  #bbb;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    outline: none;
+    color: #333;
+    box-shadow: 1px 1px 1px #ddd inset;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+    width: 190px;
+    height: 42px;
+    /* border: 1px solid blue; */
+    float: left;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) input{
+    width: 123px;
+    height: 28px;
+    background-position: 114px -147px;
+    padding-left: 3px;
+    margin-left: 10px;
+    /* border-color: #bbb #ddd #ddd #bbb; */
+    border: 1px solid  #bbb;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    outline: none;
+    color: #333;
+    box-shadow: 1px 1px 1px #ddd inset;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(3){
+    width: 60px;
+    height: 42px;
+    /* border: 1px solid blue; */
+    float: left;
+}
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(3) input{
+    width: 60px;
+    height: 40px;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    outline: none;
+    color: #333;
+    box-shadow: 1px 1px 1px #ddd inset;
+}
+
+
+/*推荐**/
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(2){
+    position: absolute;
+    top:100px;
+    width:440px;
+    height:88px;
+    /* border: 1px solid blue; */
+}
+
+
+
+
+.lunbo>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(3){
+
+}
+
+
+
+
+
+
+
+
+/* ****************************************************** */
+
+
+
+
+.nav2,.nav3,.nav4,.nav5,.nav6,.nav6,.nav7,.nav8,.nav9{
+    width:1180px;
+    height: 38px;
+    /* border:1px solid red; */
+    margin: auto;
+    margin-top: 15px;
+    border-bottom: 2px solid #3983e5;
+    font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+    .nav2 span,.nav3 span,.nav4 span,.nav5 span,.nav6 span,.nav7 span,.nav8 span,.nav9 span{
+        display: inline-block;
+        height: 36px;
+        text-align: center;
+        line-height: 30px;
+        color: #333;
+        margin-right: 30px;
+    }
+
+.nav2_con,.nav3_con{
+    width:1176px;
+    height: 390px;
+    border-left:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+    margin: auto;
+    margin-bottom:10px; 
+    background-color: white;
+}
+.nav4_con,.nav5_con,.nav6_con,.nav7_con{
+    width:1176px;
+    height: 260px;
+    border-left:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+    margin: auto;
+    margin-bottom:10px; 
+    background-color: white;
+}
+
+
+
+
+
+/* ****************************************************** */
+
+
+
+
+
+
+
+
+
+
+    /* ****************************************************** */
+    /* 2        */
+
+
+
+    .nav2_con>div:nth-child(1){
+        width: 220px;
+        height: 360px;
+        margin:10px 0;
+        padding-left: 40px;
+        box-sizing: border-box;
+        float: left;
+    }
+        .nav2_con>div:nth-child(1) a{
+            display: block;
+            line-height: 18px;
+            color: #666;
+            margin-top: 10px;
+        } 
+        .nav2_con>div:nth-child(1) h1{
+            display: block;
+            line-height: 18px;
+            padding: 4px 0 0 0;
+            font: 700 14px/34px "Microsoft yahei";
+        } 
+    .nav2_con>div:nth-child(2){
+        width: 950px;
+        height: 390px;
+        /* border: 1px solid red; */
+        border-left: 1px dotted #a3a3a3;
+        float: right;
+    }
+        .nav2_con>div:nth-child(2)>div:nth-child(1){
+            height: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+        }
+            .nav2_con>div:nth-child(2)>div:nth-child(1) span{
+                    display: inline-block;
+                    background-color: #3983e5;
+                    color: white;
+                    border-radius: 3px;
+                    margin: 2px 10px;
+                }
+        .nav2_con>div:nth-child(2)>div:nth-child(2){
+            width:480px;
+            height: 345px;
+            margin-top: 10px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+            .nav2_con>div:nth-child(2)>div:nth-child(2) div{
+            /* background-size:160px 220px ; */
+            background-repeat: no-repeat;
+            height: 160px;
+            width: 220px;   
+            }
+            .nav2_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                background-image: url(https://images3.c-ctrip.com/overseas/city/singapore256-256.jpg);
+            }
+            .nav2_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+                background-image: url(https://images3.c-ctrip.com/overseas/city/bangkok256-256.jpg);
+            }
+            .nav2_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+                background-image: url(https://images3.c-ctrip.com/overseas/city/tokyo256-256.jpg);
+            }
+            .nav2_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+                background-image: url(https://images3.c-ctrip.com/overseas/city/kualalumpur256-256.jpg);
+            }
+        
+    .nav2_con>div:nth-child(2)>div:nth-child(3){
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 220px;
+        height: 330px;
+        float: right;
+        background-image: url(https://pages.c-ctrip.com/hotel/201805/thailand/220330.jpg);
+    }
+
+
+
+
+
+    /* ****************************************************** */
+    /* 3 */
+
+
+
+
+
+
+    .nav3_con>div:nth-child(1){
+        height: 20px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+        .nav3_con>div:nth-child(1) span{
+            display: inline-block;
+            background-color: #3983e5;
+            color: white;
+            border-radius: 3px;
+            margin: 2px 10px;
+        }
+    .nav3_con>div:nth-child(2){
+        width: 700px;
+        height: 330px;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .nav3_con>div:nth-child(2) div{
+        width: 194px;
+        height: 74px;
+        padding: 15px 12px;
+        margin: 0 10px 10px 0;
+        background: #f8f8f8;
+        border: 1px solid #f8f8f8;
+        cursor: pointer;  
+    }
+    .nav3_con>div:nth-child(2)>div>a{
+        display: block;
+        text-decoration: none;
+        color: #666;
+    }
+        .nav3_con>div:nth-child(2)>div>a>p{
+            position: relative;
+            height: 20px;
+            line-height: 20px;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 5px;
+            margin-bottom: 3px;
+            color: #333;
+        }
+            .nav3_con>div:nth-child(2)>div>a>p>i{
+                width: 12px;
+                height: 7px;
+                background-position: -1px -116px;
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: middle;
+                margin:0 3px; 
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/un_index_20180209.png);
+            }
+        .nav3_con>div:nth-child(2)>div>a>span{
+            height: 27px;
+            padding: 0 5px 0;
+            color: #999;
+            display: block;
+            text-align: left;
+            cursor: pointer;
+        }
+        .nav3_con>div:nth-child(2)>div>a>h1{
+            height: 27px;
+            position: relative;
+            text-align: left;
+            padding: 0 5px;
+            display: block;
+            color: #666;
+        }
+            .nav3_con>div:nth-child(2)>div>a>h1>p{
+                font: 22px/1.5 tahoma;
+                color: #f60;
+            }
+                .nav3_con>div:nth-child(2)>div>a>h1>p>i{
+                    vertical-align: 7px;
+                    font: 12px/1.5 arial;
+                    color: #666;
+                }
+                .nav3_con>div:nth-child(2)>div>a>h1>p>span{
+                    margin-left: 3px;
+                    vertical-align: 2px;
+                    font: 12px/1.5 "Microsoft yahei";
+                    color: #666;
+                }
+            .nav3_con>div:nth-child(2)>div>a>h1>p>em{
+                width: auto;
+                height: 27px;
+                padding: 5px 15px;
+                font: 14px/27px "Microsoft yahei";
+                float:right;
+                background-color: #f7ab01;
+                color: #fff;
+                text-align: center;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+         /* .nav3_con>div:nth-child(2)>div:nth-child(1){
+            background-image: url(https://dimg02.c-ctrip.com/images/1004180000013o0jn6633_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(2){
+            background-image: url(https://dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(3){
+            background-image: url(https://dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(4){
+            background-image: url(https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(5){
+            background-image: url(https://dimg04.c-ctrip.com/images/100b11000000qbl7v8A10_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(6){
+            background-image: url(https://dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(7){
+            background-image: url(https://dimg01.c-ctrip.com/images/fd/tg/g1/M05/C7/51/CghzflWwsHOAMni3AA2c-FPVxCk836_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(8){
+            background-image: url(https://dimg01.c-ctrip.com/images/100m0u000000jqip1B411_C_221_166.jpg);
+         }
+         .nav3_con>div:nth-child(2)>div:nth-child(9){
+            background-image: url(https://dimg01.c-ctrip.com/images/100m0u000000jqip1B411_C_221_166.jpg);
+         } */
+
+    .nav3_con>div:nth-child(3){
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 220px;
+        height: 330px;
+        float: right;
+        background-image: url(https://dimg04.c-ctrip.com/images/zg0n180000013lxjp6299.jpg);
+    }
+
+
+
+
+
+
+    /* ****************************************************** */
+    /* 4 */
+
+
+    .nav4_con>div:nth-child(1){
+        width: 220px;
+        height: 255px;
+        margin:10px 0;
+        float: left;
+    }
+        .nav4_con>div:nth-child(1) a{
+            float: left;
+            display: block;
+            border-left: 1px solid #ececec;
+            padding: 0 10px;
+            line-height: 18px;
+            height: 18px;
+            margin: 7px 0;
+        } 
+        .nav4_con>div:nth-child(1) h1{
+            padding: 4px 0 0 0;
+            font: 700 14px/34px "Microsoft yahei";
+            margin: 7px 10px;
+            display: block;
+            line-height: 18px;
+        } 
+    .nav4_con>div:nth-child(2){
+        width: 950px;
+        height: 260px;
+        /* border: 1px solid red; */
+        border-left: 1px dotted #a3a3a3;
+        float: right;
+    }
+        .nav4_con>div:nth-child(2)>div:nth-child(1){
+            height: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+            .nav4_con>div:nth-child(2)>div:nth-child(1) span{
+                    display: inline-block;
+                    background-color: #3983e5;
+                    color: white;
+                    border-radius: 3px;
+                    margin: 2px 10px;
+                }
+        .nav4_con>div:nth-child(2)>div:nth-child(2){
+            width:948px;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+            .nav4_con>div:nth-child(2)>div:nth-child(2) div{
+            background-size:100%;
+            background-repeat: no-repeat;
+            height: 154px;
+            width: 231px;   
+            position: relative;
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                background-image: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Ford_Fiesta.png);
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+                background-image: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Kia_Rio.png);
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+                background-image: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Toyota_Corolla.png);
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div>p{
+                position: absolute;
+                bottom: -20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: left;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 5px;
+                display: block;
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div>span{
+                position: absolute;
+                bottom: -55px;
+                display: block;
+                color: #999;
+                line-height: 35px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: left;
+            }
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div>h1{
+                position: absolute;
+                bottom: -45px;
+                display: block;
+                right: 0;
+                padding: 0 5px;
+                height: 27px;
+            }
+
+            .nav4_con>div:nth-child(2)>div:nth-child(2)>div>h1>p{
+                    font: 22px/1.5 tahoma;
+                    color: #f60;
+                }
+                .nav4_con>div:nth-child(2)>div:nth-child(2)>div>h1>p>i{
+                        vertical-align: 7px;
+                        font: 12px/1.5 arial;
+                        color: #666;
+                    }
+                    .nav4_con>div:nth-child(2)>div:nth-child(2)>div>h1>p>span{
+                        margin-left: 3px;
+                        vertical-align: 2px;
+                        font: 12px/1.5 "Microsoft yahei";
+                        color: #666;
+                    }
+                   
+
+
+    /* ****************************************************** */
+    /* 5 */
+
+
+
+
+
+    .nav5_con>div:nth-child(1){
+        width: 220px;
+        height: 255px;
+        margin:10px 0;
+        float: left;
+    }
+        .nav5_con>div:nth-child(1) a{
+            float: left;
+            display: block;
+            border-left: 1px solid #ececec;
+            padding: 0 10px;
+            line-height: 18px;
+            height: 18px;
+            margin: 7px 0;
+        } 
+        .nav5_con>div:nth-child(1) h1{
+            padding: 4px 0 0 0;
+            font: 700 14px/34px "Microsoft yahei";
+            margin: 7px 10px;
+            display: block;
+            line-height: 18px;
+        } 
+    .nav5_con>div:nth-child(2){
+        width: 950px;
+        height: 260px;
+        /* border: 1px solid red; */
+        float: right;
+        border-left:1px dotted #a3a3a3;
+    }
+        .nav5_con>div:nth-child(2)>div:nth-child(1){
+            height: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+            .nav5_con>div:nth-child(2)>div:nth-child(1) span{
+                    display: inline-block;
+                    background-color: #3983e5;
+                    color: white;
+                    border-radius: 3px;
+                    margin: 2px 10px;
+                }
+        .nav5_con>div:nth-child(2)>div:nth-child(2){
+            width:948px;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+            .nav5_con>div:nth-child(2)>div:nth-child(2) div{
+            background-size:100%;
+            background-repeat: no-repeat;
+            height: 154px;
+            width: 231px;   
+            }
+            .nav5_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                background-image: url(https://dimg04.c-ctrip.com/images/350p1600000109qx2C354_C_280_158.jpg);
+            }
+            .nav5_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+                background-image: url(https://dimg06.c-ctrip.com/images/350l0n000000ec6k84D0F_C_280_158.jpg);
+            }
+            .nav5_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+                background-image: url(https://dimg04.c-ctrip.com/images/350b10000000pm2zgA5CF_C_280_158.jpg);
+            }
+
+
+
+
+
+/* ****************************************************** */
+    /* 6 */
+
+
+
+
+    .nav6_con>div:nth-child(1){
+        width: 220px;
+        height: 255px;
+        margin:10px 0;
+        float: left;
+    }
+        .nav6_con>div:nth-child(1) a{
+            float: left;
+            display: block;
+            border-left: 1px solid #ececec;
+            padding: 0 10px;
+            line-height: 18px;
+            height: 18px;
+            margin: 7px 0;
+        } 
+        .nav6_con>div:nth-child(1) h1{
+            padding: 4px 0 0 0;
+            font: 700 14px/34px "Microsoft yahei";
+            margin: 7px 10px;
+            display: block;
+            line-height: 18px;
+        } 
+    .nav6_con>div:nth-child(2){
+        width: 950px;
+        height: 260px;
+        /* border: 1px solid red; */
+        float: right;
+        border-left:1px dotted #a3a3a3;
+    }
+        .nav6_con>div:nth-child(2)>div:nth-child(1){
+            height: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+            .nav6_con>div:nth-child(2)>div:nth-child(1) span{
+                    display: inline-block;
+                    background-color: #3983e5;
+                    color: white;
+                    border-radius: 3px;
+                    margin: 2px 10px;
+                }
+        .nav6_con>div:nth-child(2)>div:nth-child(2){
+            width:948px;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+            .nav6_con>div:nth-child(2)>div:nth-child(2) div{
+            background-size:100%;
+            background-repeat: no-repeat;
+            height: 154px;
+            width: 231px;   
+            }
+            .nav6_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                background-image: url(https://images4.c-ctrip.com/target/zd0d0i00000097qa9955E_C_570_285.jpg);
+            }
+            .nav6_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+                background-image: url(https://images4.c-ctrip.com/target/zd0d0f0000007ckfk0B0C_C_570_285.jpg);
+            }
+            .nav6_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+                background-image: url(https://images4.c-ctrip.com/target/zd0w0j000000b7c8g09C8_C_570_285.jpg);
+            }
+
+
+
+
+
+
+/* *********************************************************************************************** */
+    /* 7 */
+
+
+
+
+    .nav7_con>div:nth-child(1){
+        width: 220px;
+        height: 255px;
+        margin:10px 0;
+        float: left;
+    }
+        .nav7_con>div:nth-child(1) a{
+            float: left;
+            display: block;
+            border-left: 1px solid #ececec;
+            padding: 0 10px;
+            line-height: 18px;
+            height: 18px;
+            margin: 7px 0;
+            font: 500 12px "Microsoft yahei";
+        } 
+        .nav7_con>div:nth-child(1) h1{
+            padding: 4px 0 0 0;
+            font: 700 14px/34px "Microsoft yahei";
+            margin: 7px 10px;
+            display: block;
+            line-height: 18px;
+        } 
+    .nav7_con>div:nth-child(2){
+        width: 950px;
+        height: 260px;
+        /* border: 1px solid red; */
+        float: right;
+        border-left:1px dotted #a3a3a3;
+    }
+        .nav7_con>div:nth-child(2)>div:nth-child(1){
+            height: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+            .nav7_con>div:nth-child(2)>div:nth-child(1) span{
+                    display: inline-block;
+                    background-color: #3983e5;
+                    color: white;
+                    border-radius: 3px;
+                    margin: 2px 10px;
+                }
+        .nav7_con>div:nth-child(2)>div:nth-child(2){
+            width:948px;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+            .nav7_con>div:nth-child(2)>div:nth-child(2) div{
+            background-size:100%;
+            background-repeat: no-repeat;
+            height: 154px;
+            width: 231px;   
+            }
+            .nav7_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                background-image: url(https://dimg06.c-ctrip.com/images/100k0w000000kgkgfC8BA_R_220_160.jpg);
+            }
+            .nav7_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+                background-image: url(https://dimg02.c-ctrip.com/images/100e0w000000kfb626E83_R_220_160.jpg);
+            }
+            .nav7_con>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+                background-image: url(https://dimg01.c-ctrip.com/images/100m0w000000kuq4eB05F_R_220_160.jpg);
+            }
+
+
+
+
+
+/* ************************************************************************************************************* **/
+    /* 8 */
+    .nav8_con{
+        width:1176px;
+        height: 290px;
+        /* border:1px solid red; */
+        margin: auto;
+    }
+        .nav8_con>div:nth-child(1){
+            width: 384px;
+            height: 140px;
+            float: left;
+            /* border: 1px solid red; */
+            background-color: white;
+            border:1px solid #e0e0e0;
+        }
+            .nav8_con>div:nth-child(1)>div:nth-child(1){
+                width: 384px;
+                height: 100px;
+            }
+                .nav8_con>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+                    width: 70px;
+                    height: 70px;
+                    background-color: #abcbf5;
+                    border-radius: 50%;
+                   
+                    margin-top:20px;
+                    margin-left: 50px;
+                    float: left;
+                }
+                    .nav8_con > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) span{
+                        display: block;
+                        margin: auto;
+                        padding:auto;
+                    }
+                    .nav8_con > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) i{
+                        width: 70px;
+                        height: 60px;
+                        display: block;
+                        background-repeat: no-repeat;
+                        background-position:12px 22px;
+                        background-image: url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png);
+                    }
+
+                .nav8_con>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+                    width: 254px;
+                    height: 24px;
+                    float: right;
+                    margin-top: 20px;
+                }
+                .nav8_con>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) p{
+                    width: 254px;
+                    height: 14px;
+                    float: right;
+                    margin-top: 5px;
+                    font: 16px/1.5 "Microsoft yahei";
+                    margin-bottom: 5px;
+                }
+                .nav8_con>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) i{
+                    width: 254px;
+                    height: 14px;
+                    float: right;
+                    margin-top: 5px;
+                    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+                    color: #666;
+                }
+            .nav8_con>div:nth-child(1)>div:nth-child(2){
+                width: 384px;
+                height: 40px;
+            }
+            .nav8_con>div:nth-child(1)>div:nth-child(2)>ul{
+                width: 100%;
+                height: 100%;
+            }
+            .nav8_con>div:nth-child(1)>div:nth-child(2)>ul>li{
+                width: 70px;
+                height: 30px;
+                margin:0 20px; 
+                float: left;
+                vertical-align: middle;
+                padding: 8px 0;
+            }
+            .nav8_con>div:nth-child(1)>div:nth-child(2)>ul>li>a{
+                display: inline-block;
+                height: 24px;
+                width:60px;
+                line-height: 24px;
+                border-left: 1px dashed #a3a3a3;
+                padding-left: 20px;
+                text-align: center;
+                margin-left: -2px;
+                color: #333;
+            }
+            .nav8_con>div:nth-child(1)>div:nth-child(2)>ul>li>a>i>img{
+                overflow: hidden;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+
+
+        .nav8_con>div:nth-child(2){
+            
+        }
+        .nav8_con>div:nth-child(3){
+            
+        }
+
+
+
+
+
+        /* ************************************************************************************************************* **/
+    /* 9 */
+
+
+
+
+.nav9_con{
+    width:1176px;
+    height: 240px;
+    /* border:1px solid red; */
+    margin: auto;
+}
+
+.nav9_con>div:nth-child(1){
+    width: 384px;
+    height: 110px;
+    float: left;
+    /* border: 1px solid red; */
+    background-color: white;
+            border:1px solid #e0e0e0;
+}
+    .nav9_con>div:nth-child(1)>a{
+        width: 384px;
+        height: 100%;
+    }
+        .nav9_con>div:nth-child(1)>a>div:nth-child(1){
+            width: 70px;
+            height: 70px;
+            background-color: #F8c2b3;
+            border-radius: 50%;
+           
+            margin-top:20px;
+            margin-left: 50px;
+            float: left;
+        }
+            .nav9_con > div:nth-child(1) >a> div:nth-child(1) span{
+                display: block;
+                margin: auto;
+                padding:auto;
+            }
+            .nav9_con > div:nth-child(1) > a > div:nth-child(1) i{
+                width: 50px;
+                height: 50px;
+                margin:7px 0 0 10px;
+                display: block;
+                background-repeat: no-repeat;
+                background-position:0 -136px;
+                background-image: url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png);
+            }
+
+        .nav9_con>div:nth-child(1)>a>div:nth-child(2){
+            width: 254px;
+            height: 24px;
+            float: right;
+            margin-top: 20px;
+        }
+        .nav9_con>div:nth-child(1)>a>div:nth-child(2) p{
+            width: 254px;
+            height: 24px;
+            float: right;
+            margin-top: 5px;
+            font: 16px/1.5 "Microsoft yahei";
+            margin-bottom: 5px;
+        }
+        /* .nav9_con>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) p{
+            width: 254px;
+            height: 14px;
+            float: right;
+            margin-top: 5px;
+            font: 16px/1.5 "Microsoft yahei";
+            margin-bottom: 5px;
+        } */
+        .nav9_con>div:nth-child(1)>a>div:nth-child(2) i{
+            width: 254px;
+            height: 14px;
+            float: right;
+            /* margin-top: 5px; */
+            font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+            color: #666;
+        }
+/*************************************************/
+
+.nav10_out{
+    width:1180px;
+    height: 350px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    margin: auto;
+    margin: 28px auto 0;
+}
+.nav10{
+    width:1180px;
+    height: 100px;
+    border: 1px solid #e0e0e0;
+}
+    .nav10 div:nth-child(1){
+        width:140px;
+        position: relative;
+        font: 16px/26px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        padding-top: 10px;
+       
+    }
+        .nav10 div:nth-child(1)>span{
+            font: 16px/26px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+        }
+         .nav10 div:nth-child(1)>a{
+            color: #b6b6b6;
+            font: 12px/26px 'SimSun';
+            float: right;
+         }
+    .nav10 div:nth-child(2){
+        font-size: 12px;
+        font-family: 'simsun';
+        color: #666;
+        line-height: 1.8;
+        margin-left: 20px;
+    }
+.nav10_con{
+    width:1176px;
+    height: 250px;
+    /* border:1px solid red; */
+    margin: auto;
+}
+    .nav10_con>div:nth-child(1){
+        overflow: hidden;
+        width: 100%;
+        height:48px;
+    }
+        .nav10_con>div:nth-child(1)>h1{
+            height:48px;
+            width: 80px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+        }
+        .nav10_con>div:nth-child(1)>ul{
+            height:48px;
+            width: 1090px;
+            float: left;
+        }
+            .nav10_con>div:nth-child(1)>ul>li{
+                display: inline-block;
+                margin: 10px;
+                color: #b6b6b6;
+            }
+
+
+
+
+
+/*********************************************************************************/
+.bt_out{
+    width:100%;
+    height: 350px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.bt1{
+    width:1176px;
+    height: 200px;
+    /* border:1px solid red; */
+    margin: auto;
+    
+}
+    .bt1 >div:nth-child(1){
+        position: relative;
+        width: 235px;
+        height: 150px;
+        padding: 0 10px 0 0;
+        margin-left: 20px;  
+        display: inline-block;
+        border-right: 1px solid #e0e0e0;
+        margin-top: 20px;
+    }
+        .bt1 >div:nth-child(1)>h1{
+            display: block;
+            font: 16px/20px 'Microsoft yahei';
+            margin-bottom: 10px;
+        }
+        .bt1 >div:nth-child(1)>div{
+            width: 235px;
+            height: 100px;
+        }
+            .bt1 >div:nth-child(1)>div>div:nth-child(1){
+               width: 40px;
+               height:40px;
+               float: left;
+            }
+                .bt1 >div:nth-child(1)>div>div:nth-child(1)>i{
+                    background-position: -41px -250px;
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    background-repeat: no-repeat;
+                    background-image: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png)
+                    
+                }
+            .bt1 >div:nth-child(1)>div>div:nth-child(2){
+                float: left;
+                height:40px;
+            }
+                .bt1 >div:nth-child(1)>div>div:nth-child(2)>i{
+                    color: #2577e3;
+                    font: bold 16px "Microsoft Yahei";
+                }
+                .bt1 >div:nth-child(1)>div>div:nth-child(2)>p{
+                    color: #666;
+                }
+
+
+
+/*********************************************************************************/
+
+.bt2{
+    width:1176px;
+    height: 120px;
+    /* border:1px solid red; */
+    margin: auto;
+}
+    .bt2>p{
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        color: #999;
+        padding-top: 5px;
+        display: inline-block;
+
+    }
+    .bt2>p>i{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+        background-position: 0 -235px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-image: url(https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png)
+    }
+    .bt2>div>a{
+        background-position: -88px -50px;
+        text-indent: 36px;
+        float: left;
+        margin: 0 4px;
+        width: 88px;
+        height: 32px;
+        border: 1px solid #d1d1d1;
+        border-radius: 2px;
+        font: 12px/32px Simsun;
+        color: #666;
+        overflow: hidden;
+        background-image: url(https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png);
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
