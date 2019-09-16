@@ -1,0 +1,389 @@
+body,p,h1,h2,ul,em,span,i{
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+   
+}
+body{
+    background: #f6f6f6;
+    /* padding: 1px 0 40px 0; */
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    font-style: normal;
+    color: #000;
+}
+.out{
+    width: 1180px;
+    height: 430px;
+    width: 1180px;
+    margin: 28px auto 0;
+}
+
+.nav1{
+    width:1180px;
+    height: 38px;
+    margin: auto;
+    border-bottom: 2px solid #3983e5;
+    text-align: left;
+    position: relative;
+}
+    .nav1_left{
+        position: relative;
+        font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    }
+        .nav1_left>span{
+            height: 36px;
+            text-align: center;
+            line-height: 30px;
+            color: #333;
+            /* ******************************************************************** */
+            /* color: #06c; */
+            margin-right: 30px;
+            cursor: pointer;
+            position: relative;
+            float: left;
+            bottom: -3px;
+        }
+        .nav1_left>span>i{
+            position: absolute;
+            left: 50%;
+            margin-left: -6px;
+            bottom: 3px;
+            /* *************************************************************************** */
+            display: none;
+            /* width: 0;
+            height: 0; */
+            /* overflow: hidden; */
+            /* line-height: 0;
+            font-size: 0; */
+            /* vertical-align: middle; */
+            border-bottom: 6px solid #3983e5;
+            /* border-top: 0 none; */
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+        .nav1_left>span>b{
+            position: absolute;
+            top: -10px;
+            right: -7px;
+            font-family: 'Tahoma', arial;
+            font-style: normal;
+            /* margin: 0; */
+            font-size: 12px;
+            vertical-align: 2px;
+            display: inline-block;
+            padding: 0 2px;
+            height: 15px;
+            line-height: 15px;
+            background-color: #ff9913;
+            color: #fff;
+        }
+    .nav1_right{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 22px;
+        line-height: 22px;
+    }
+        .nav1_right>a{
+            height: 22px;
+            color: #3983e4;
+            padding: 1px 5px 0;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .nav1_right>a>i{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            line-height: 0;
+            font-size: 0;
+            vertical-align: middle;
+            border-top: 5px solid #3983e4;
+            border-bottom: 0 none;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+
+
+/* 导航下 */
+.nav1_con{
+  
+}
+.nav1_con_1{
+    position: relative;
+    height: 375px;
+    /* margin-left: 229px;
+     */
+     margin-left: 0;
+    padding: 15px 19px 0;
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    /* *********************************************************************************** */
+    display: none;
+}
+
+.nav1_con_nav{
+    height: 20px;
+    margin-bottom: 10px;
+    /* padding-top: 10px; */
+}
+.nav1_con_nav>ul>li{
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 20px;
+    margin-right: 15px;
+    /* background-color: #3983e5; */
+    color: white;
+    border-radius: 3px;
+    
+}
+    .nav1_con_nav>ul>li>a{
+        display: inline-block;
+        color: #3983e5;
+    }
+
+
+    /* 选项卡二内容 */
+
+.nav1_con_con{
+    width: 1140px;
+    height: 330px;
+    display: none;
+    /* height: 330px; */
+    /* float: left;  */
+    /* border: 1px solid red; */
+}
+.nav1_con_con_left{
+    margin-left: 0;
+    overflow: hidden;
+    position: relative;
+    width: 910px;
+    height: 330px;
+    margin-top: -10px;
+    float: left;
+}
+.nav1_con_con>div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav1_con_con_left_1{
+    /* background-size:160px 220px ; */
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 220px;    
+    position: relative; 
+    margin-top: 10px;
+    /* margin-right: 10px; */
+    display: inline-block;
+    box-sizing: border-box;
+}
+.nav1_con_con_left_1>a{
+    display: block;
+    position: relative;
+}
+.nav1_con_con_left_1_img>img{
+    height: 160px;
+    width: 220px;
+}
+.nav1_con_con_left_1_radius{
+        
+        width: 102px;
+        height: 52px;
+        position: absolute;
+        padding: 30px 5px;
+        top: 50%;
+        left: 50%;
+        margin: -56px 0 0 -56px;
+        overflow: hidden;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+}
+.nav1_con_con_left_1>a>div:nth-child(3){
+   
+}
+.buynum{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    border-radius: 3px 0 10px 0.5px;
+}
+.buynum>span{
+        background: #FF6913;
+        border-radius: 0 0 10px 0;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 11px 0 6px;
+        color: #fff;
+     }
+     .nav1_con_con_left_1_radius>p:nth-child(1){
+            color: #fff;
+            text-align: center;
+            font: 700 18px/1.2 "Microsoft yahei";
+        }
+        .price{
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+            position: relative;
+            height: 35px;
+            color: #666;
+            margin-top: 4px;   
+            /* font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif; */
+        }
+        .price1,.price>span{
+            font: 22px/1.5 tahoma;
+            color: #f60;
+        }
+        .price2,.price>span>em{
+                    vertical-align: 7px;
+                    font: 12px/1.5 arial;
+                    color: white;
+                }
+                .price3,.price>span>i{
+                    margin-left: 3px;
+                    vertical-align: 2px;
+                    font: 12px/1.5 "Microsoft yahei";
+                    color: white;
+                }
+               
+.nav1_con_con_ad{
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    width: 220px;
+    height: 320px;
+    float: left;
+    background-image: url(https://dimg04.c-ctrip.com/images/zg0n180000013lxjp6299.jpg);
+}
+/* ************************************************************************* */
+/* 特价旅游 */
+.buynum>p{
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+}
+.nav1_con_con_left_2_img{
+    position: relative;
+    width: 220px;
+    height: 100px;
+    margin-bottom: 3px;
+}
+.nav1_con_con_left_2_img>img{
+    position: relative;
+    width: 220px;
+    height: 100px;
+    /* margin-bottom: 3px; */
+}
+.nav1_con_con_left_2_img>p{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 10px;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav1_con_con_left_2_txt{
+    height: 15px;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    color: #666;
+}
+.nav1_con_con_left_2_bot{
+    height: 20px;
+}
+.nav1_con_con_left_2_bot>span{
+    width: 200px;
+    height: 30px;
+    padding: 0 5px;
+    color: #FF4646;
+    line-height: 35px;
+    text-align: left;
+    /* float: left; */
+}
+.nav1_con_con_left_2_bot>p{
+    float: right;
+    width: 90px;
+    color: #666;
+}
+#color666{
+    color: #666;
+}
+#margin0{
+    margin: 0;
+
+}
+
+/* 选项卡三 */
+#floatright{
+    float: right;
+}
+#floatleft{
+    float: left;
+}
+.nav3_left{
+    width: 187px;
+    height: 360px;
+    background-image: none;
+    position: relative;
+    float: left;
+    padding: 0 15px 0 0 ;
+    overflow: hidden;
+    border-right: 1px dotted #a3a3a3;
+}
+.nav3_right{
+    width: 910px;
+    height: 360px;
+    float: right;
+}
+#width0{
+    width:0;
+}
+
+.nav3_left>h1{
+    display: block;
+    line-height: 18px;
+    padding: 4px 0 0 0;
+    font: 700 14px/34px "Microsoft yahei"; 
+}
+.nav3_left>a{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+#diamond{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 10px;
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_index_20180209.png) no-repeat;
+}
+
+/* 选项卡六 */
+#nav6_con_con_right{
+    width:680px;
+}
+#width951{
+    width:951px;
+}
