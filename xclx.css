@@ -399,40 +399,106 @@ a{
     overflow: hidden;
     top: 10px;
 }
-.nav-bar-five-img{
+#nav-bar-five-img{
     position: absolute;
-    width: 1920px;
+    width: 11520px;
     height: 340px;
     margin: auto;
 }
-.nav-bar-five-img img{
+#nav-bar-five-img img{
     float: left;
-    width: 1920px;
+    width: 1540px;
     height: 340px;
+    overflow: hidden;
 }
 
-
-/*
-#imgyuan{
-    width: 182px;
-    height: 20px;
-    border-radius: 12px;
-    background-color: red;
-    padding-left: 13px;
-    margin: 0 auto;
-    position: relative;
-    top: -40px;
-    background-color: rgba(1, 150, 0, 0.3);
+.nav-bar-fives{
+    width: 1180px;
+    height: 340px;
+    margin-left: 169px;
+    /*position: relative;*/
 }
-
-#imgyuan font{
-    border:1px solid white;
-    width:11px;
-    height:11px;
-    border-radius:50%;
-    margin-right: 9px;
-    margin-top: 4px;
-    display: block;
-    float: left;
+.search{
+    width: 580px;
+    height: 300px;
+    margin: 20px 0;
+    position: absolute;
     background-color: white;
-}*/
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+.search-left{
+    width: 90px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2577e3;
+}
+.search-left .tag{
+    position: relative;
+    border-left: 4px solid #ff9915;
+    color: #2577e3;
+    background: white;
+    cursor: default;
+}
+.search-left li{
+    float: left;
+    display: inline-block;
+    width: 60px;
+    height: 42px;
+    padding: 0 17px 0 13px;
+    margin: 0;
+    line-height: 42px;
+    list-style: none;
+    text-align: left;
+}
+.search-left li b{
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px dashed #aac3f1;
+}
+
+.search-top{
+    width: 451px;
+    height: 275px;
+    background-color: white;
+    margin-left: 90px;
+    padding: 20px 20px 5px;
+    text-align: left;
+}
+
+.tab_a{
+    position: relative;
+    height: 27px;
+    line-height: 20px;
+    background-image: url("./img/un_bg_line_141218.png");
+    background-position: 0 -96px;
+    background-repeat: repeat-x;
+    margin-bottom: 8px;
+}
+.tab_a .xuan{
+    color: #0066CC;
+    cursor: default;
+    text-decoration: none;
+    padding-bottom: 2px;
+    background: url("./img/un_bg_line_141218.png") no-repeat 50% -10px;
+}
+.tab_a a{
+    position: relative;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+    height: 25px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
