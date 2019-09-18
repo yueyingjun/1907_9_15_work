@@ -101,6 +101,9 @@ li b .a{
     text-decoration: none;
     margin-top: 17px;
 }
+.optsss a:hover{
+    color: blue;
+}
 .conss{
     width: 500px;height: 283px;
 

@@ -5,6 +5,8 @@
     <title>ctrip.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="select.css">
+   <!-- <script src="轮播.js"></script>-->
+
 </head>
 
 <body>
@@ -64,8 +66,232 @@
             tabs(".boxss6:nth-child("+i+") .optsss6 a",".boxss6:nth-child("+i+") .listss6")
             tabs(".boxss7:nth-child("+i+") .optsss7 a",".boxss7:nth-child("+i+") .listss7")
         }
+
+
+
+        var language=document.querySelector(".mid")
+        var language1=document.querySelector(".en-con")
+        language.onmouseover=function () {
+            language1.style.display='block'
+
+        }
+        language.onmouseout=function () {
+            language1.style.display='none'
+        }
+        var wdxc=document.querySelector(".con4")
+        var wdxc1=document.querySelector(".hide-wdxc")
+        wdxc.onmouseover=function () {
+            wdxc1.style.display='block'
+
+        }
+        wdxc.onmouseout=function () {
+            wdxc1.style.display='none'
+        }
+
+        var wddd=document.querySelector(".con5")
+        var wddd1=document.querySelector(".hide-wddd")
+        wddd.onmouseover=function () {
+            wddd1.style.display='block'
+
+        }
+        wddd.onmouseout=function () {
+            wddd1.style.display='none'
+        }
+
+        var xcsl=document.querySelector(".con7")
+        var xcsl1=document.querySelector(".hide-xcsl")
+        xcsl.onmouseover=function () {
+            xcsl1.style.display='block'
+
+        }
+        xcsl.onmouseout=function () {
+            xcsl1.style.display='none'
+        }
+
+        var sj=document.querySelector(".con8")
+        var sj1=document.querySelector(".hide-sj")
+        sj.onmouseover=function () {
+            sj1.style.display='block'
+
+        }
+        sj.onmouseout=function () {
+            sj1.style.display='none'
+        }
+
+
+        var wx=document.querySelector(".con9")
+        var wx1=document.querySelector(".hide-wx")
+        wx.onmouseover=function () {
+            wx1.style.display='block'
+
+        }
+        wx.onmouseout=function () {
+            wx1.style.display='none'
+        }
+
+
+
+       //=======================轮播图====================================
+            var box = document.querySelector(".boxbox")
+            var btn = document.querySelectorAll(".boxbtn")
+            var clientw=document.documentElement.clientWidth
+            var num=0
+
+
+        var movefn = {
+            linear:function(c,t,d,b){
+                return b+c*t/d
+            },
+            easein:function(c,t,d,b){
+                return b+c*(t/=d)*t
+            },
+            easeout:function(c,t,d,b){
+                return b-c*(t/=d)*(t-2)
+            }
+        }
+
+
+        function animate1(obj,attrobj,duration,fun,callback){
+            var begin=[],change=[],end=[],val=[]
+            var time = 0;
+            if(arguments.length==2){
+                var d = 1000
+                var f = "linear"
+                var call = null
+            }else if(arguments.length==3){
+                if(typeof arguments[2]=="number"){
+                    var d = arguments[2]
+                    var f = "linear"
+                    var call = null
+                }else if(typeof arguments[2]=="string"){
+                    var d = 1000
+                    var f = arguments[2]
+                    var call = null
+                }else if(typeof arguments[2]=="function"){
+                    var d = 1000
+                    var f = "linear"
+                    var call = arguments[2]
+                }
+            }else if(arguments.length == 4){
+                if(typeof arguments[3]=="string"){
+                    var d = duration
+                    var f = arguments[3]
+                    var call = null
+                }else if(typeof arguments[3]=="function"){
+                    var d = duration
+                    var f = "linear"
+                    var call = arguments[3]
+                }
+            }
+            for(var i in attrobj){
+                end[i] = attrobj[i]
+                begin[i]=parseInt(getComputedStyle(obj,null)[i])?parseInt(getComputedStyle(obj,null)[i]):0;
+                change[i]=end[i]-begin[i]
+            }
+            function move(){
+                time+=40
+                for(var i in attrobj){
+                    val[i] = movefn[f](change[i],time,d,begin[i]);
+                }
+                if(time>d){
+                    cancelAnimationFrame(t);
+                    for(var i in attrobj){
+                        obj.style[i] = end[i]+"px";
+                    }
+                    if(call){
+                        call();
+                    }
+                }else{
+                    for(var i in attrobj){
+                        obj.style[i] = val[i]+"px"
+                    }
+                }
+                var t=requestAnimationFrame(move)
+            }
+
+            move()
+
+
+
+        }
+
+
+            function move() {
+                num++;
+                if(num>3) {
+                    animate1(box, {
+                        left: -num * clientw
+                    }, function () {
+                        box.style.left = 0;
+                    })
+                    num = 0
+                }else{
+                    animate1(box,{
+                        left:-num*clientw
+                    })
+                }
+
+
+                for(var i=0;i<btn.length;i++){
+                    btn[i].style.background=""
+                }
+                btn[num].style.background="white"
+
+            }
+            var t=setInterval(move,2000)
+
+            var view = document.querySelector(".view")
+
+            view.onmouseover=function () {
+                clearInterval(t)
+            }
+            view.onmouseout=function () {
+                t=setInterval(move,2000)
+            }
+
+
+            for(let i=0;i<btn.length;i++){
+
+                btn[i].onclick=function () {
+                    num=i
+                    animate(box,{
+                        left:-num*clientw
+                    })
+
+                    for(var j=0;j<btn.length;j++){
+                        btn[j].style.background=""
+
+                    }
+                    btn[num].style.background="white"
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 </script>
+
+
 
     <div class="box">
         <div class="one">
@@ -76,6 +302,105 @@
                     <div class="en">language</div>
                     <div class="logo1"></div>
                 </div>
+                <div class="en-con" style="display: none" >
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">简体中文</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English (United States)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English (United Kingdom)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">繁體中文 (中國香港)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English(Hong Kong,China)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">韩语版</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">日语版</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English (Singapore)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English (Australia)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Deutsch</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Français</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Español</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Italiano</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Русский</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">泰国站</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Bahasa Indonesia</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">Bahasa Malaysia</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">English (Malaysia)</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">越南语</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">荷兰语</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">波兰语</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">希腊语</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">土耳其语</div>
+                    </div>
+                    <div class="en-type">
+                        <div class="left-tu"></div>
+                        <div class="right-zi">巴西葡萄牙语</div>
+                    </div>
+
+                </div>
                 <div class="right">
                     <div class="con1"><div class="zi1">您好，请登录</div></div>
                     <div class="con2"><div class="zhuce">免费注册</div></div>
@@ -85,26 +410,64 @@
 
 
                     </div>
-                        <div class="con4"><div class="xc">我的携程</div>
+                    <div class="con4">
+                        <div class="xc">我的携程</div>
                         <div class="tubiao2"></div>
+                        <div class="hide-wdxc" style="display: none;">
+                            <div class="hide-con">我的收藏</div>
+                            <div class="hide-con">我的优惠卷</div>
+                            <div class="hide-con">常用信息</div>
+                            <div class="hide-con">我的钱包</div>
+                        </div>
                     </div>
-                    <div class="con5"><div class="zi5">我的订单</div>
+                    <div class="con5">
+                        <div class="zi5">我的订单</div>
                         <div class="tubiao3"></div>
+                        <div class="hide-wddd" style="display: none;" >
+                            <div class="hide-con">机票+相关订单</div>
+                            <div class="hide-con">酒店订单</div>
+                            <div class="hide-con">旅游订单</div>
+                            <div class="hide-con">火车票订单</div>
+                            <div class="hide-con">全部订单</div>
+                            <div class="hide-con">手机号查订单</div>
+                        </div>
                     </div>
                     <div class="con6"><div class="zi6">客服中心</div></div>
                     <div class="con7">
                         <div class="tubiao4"></div>
-                        <div class="zi7">携程商旅</div></div>
-                        <div class="tubiao5"></div>
-                    <div class="tubiao6"></div>
-                    <div class="tubiao7"></div>
+                        <div class="zi7">携程商旅</div>
+                        <div class="hide-xcsl" style="display: none">
+                            <div class="hide-con">商旅首页</div>
+                            <div class="hide-con">企业差旅平台</div>
+                            <div class="hide-con">会议旅游</div>
+                        </div>
+                    </div>
+                    <div class="tubiao5"></div>
+                   <div class="con8">
+                       <div class="tubiao6"></div>
+
+                       <div class="hide-sj" style="display: none">
+                           <img src="https://pic.c-ctrip.com/platform/online/home/er_ctrip_app.jpg" alt="">
+                           <div class="hide-con">手机扫码快速下载</div>
+                           <div class="hide-con"><div class="zi">携程旅行手机版></div></div>
+                       </div>
+
+
+
+                   </div>
+                    <div class="con9">
+                        <div class="tubiao7"></div>
+                        <div class="hide-wx" style="display: none">
+                            <img src="https://pic.c-ctrip.com/platform/online/home/er_ctrip_wechat.jpg" alt="">
+                            <div class="hide-con">携程订阅号:helloctrip</div>
+                            <div class="hide-con"><div class="zi">扫一扫，<div class="zi-right">领旅行福利</div></div></div>
+                        </div>
+                    </div>
+
                 </div>
 
 
             </div>
-
-
-
         </div>
         <div class="two">
             <div class="main">
@@ -161,6 +524,7 @@
         <div class="four">
             <div class="main">
                 <div class="con1"><div class="zi">境外直通车</div></div>
+
                 <ul class="con2">
                    <li>
                        <div class="icon1"></div>
@@ -215,311 +579,1026 @@
 
             </div>
         </div>
+
         <div class="five">
-                <div class="below">
 
-                    <div class="bigboxss">
+            <div class="view">
+                <div class="boxbox">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <div class="boxbtns">
+                    <div class="boxbtn" style="background: white"></div>
+                    <div class="boxbtn"></div>
+                    <div class="boxbtn"></div>
+                    <div class="boxbtn"></div>
+                </div>
+                <div class="bigboxss">
 
-                        <div class="bigoptsss">
+                    <div class="bigoptsss">
 
-                            <div class="set-current">
-                                <b class="set" href="javascript:;" style="color:blue;margin-left: 8px;"><div class="a1"><div class="a11">酒店</div></div></b>
+                        <div class="set-current">
+                            <b class="set" href="javascript:;" style="color:blue;margin-left: 8px;"><div class="a1"><div class="a11">酒店</div></div></b>
+                        </div>
+                        <li class="set"><b href="javascript:;"><div class="a">机票</div></b></li>
+                        <li class="set"> <b href="javascript:;"><div class="a">旅游</div></b></li>
+                        <li class="set"><b href="javascript:;"><div class="a">跟团游</div></b></li>
+                        <li class="set"> <b href="javascript:;"><div class="a">自由行</div></b></li>
+                        <li class="set"> <b href="javascript:;"><div class="a">火车</div></b></li>
+                        <li class="set">  <b href="javascript:;"><div class="a">用车</div></b></li>
+
+                    </div>
+
+                    <div class="bigconss">
+                        <!--酒店-->
+                        <div class="boxss">
+
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 国内酒店</a>
+                                <a  href="javascript:;"> 海外酒店</a>
+                                <a  href="javascript:;" > 民宿</a>
+                                <a  href="javascript:;" > 酒店团购</a>
+                                <a  href="javascript:;" > 酒店+景点</a>
+                                <a  href="javascript:;" > 会议·团房</a>
                             </div>
-                            <li class="set"><b href="javascript:;"><div class="a">机票</div></b></li>
-                            <li class="set"> <b href="javascript:;"><div class="a">旅游</div></b></li>
-                            <li class="set"><b href="javascript:;"><div class="a">跟团游</div></b></li>
-                            <li class="set"> <b href="javascript:;"><div class="a">自由行</div></b></li>
-                            <li class="set"> <b href="javascript:;"><div class="a">火车</div></b></li>
-                            <li class="set">  <b href="javascript:;"><div class="a">用车</div></b></li>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">目的地</div>
+                                        <div class="top-right">中文/拼音</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">入住日期</div>
+                                                <div class="bottom-right">2019-9-14</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">退房日期</div>
+                                                <div class="bottom-right">2019-9-16</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">酒店级别</div>
+                                                <div class="bottom-right">不限</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">房间数</div>
+                                                <div class="bottom-right">1间</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">住客数</div>
+                                                <div class="bottom-right">1成人</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">关键词</div>
+                                                <div class="bottom-right">(选填)酒店名/地标/商圈</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">目的地</div>
+                                        <div class="top-right">城市/机场/地标/酒店</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">入住日期</div>
+                                                <div class="bottom-right">2019-9-29</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">退房日期</div>
+                                                <div class="bottom-right">2019-9-30</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">酒店级别</div>
+                                                <div class="bottom-right">不限</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">房间数</div>
+                                                <div class="bottom-right">100间</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">住客数</div>
+                                                <div class="bottom-right">2成人</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">关键词</div>
+                                                <div class="bottom-right">(选填)酒店名/地标</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">目的地</div>
+                                        <div class="top-right">中文/拼音</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">入住日期</div>
+                                                <div class="bottom-right">2019-9-15</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">退房日期</div>
+                                                <div class="bottom-right">2019-9-16</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">入住人数</div>
+                                                <div class="bottom-right">不限</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">关键词</div>
+                                                <div class="bottom-right">(选填)民宿名/地标/商圈</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="remencity">
+                                        <div class="left">热门城市：</div>
+                                        <div class="right">上海&nbsp;北京&nbsp;广州&nbsp;深圳&nbsp;成都&nbsp;杭州&nbsp;苏州&nbsp;青岛&nbsp;厦门&nbsp;三亚&nbsp;</div>
+                                    </div>
+                                    <div class="tuangou">
+                                        <div class="left">热门团购：</div>
+                                        <div class="right">度假公寓&nbsp;别墅轰趴&nbsp;住店游玩&nbsp;情侣酒店&nbsp;火车票专享</div></div>
+                                    <div class="mudidi">
+                                        <div class="mudi-left">目的地</div>
+                                        <div class="mudi-right">上海</div>
+                                    </div>
+                                    <div class="guanjian">
+                                        <div class="guanjian-left">关键词</div>
+                                        <div class="guanjian-right">（选填）商圈/景区/酒店品牌/酒店名称/关键字</div>
+                                    </div>
+                                    <div class="jiudiantuangou-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">目的地</div>
+                                        <div class="top-right">上海</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">入住日期</div>
+                                                <div class="bottom-right">2019-9-16</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">游玩天数</div>
+                                                <div class="bottom-right">不限</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">酒店级别</div>
+                                                <div class="bottom-right">不限</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+
+                                            <li>
+                                                <div class="bottom-left">关键词</div>
+                                                <div class="bottom-right">酒店名称、景点名称...</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi-jj">搜索酒店+景点套餐</div></div>
+
+
+
+                                </div>
+                                <div class="listss" >
+
+                                    <div class="type">类型</div>
+                                    <div class="type-select">
+                                        <div class="tf">
+                                            <div class="quan">
+                                                <div class="xiaoquan">
+
+                                                </div>
+                                            </div>
+                                            <div class="tf-zi1">团房</div>
+                                            <div class="tf-zi2">5间以上享优惠</div>
+                                        </div>
+                                        <div class="czf">
+                                            <div class="quan">
+
+                                            </div>
+                                            <div class="czf-zi1">长住房</div>
+                                            <div class="czf-zi2">连住10天享优惠</div>
+                                        </div>
+                                        <div class="hycd">
+                                            <div class="quan-hycd">
+
+                                            </div>
+                                            <div class="hycd-zi1">会议场地</div>
+                                        </div>
+                                    </div>
+                                    <div class="hytf-bottom">
+                                        <div class="hytf-bottom1">
+                                            <div class="hytf-bottom1-left">目的地</div>
+                                            <div class="hytf-bottom1-right">上海</div>
+                                        </div>
+
+                                        <div class="hytf-bottom2">
+                                            <div class="hytf-bottom2-left">关键词</div>
+                                            <div class="hytf-bottom2-right">（选填）场地名/地标/商圈</div>
+                                        </div>
+
+                                        <div class="listss-rightdown1"><div class="zi-hytf">搜索</div></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
 
                         </div>
 
-                        <div class="bigconss">
-                           <!--酒店-->
-                            <div class="boxss">
+                        <!-- 机票-->
+                        <div class="boxss">
 
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 国内酒店</a>
-                                    <a  href="javascript:;"> 海外酒店</a>
-                                    <a  href="javascript:;" > 民宿</a>
-                                    <a  href="javascript:;" > 酒店团购</a>
-                                    <a  href="javascript:;" > 酒店+景点</a>
-                                    <a  href="javascript:;" > 会议·团房</a>
-                                </div>
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 国内机票</a>
+                                <a  href="javascript:;"> 国际·港澳台机票</a>
+                                <a  href="javascript:;" > 发现低价</a>
+                            </div>
 
-                                <div class="conss">
-                                    <div class="listss" >
-                                        <div class="listss-top">
-                                            <div class="top-left">目的地</div>
-                                            <div class="top-right">中文/拼音</div>
-                                        </div>
-                                        <div class="listss-bottom">
-                                            <ul class="left">
-                                               <li>
-                                                   <div class="bottom-left">入住日期</div>
-                                                   <div class="bottom-right">2019-9-14</div>
-                                               </li>
-                                                <li>
-                                                    <div class="bottom-left">房间数</div>
-                                                    <div class="bottom-right">1间</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">酒店级别</div>
-                                                    <div class="bottom-right">不限</div>
-                                                </li>
-                                            </ul>
-                                            <ul class="right">
-                                                <li>
-                                                    <div class="bottom-left">退房日期</div>
-                                                    <div class="bottom-right">2019-9-16</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">住客数</div>
-                                                    <div class="bottom-right">1成人</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">关键词</div>
-                                                    <div class="bottom-right">(选填)酒店名/地标/商圈</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">航程类型</div>
+                                        <div class="top-right">单程/往返/多程</div>
                                     </div>
-                                    <div class="listss" >
-                                        <div class="listss-top">
-                                            <div class="top-left">目的地</div>
-                                            <div class="top-right">城市/机场/地标/酒店</div>
-                                        </div>
-                                        <div class="listss-bottom">
-                                            <ul class="left">
-                                                <li>
-                                                    <div class="bottom-left">入住日期</div>
-                                                    <div class="bottom-right">2019-9-29</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">房间数</div>
-                                                    <div class="bottom-right">1间</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">酒店级别</div>
-                                                    <div class="bottom-right">不限</div>
-                                                </li>
-                                            </ul>
-                                            <ul class="right">
-                                                <li>
-                                                    <div class="bottom-left">退房日期</div>
-                                                    <div class="bottom-right">2019-9-30</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">住客数</div>
-                                                    <div class="bottom-right">2成人</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">关键词</div>
-                                                    <div class="bottom-right">(选填)酒店名/地标</div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">中文/拼音</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">yyyy-mm-dd</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">中文/拼音</div>
 
-
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">返回日期</div>
+                                                <div class="bottom-right">yyyy-mm-dd</div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="listss" >
-                                        <div class="listss-top">
-                                            <div class="top-left">目的地</div>
-                                            <div class="top-right">中文/拼音</div>
-                                        </div>
-                                        <div class="listss-bottom">
-                                            <ul class="left">
-                                                <li>
-                                                    <div class="bottom-left">入住日期</div>
-                                                    <div class="bottom-right">2019-9-15</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">入住人数</div>
-                                                    <div class="bottom-right">不限</div>
-                                                </li>
-                                            </ul>
-                                            <ul class="right">
-                                                <li>
-                                                    <div class="bottom-left">退房日期</div>
-                                                    <div class="bottom-right">2019-9-16</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">关键词</div>
-                                                    <div class="bottom-right">(选填)民宿名/地标/商圈</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">航程类型</div>
+                                        <div class="top-right">单程/往返/多程</div>
                                     </div>
-                                    <div class="listss" >
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">中文/拼音/英文</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right"></div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">中文/拼音/英文</div>
 
-                                        <div class="tuangou">热门团购：度假公寓 别墅轰趴 住店游玩 情侣酒店 火车票专享</div>
-                                        <div class="place">目的地</div><div class="con-place">上海</div>
-                                        <div class="guanjian">关键词</div><div class="con-place">（选填）商圈/景区/酒店品牌/酒店名称/关键字</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">返回日期</div>
+                                                <div class="bottom-right"></div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="listss" >
-                                        <div class="listss-top">
-                                            <div class="top-left">目的地</div>
-                                            <div class="top-right">上海</div>
-                                        </div>
-                                        <div class="listss-bottom">
-                                            <ul class="left">
-                                                <li>
-                                                    <div class="bottom-left">入住日期</div>
-                                                    <div class="bottom-right">2019-9-15</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">酒店级别</div>
-                                                    <div class="bottom-right">不限</div>
-                                                </li>
-
-                                            </ul>
-                                            <ul class="right">
-
-                                                <li>
-                                                    <div class="bottom-left">游玩天数</div>
-                                                    <div class="bottom-right">不限</div>
-                                                </li>
-                                                <li>
-                                                    <div class="bottom-left">关键词</div>
-                                                    <div class="bottom-right">酒店名称、景点名称、主题、人群</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="remencity">
+                                        <div class="left">大家再搜：</div>
+                                        <div class="right">免签/落地签&nbsp;海岛沙滩&nbsp;第一次出镜&nbsp;学生党&nbsp;疯狂血拼</div>
                                     </div>
-                                    <div class="listss" >会议·团房</div>
-                                </div>
 
-                            </div>
+                                    <div class="mudidi">
+                                        <div class="mudi-left">出发地</div>
+                                        <div class="mudi-right">上海</div>
+                                    </div>
+                                    <div class="guanjian">
+                                        <div class="guanjian-left">目的地</div>
+                                        <div class="guanjian-right">全世界</div>
+                                    </div>
+                                    <div class="jiudiantuangou-rightdown"><div class="zi">搜索</div></div>
 
-                           <!-- 机票-->
-                            <div class="boxss">
-
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 国内机票</a>
-                                    <a  href="javascript:;"> 国际·港澳台机票</a>
-                                    <a  href="javascript:;" > 发现低价</a>
-                                </div>
-
-                                <div class="conss">
-                                    <div class="listss" >国内机票</div>
-                                    <div class="listss" >国际·港澳台机票</div>
-                                    <div class="listss" >发现低价</div>
-                                </div>
-                            </div>
-
-                            <!--旅游-->
-                            <div class="boxss">
-
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;">全部</a>
-                                    <a  href="javascript:;"> 跟团游</a>
-                                    <a  href="javascript:;" > 自由行</a>
-                                    <a  href="javascript:;" > 周边游</a>
-                                    <a  href="javascript:;" > 门票</a>
-                                    <a  href="javascript:;" > 游轮</a>
-                                </div>
-
-                                <div class="conss">
-                                    <div class="listss" >全部</div>
-                                    <div class="listss" >跟团游</div>
-                                    <div class="listss" >自由行</div>
-                                    <div class="listss" >周边游</div>
-                                    <div class="listss" >门票</div>
-                                    <div class="listss" >游轮</div>
-                                </div>
-                            </div>
-
-                            <!--跟团游-->
-                            <div class="boxss">
-
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 推荐</a>
-                                    <a  href="javascript:;"> 周边跟团</a>
-                                    <a  href="javascript:;" > 境内跟团</a>
-                                    <a  href="javascript:;" > 出境跟团</a>
-
-                                </div>
-
-                                <div class="conss">
-                                    <div class="listss" >推荐</div>
-                                    <div class="listss" >周边跟团</div>
-                                    <div class="listss" >境内跟团</div>
-                                    <div class="listss" >出境跟团</div>
 
                                 </div>
                             </div>
+                        </div>
 
-                            <!--自由行-->
-                            <div class="boxss">
+                        <!--旅游-->
+                        <div class="boxss">
 
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 机票+酒店</a>
-                                    <a  href="javascript:;"> 火车+酒店</a>
-                                    <a  href="javascript:;" > 酒店+景点</a>
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;">全部</a>
+                                <a  href="javascript:;"> 跟团游</a>
+                                <a  href="javascript:;" > 自由行</a>
+                                <a  href="javascript:;" > 周边游</a>
+                                <a  href="javascript:;" > 门票</a>
+                                <a  href="javascript:;" > 游轮</a>
+                            </div>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">青岛</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">云南</div></div>
+                                            <div class="kuang"><div class="zi">太原</div></div>
+                                            <div class="kuang"><div class="zi">大同</div></div>
+                                            <div class="kuang"><div class="zi">三亚</div></div>
+                                            <div class="kuang"><div class="zi">日本</div></div>
+                                            <div class="kuang"><div class="zi">张家界</div></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">青岛</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">云南</div></div>
+                                            <div class="kuang"><div class="zi">太原</div></div>
+                                            <div class="kuang"><div class="zi">大同</div></div>
+                                            <div class="kuang"><div class="zi">三亚</div></div>
+                                            <div class="kuang"><div class="zi">日本</div></div>
+                                            <div class="kuang"><div class="zi">张家界</div></div>
+                                            <div class="kuang"><div class="zi">泰国</div></div>
+                                            <div class="kuang"><div class="zi">厦门</div></div>
+                                            <div class="kuang"><div class="zi">上海</div></div>
+                                            <div class="kuang"><div class="zi">大连</div></div>
+                                            <div class="kuang"><div class="zi">桂林</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+
+                                            <div class="kuang"><div class="zi">太原</div></div>
+                                            <div class="kuang"><div class="zi">大同</div></div>
+                                            <div class="kuang"><div class="zi">三亚</div></div>
+                                            <div class="kuang"><div class="zi">日本</div></div>
+                                            <div class="kuang"><div class="zi">丽江</div></div>
+                                            <div class="kuang"><div class="zi">泰国</div></div>
+                                            <div class="kuang"><div class="zi">厦门</div></div>
+                                            <div class="kuang"><div class="zi">上海</div></div>
+                                            <div class="kuang"><div class="zi">大连</div></div>
+                                            <div class="kuang"><div class="zi">桂林</div></div>
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">青岛</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">云南</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+
+                                            <div class="kuang"><div class="zi">桂林</div></div>
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">青岛</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">云南</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">上海</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">广州</div></div>
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">普吉岛</div></div>
+                                            <div class="kuang"><div class="zi">新加坡</div></div>
+                                            <div class="kuang"><div class="zi">东京</div></div>
+                                            <div class="kuang"><div class="zi">曼谷</div></div>
+                                            <div class="kuang"><div class="zi">大阪</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">日本</div></div>
+                                            <div class="kuang"><div class="zi">东南亚</div></div>
+                                            <div class="kuang"><div class="zi">港澳台</div></div>
+                                            <div class="kuang"><div class="zi">阿拉斯</div></div>
+                                            <div class="kuang"><div class="zi">河轮</div></div>
+                                            <div class="kuang"><div class="zi">加勒比</div></div>
+                                            <div class="kuang"><div class="zi">爱琴海</div></div>
+                                            <div class="kuang"><div class="zi">北欧</div></div>
+                                            <div class="kuang"><div class="zi">夏威夷</div></div>
+                                            <div class="kuang"><div class="zi">地中海</div></div>
+                                            <div class="kuang"><div class="zi">澳新</div></div>
+                                            <div class="kuang"><div class="zi">极地</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--跟团游-->
+                        <div class="boxss">
+
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 推荐</a>
+                                <a  href="javascript:;"> 周边跟团</a>
+                                <a  href="javascript:;" > 境内跟团</a>
+                                <a  href="javascript:;" > 出境跟团</a>
+
+                            </div>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">西安</div></div>
+                                            <div class="kuang"><div class="zi">北京</div></div>
+                                            <div class="kuang"><div class="zi">青岛</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">云南</div></div>
+                                            <div class="kuang"><div class="zi">太原</div></div>
+                                            <div class="kuang"><div class="zi">大同</div></div>
+                                            <div class="kuang"><div class="zi">三亚</div></div>
+                                            <div class="kuang"><div class="zi">日本</div></div>
+                                            <div class="kuang"><div class="zi">张家界</div></div>
+                                            <div class="kuang"><div class="zi">桂林</div></div>
+                                            <div class="kuang"><div class="zi">上海</div></div>
+                                            <div class="kuang"><div class="zi">厦门</div></div>
+                                            <div class="kuang"><div class="zi">三亚</div></div>
+                                            <div class="kuang"><div class="zi">大连</div></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">五台山</div></div>
+                                            <div class="kuang"><div class="zi">平遥</div></div>
+                                            <div class="kuang"><div class="zi">长治</div></div>
+                                            <div class="kuang"><div class="zi">石家庄</div></div>
+                                            <div class="kuang"><div class="zi">临汾</div></div>
+                                            <div class="kuang"><div class="zi">忻州</div></div>
+                                            <div class="kuang"><div class="zi">运城</div></div>
+                                            <div class="kuang"><div class="zi">晋中</div></div>
+                                            <div class="kuang"><div class="zi">晋城</div></div>
+                                            <div class="kuang"><div class="zi">五台</div></div>
+                                            <div class="kuang"><div class="zi">保定</div></div>
+                                            <div class="kuang"><div class="zi">吕梁</div></div>
+                                            <div class="kuang"><div class="zi">宁武</div></div>
+                                            <div class="kuang"><div class="zi">介休</div></div>
+                                            <div class="kuang"><div class="zi">朔州</div></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">丽江</div></div>
+                                            <div class="kuang"><div class="zi">杭州</div></div>
+                                            <div class="kuang"><div class="zi">重庆</div></div>
+                                            <div class="kuang"><div class="zi">成都</div></div>
+                                            <div class="kuang"><div class="zi">秦皇岛</div></div>
+                                            <div class="kuang"><div class="zi">山西</div></div>
+                                            <div class="kuang"><div class="zi">新疆</div></div>
+                                            <div class="kuang"><div class="zi">内蒙古</div></div>
+                                            <div class="kuang"><div class="zi">天津</div></div>
+                                            <div class="kuang"><div class="zi">昆明</div></div>
+                                            <div class="kuang"><div class="zi">西藏</div></div>
+                                            <div class="kuang"><div class="zi">南京</div></div>
+                                            <div class="kuang"><div class="zi">广州</div></div>
+                                            <div class="kuang"><div class="zi">贵州</div></div>
+                                            <div class="kuang"><div class="zi">长沙</div></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="all-top">
+                                        <div class="all-left"><div class="left">出发地</div><div class="right">太原</div></div>
+                                        <div class="all-left"><div class="left">目的地</div><div class="right">中文/拼音</div></div>
+                                        <div class="right-right"><div class="right-zi">搜索</div></div>
+                                    </div>
+                                    <div class="all-bottom">
+                                        <div class="left">推荐:</div>
+                                        <div class="right">
+                                            <div class="kuang"><div class="zi">巴厘岛</div></div>
+                                            <div class="kuang"><div class="zi">普吉岛</div></div>
+                                            <div class="kuang"><div class="zi">新加坡</div></div>
+                                            <div class="kuang"><div class="zi">俄罗斯</div></div>
+                                            <div class="kuang"><div class="zi">芽庄</div></div>
+                                            <div class="kuang"><div class="zi">迪拜</div></div>
+                                            <div class="kuang"><div class="zi">土耳其</div></div>
+                                            <div class="kuang"><div class="zi">越南</div></div>
+                                            <div class="kuang"><div class="zi">塞班岛</div></div>
+                                            <div class="kuang"><div class="zi">仙本群</div></div>
+                                            <div class="kuang"><div class="zi">瑞士</div></div>
+                                            <div class="kuang"><div class="zi">柬埔寨</div></div>
+                                            <div class="kuang"><div class="zi">老挝</div></div>
+                                            <div class="kuang"><div class="zi">法国</div></div>
+                                            <div class="kuang"><div class="zi">希腊</div></div>
+                                        </div>
+                                    </div>
 
                                 </div>
 
-                                <div class="conss">
-                                    <div class="listss" >机票+酒店</div>
-                                    <div class="listss" >火车+酒店</div>
-                                    <div class="listss" >酒店+景点</div>
+                            </div>
+                        </div>
+
+                        <!--自由行-->
+                        <div class="boxss">
+
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 机票+酒店</a>
+                                <a  href="javascript:;"> 火车+酒店</a>
+                                <a  href="javascript:;" > 酒店+景点</a>
+
+                            </div>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">航程类型</div>
+                                        <div class="top-right">单程/往返/多程</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">山西</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">上海</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">人数</div>
+                                                <div class="bottom-right">2成人/1小孩</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">航位选择</div>
+                                                <div class="bottom-right">经济舱</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">单程/往返/多程</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">上海</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">北京</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">2019-09-17</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">返回日期</div>
+                                                <div class="bottom-right">2019-09-19</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">入住城市</div>
+                                        <div class="top-right">北京</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">入住日期</div>
+                                                <div class="bottom-right">2019-09-17</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">离店日期</div>
+                                                <div class="bottom-right">2019-09-19</div>
+
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">入住人数</div>
+                                                <div class="bottom-right">2成人/0儿童</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">酒店级别</div>
+                                                <div class="bottom-right">五星级</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--火车-->
+                        <div class="boxss">
+
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 国内火车票</a>
+                                <a  href="javascript:;"> 国际·港台火车票</a>
+                                <a  href="javascript:;" > 国内汽车票</a>
+
+                            </div>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">单程/往返/中转</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发站</div>
+                                                <div class="bottom-right">山西</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">到达站</div>
+                                                <div class="bottom-right">上海</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">yyyy-mm-dd</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">返回日期</div>
+                                                <div class="bottom-right">yyyy-mm-dd</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">单程/往返/通票/订座</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">罗马</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">佛罗伦萨</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">2019-09-17</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">返回日期</div>
+                                                <div class="bottom-right">2019-09-23</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">中文/拼音/英文</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">到达城市</div>
+                                                <div class="bottom-right">中文/拼音/英文</div>
+
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">yyyy-mm-dd</div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--用车-->
+                        <div class="boxss">
+
+                            <div class="optsss">
+                                <a  href="javascript:;" style="color: blue;"> 国内接送机</a>
+                                <a  href="javascript:;"> 境外接送机</a>
+                                <a  href="javascript:;" > 国内租车</a>
+                                <a  href="javascript:;" > 境外租车</a>
+                                <a  href="javascript:;" > 日租包车</a>
+                            </div>
+
+                            <div class="conss">
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">接机/送机/接火车/送货车</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">机场</div>
+                                                <div class="bottom-right">武宿机场T1航站楼</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">送达地点</div>
+                                                <div class="bottom-right">必填，可送达异地城市</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">用车时间</div>
+                                                <div class="bottom-right">2019-09-16</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">时间</div>
+                                                <div class="bottom-right">23：03</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">接机/送机</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">航班号</div>
+                                                <div class="bottom-right">如MU547</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">出发日期</div>
+                                                <div class="bottom-right">2019-09-26</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">送达区域</div>
+                                                <div class="bottom-right">送达地点/酒店名称</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">人数</div>
+                                                <div class="bottom-right">2成人(>=12岁)</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">取车地点</div>
+                                                <div class="bottom-right">太原</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">还车地点</div>
+                                                <div class="bottom-right">地标/商圈</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">取车时间</div>
+                                                <div class="bottom-right">2019-09-12</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">还车时间</div>
+                                                <div class="bottom-right">2019-09-19</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">取车地点</div>
+                                        <div class="top-right">城市/机场/商圈</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">取车时间</div>
+                                                <div class="bottom-right">2019-09-17</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">还车时间</div>
+                                                <div class="bottom-right">2019-09-19</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">当地时间</div>
+                                                <div class="bottom-right">10：00</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">当地时间</div>
+                                                <div class="bottom-right">22：00</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
+                                </div>
+                                <div class="listss" >
+                                    <div class="listss-top">
+                                        <div class="top-left">行程类型</div>
+                                        <div class="top-right">国内/境外</div>
+                                    </div>
+                                    <div class="listss-bottom">
+                                        <ul class="left">
+                                            <li>
+                                                <div class="bottom-left">出发城市</div>
+                                                <div class="bottom-right">太原</div>
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">出发时间</div>
+                                                <div class="bottom-right">2019-09-17</div>
+                                            </li>
+                                        </ul>
+                                        <ul class="right">
+                                            <li>
+                                                <div class="bottom-left">用车时长</div>
+                                                <div class="bottom-right">一天</div>
+
+                                            </li>
+                                            <li>
+                                                <div class="bottom-left">时间</div>
+                                                <div class="bottom-right">23：03</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="listss-rightdown"><div class="zi">搜索</div></div>
 
                                 </div>
                             </div>
-
-                            <!--火车-->
-                            <div class="boxss">
-
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 国内火车票</a>
-                                    <a  href="javascript:;"> 国际·港台火车票</a>
-                                    <a  href="javascript:;" > 国内汽车票</a>
-
-                                </div>
-
-                                <div class="conss">
-                                    <div class="listss" >国内火车票</div>
-                                    <div class="listss" >国际·港台火车票</div>
-                                    <div class="listss" >国内汽车票</div>
-
-                                </div>
-                            </div>
-
-                            <!--用车-->
-                            <div class="boxss">
-
-                                <div class="optsss">
-                                    <a  href="javascript:;" style="color: blue;"> 国内接送机</a>
-                                    <a  href="javascript:;"> 境外接送机</a>
-                                    <a  href="javascript:;" > 国内租车</a>
-                                    <a  href="javascript:;" > 境外租车</a>
-                                    <a  href="javascript:;" > 日租包车</a>
-                            </div>
-
-                                <div class="conss">
-                                    <div class="listss" >国内接送机</div>
-                                    <div class="listss" >境外接送机</div>
-                                    <div class="listss" >国内租车</div>
-                                    <div class="listss" >境外租车</div>
-                                    <div class="listss" >日租包车</div>
-
-                                </div>
-                            </div>
-
                         </div>
 
                     </div>
 
-
                 </div>
+            </div>
+
+
+
+
+
+
+
+
+
 
         </div>
+
         <div class="six">
 
             <!--  热门特价旅游...-->
@@ -11514,19 +12593,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
 </body>
