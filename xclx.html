@@ -6,7 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>携程</title>
     <link rel="stylesheet" href="xclx.css">
-    <script src="xclx.js"></script>
+    <script src="donghua.js"></script>
+    <script>
+/*        onload=function () {
+            var box = document.querySelector(".nav-bar-five");
+            var dian = document.querySelectorAll(".dian a");
+            var num = 1;
+            var w = document.documentElement.clientWidth;
+            var hs = function () {
+                if(num>5){
+                    num=0
+                }
+                animate(box,{left:-num*w},1000);
+                for(var i=0;i<dian.length;i++){
+                    dian[i].style.background=""
+                }
+                dian[num].style.background="write";
+                num++
+            };
+            var t=setInterval(hs,2000);
+            for(let j=0;j<dian.length;j++){
+                dian[j].onclick=function () {
+                    num=j
+                }
+            }
+            dian[num].style.background="write";
+            num++;
+            var t1 = setInterval(hs,2000)
+        }*/
+
+    window.onload=function () {
+        var box = document.querySelector("#nav-bar-five-img");
+        /*var di = document.querySelectorAll("#nav-bar-five-img a")*/
+        var dian = document.querySelectorAll(".dian a");
+        var clientW=document.documentElement.clientWidth;
+        var num = 0;
+        onblur=function () {
+            clearInterval(t)
+        };
+        onfocus=function () {
+            t = setInterval(move,2000);
+        };
+        function move() {
+            num++;
+            /*if (num>=5){
+                for (var i = 0;i<di.length;i++){
+                    di[i].style.opacity=0
+                }di[num].style.opacity=1
+            }*/
+            if (num > 4) {
+                animate(box, {
+                    left: -num * clientW
+                }, function () {
+                    box.style.left = 0 +"px"
+                });
+                num = 0
+            } else{
+                animate(box, {
+                    left: -num * clientW
+                });
+            }
+            for (var i=0;i<dian.length;i++){
+                dian[i].style.background=""
+            }
+            dian[num].style.background="white"
+
+/*            function autoPlay(){
+                t=setInterval(function(){
+                    if(box==dian.length-1){
+                        num=1;
+
+                        dian.style.left=0+"px";
+                    }else{
+                        num++;
+                    }
+                    move();
+                },2000)
+            }
+            autoPlay();*/
+        }
+        var t = setInterval(move,2000);
+
+        box.onmousemove=function () {
+           clearInterval(t)
+        };
+        box.onmouseout=function () {
+            t = setInterval(move,2000)
+        };
+        /*clientW=document.documentElement.clientWidth;*/
+        for (let l=0;l<dian.length;l++){
+            dian[l].onclick=function () {
+                num=l;
+                animate(box,{
+
+                    left:-num * clientW
+                });
+
+                for (var j=0;j<dian.length;j++){
+                    dian[j].style.background=""
+                }
+                dian[num].style.background="white"
+            }
+        }
+    }
+    </script>
 </head>
 <body>
 <!--第一行导航栏-->
@@ -195,12 +298,19 @@
 <div class="nav-bar-five">
     <!--第五行轮播图-->
     <div id="nav-bar-five-img">
-        <img src="./img/xclx.jpg" alt="">
-        <img src="./img/fushishan.jpg" alt="">
-        <img src="./img/fengwanriben.jpg" alt="">
-        <img src="./img/20zhounian.jpg" alt="">
-        <img src="./img/sifakaoshi.jpg" alt="">
-        <img src="./img/xclx.jpg" alt="">
+        <a href=""><img src="./img/xclx.jpg" alt=""></a>
+        <a href=""><img src="./img/fushishan.jpg" alt=""></a>
+        <a href=""><img src="./img/fengwanriben.jpg" alt=""></a>
+        <a href=""><img src="./img/20zhounian.jpg" alt=""></a>
+        <a href=""><img src="./img/sifakaoshi.jpg" alt=""></a>
+        <a href=""><img src="./img/xclx.jpg" alt=""></a>
+    </div>
+    <div class="dian">
+        <a href="javascript:;" style="background-color: white"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
     </div>
     <!--第五行的搜索框-->
     <div class="nav-bar-fives">
