@@ -1,0 +1,398 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>携程</title>
+    <link rel="stylesheet" href="xclx.css">
+    <script src="donghua.js"></script>
+    <script>
+/*        onload=function () {
+            var box = document.querySelector(".nav-bar-five");
+            var dian = document.querySelectorAll(".dian a");
+            var num = 1;
+            var w = document.documentElement.clientWidth;
+            var hs = function () {
+                if(num>5){
+                    num=0
+                }
+                animate(box,{left:-num*w},1000);
+                for(var i=0;i<dian.length;i++){
+                    dian[i].style.background=""
+                }
+                dian[num].style.background="write";
+                num++
+            };
+            var t=setInterval(hs,2000);
+            for(let j=0;j<dian.length;j++){
+                dian[j].onclick=function () {
+                    num=j
+                }
+            }
+            dian[num].style.background="write";
+            num++;
+            var t1 = setInterval(hs,2000)
+        }*/
+
+    window.onload=function () {
+        var box = document.querySelector("#nav-bar-five-img");
+        /*var di = document.querySelectorAll("#nav-bar-five-img a")*/
+        var dian = document.querySelectorAll(".dian a");
+        var clientW=document.documentElement.clientWidth;
+        var num = 0;
+        onblur=function () {
+            clearInterval(t)
+        };
+        onfocus=function () {
+            t = setInterval(move,2000);
+        };
+        function move() {
+            num++;
+            /*if (num>=5){
+                for (var i = 0;i<di.length;i++){
+                    di[i].style.opacity=0
+                }di[num].style.opacity=1
+            }*/
+            if (num > 4) {
+                animate(box, {
+                    left: -num * clientW
+                }, function () {
+                    box.style.left = 0 +"px"
+                });
+                num = 0
+            } else{
+                animate(box, {
+                    left: -num * clientW
+                });
+            }
+            for (var i=0;i<dian.length;i++){
+                dian[i].style.background=""
+            }
+            dian[num].style.background="white"
+
+/*            function autoPlay(){
+                t=setInterval(function(){
+                    if(box==dian.length-1){
+                        num=1;
+
+                        dian.style.left=0+"px";
+                    }else{
+                        num++;
+                    }
+                    move();
+                },2000)
+            }
+            autoPlay();*/
+        }
+        var t = setInterval(move,2000);
+
+        box.onmousemove=function () {
+           clearInterval(t)
+        };
+        box.onmouseout=function () {
+            t = setInterval(move,2000)
+        };
+        /*clientW=document.documentElement.clientWidth;*/
+        for (let l=0;l<dian.length;l++){
+            dian[l].onclick=function () {
+                num=l;
+                animate(box,{
+
+                    left:-num * clientW
+                });
+
+                for (var j=0;j<dian.length;j++){
+                    dian[j].style.background=""
+                }
+                dian[num].style.background="white"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+<!--第一行导航栏-->
+<div class="nav-bar-top">
+    <div class="nav-left">
+        <div class="slogan">让旅行更幸福</div>
+        <div class="nav-left-1">
+            <div class="nav-left-1-img">
+                <!--<img src="./img/sprite.png" alt="">-->
+            </div>
+            <div class="nav-left-1-font">
+                <a href="">Language</a>
+            </div>
+            <div class="nav-left-1-img1"></div>
+        </div>
+        <ul>
+            <li class="nav-right-1">
+                <a href="" style="color: #0066CC;">您好,请登录</a>
+            </li>
+            <li>
+                <a href="">免费注册</a>
+            </li>
+            <li >
+                <div class="nav-right-1-img"></div>
+                <a>消息</a>
+            </li>
+            <li>
+                <a href="">我的携程</a>
+                <div class="top-lan-img3"></div>
+            </li>
+            <li>
+                <a href="">我的订单</a>
+                <div class="nav-right-1-img1"></div>
+            </li>
+            <li><a>客服中心</a></li>
+            <li class="nav-right-1-img2"></li>
+            <li class="nav-right-1-img3" style="border: none"></li>
+        </ul>
+    </div>
+</div>
+
+<!--第二行-->
+<div class="nav-bar-second">
+    <div class="nav-bar-second-s">
+        <div class="nav-bar-second-left">
+            <img src="./img/c_logo2013.png">
+        </div>
+        <div class="nav-bar-second-left-sou">
+            <input type="text" placeholder="搜索旅行地/酒店/旅游/景点门票/交通">
+            <button type="button"></button>
+        </div>
+        <ul class="nav-bar-second-right">
+            <li>境内：95010</li>
+            <li>(或)400-830-6666</li>
+            <div class="nav-bar-second-rightdown"></div>
+        </ul>
+    </div>
+</div>
+
+<!--第三行导航栏-->
+<div class="nav-bar-three">
+    <ul class="nav-bar-three-d">
+        <li>首页</li>
+        <li>
+            <a href="">酒店</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">旅游</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">跟团游</a>
+        </li>
+        <li>
+            <a href="">自由行</a>
+        </li>
+        <li>
+            <a href="">机票</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">火车</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">汽车·船</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">用车</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">门票</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">攻略</a>
+        </li>
+        <li>
+            <a href="">全球购</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">礼品卡</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">商旅</a>
+            <div></div>
+        </li>
+        <li>
+            <a href="">邮轮</a>
+        </li>
+        <li>
+            <a href="">目的地</a>
+        </li>
+        <li>
+            <a href="">金融</a>
+        </li>
+        <li class="genduo">
+            <a href="">更多</a>
+            <div></div>
+        </li>
+    </ul>
+</div>
+
+<!--第四行-->
+<div class="nav-bar-four">
+    <div class="nav-bar-four-left">境外直通车</div>
+    <div class="sanjiao"></div>
+    <ul>
+        <li>
+            <div class="nav-four-icon1"></div>
+            <a href="">海外酒店</a>
+        </li>
+        <li>
+            <div class="nav-four-icon2"></div>
+            <a href="">国际·港澳机票</a>
+        </li>
+        <li>
+            <div class="nav-four-icon3"></div>
+            <a href="">境外出租</a>
+        </li>
+        <li>
+            <div class="nav-four-icon4"></div>
+            <a href="">国际·港澳台火车票</a>
+        </li>
+        <li>
+            <div class="nav-four-icon5"></div>
+            <a href="">出境游</a>
+        </li>
+        <li>
+            <div class="nav-four-icon6"></div>
+            <a href="">高端游</a>
+        </li>
+        <li>
+            <div class="nav-four-icon7"></div>
+            <a href="">出境·港澳台门票</a>
+        </li>
+        <li>
+            <div class="nav-four-icon8"></div>
+            <a href="">签证</a>
+        </li>
+        <li>
+            <div class="nav-four-icon9"></div>
+            <a href="">保险</a>
+        </li>
+        <li>
+            <div class="nav-four-icon10"></div>
+            <a href="">Wifi·电话卡</a>
+        </li>
+        <li>
+            <div class="nav-four-icon11"></div>
+            <a href="">境外接送机</a>
+        </li>
+        <li>
+            <div class="nav-four-icon12"></div>
+            <a href="">外币兑换</a>
+        </li>
+    </ul>
+</div>
+
+<!--第五行-->
+<div class="nav-bar-five">
+    <!--第五行轮播图-->
+    <div id="nav-bar-five-img">
+        <a href=""><img src="./img/xclx.jpg" alt=""></a>
+        <a href=""><img src="./img/fushishan.jpg" alt=""></a>
+        <a href=""><img src="./img/fengwanriben.jpg" alt=""></a>
+        <a href=""><img src="./img/20zhounian.jpg" alt=""></a>
+        <a href=""><img src="./img/sifakaoshi.jpg" alt=""></a>
+        <a href=""><img src="./img/xclx.jpg" alt=""></a>
+    </div>
+    <div class="dian">
+        <a href="javascript:;" style="background-color: white"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+    <!--第五行的搜索框-->
+    <div class="nav-bar-fives">
+        <div class="search">
+            <ul class="search-left">
+                <li class="tag">
+                    <b>酒店</b>
+                </li>
+                <li class="tag">
+                    <b>机票</b>
+                </li>
+                <li class="tag">
+                    <b>旅游</b>
+                </li>
+                <li class="tag">
+                    <b>跟团游</b>
+                </li>
+                <li class="tag">
+                    <b>自由行</b>
+                </li>
+                <li class="tag">
+                    <b>火车</b>
+                </li>
+                <li class="tag">
+                    <b>用车</b>
+                </li>
+            </ul>
+            <div class="search-top">
+                <p class="tab_a">
+                    <a href="" class="xuan">国内酒店</a>
+                    <a href="">海外酒店</a>
+                    <a href="">民宿</a>
+                    <a href="">酒店团购</a>
+                    <a href="">酒店+景点</a>
+                    <a href="">会议·团房</a>
+                </p>
+
+                <div class="find-all">
+                    <div class="find-a">
+                        <div class="find-a-1" style="width: 100%;">
+                            目的地
+                            <input class="a-1-input" style="width: 380px;" type="text" placeholder="中文/拼音">
+                        </div>
+                    </div>
+                    <div class="find-a">
+                        <div class="find-a-1">
+                            入住日期
+                            <input class="a-1-input" type="text" value="2017-9-17">
+                        </div>
+                        <div class="find-a-2">
+                            退房日期
+                            <input class="a-1-input" type="text" value="2019-9-18">
+                        </div>
+                    </div>
+                    <div class="find-a">
+                        <div class="find-a-1">
+                            房间数
+                            <input class="a-1-input" type="text" value="1间">
+                        </div>
+                        <div class="find-a-2">
+                            住客数
+                            <input class="a-1-input" type="text" value="1成人">
+                        </div>
+                    </div>
+                    <div class="find-a">
+                        <div class="find-a-1">
+                            酒店级别
+                            <input class="a-1-input" type="text" value="不限">
+                        </div>
+                        <div class="find-a-2">
+                            关键字
+                            <input class="a-1-input" type="text" placeholder="(选填)酒店名/地标/商圈">
+                        </div>
+                    </div>
+                    <div class="find-all-sousuo">
+                        <input type="button" value="搜索" class="sousuo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
