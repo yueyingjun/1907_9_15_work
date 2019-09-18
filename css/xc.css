@@ -1052,23 +1052,23 @@ p{
 }
 .box a:nth-child(1) div{
     float: left;
-    background: url("../../java script/image/1.jpg") no-repeat center;
+    background: url("../image/1.jpg") no-repeat center;
 }
 .box a:nth-child(5) div{
     float: left;
-    background: url("../../java script/image/1.jpg") no-repeat center;
+    background: url("../image/1.jpg") no-repeat center;
 }
 .box a:nth-child(2) div{
     float: left;
-    background: url("../../java script/image/2.jpg") no-repeat center;
+    background: url("../image/2.jpg") no-repeat center;
 }
 .box a:nth-child(3) div{
     float: left;
-    background: url("../../java script/image/3.jpg") no-repeat center;
+    background: url("../image/3.jpg") no-repeat center;
 }
 .box a:nth-child(4) div{
     float: left;
-    background: url("../../java script/image/4.jpg") no-repeat center;
+    background: url("../image/4.jpg") no-repeat center;
 }
 .bnts{
     width: 200px;
