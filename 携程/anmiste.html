@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="donghua.js"></script>
+</head>
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+</style>
+<script>
+
+
+
+    window.onload = function () {
+        var div = document.querySelector("div")
+            move2(div,{width:300,height:300},function () {
+                alert(1)
+            })
+    }
+
+
+</script>
+
+<body>
+<div></div>
+</body>
+</html>

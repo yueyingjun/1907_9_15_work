@@ -42,7 +42,7 @@ window.onload = function() {
     qweList.onmouseover = function() {
             clearInterval(timer);
         }
-        //移除    
+        //移除
     qweList.onmouseout = function() {
             timer = setInterval(function() {
                 for (var i = 0; i < 5; i++) {
@@ -75,10 +75,7 @@ window.onload = function() {
         }
     }
 
-    tabs(".remen .remen-top ul li a",".remen .con")
-    for(var i=1;i<=3;i++){
-        tabs(".remen .con:nth-child("+i+") .remen-center ul li ",".remen .con:nth-child("+i+") .remen-bottom")
-    }
+
 
 }
 
@@ -95,6 +92,40 @@ function tabs(selector1,selector2) {
             }
             list[i].style.display="block"
             this.style.color="red";
+        }
+    }
+}
+
+function tabs2(selector1,selector2) {
+    var links=document.querySelectorAll(selector1)
+    var list=document.querySelectorAll(selector2)
+    for(let i=0;i<links.length;i++){
+        links[i].onclick=function () {
+            for(let j=0;j<list.length;j++){
+                list[j].style.display="none"
+                links[j].style.background="#0EABD7"
+                links[j].style.color="#fff"
+            }
+            list[i].style.display="block"
+            this.style.background="#fff";
+            this.style.color="#000"
+        }
+    }
+}
+
+
+function tabs3(selector1,selector2) {
+    var links=document.querySelectorAll(selector1)
+    var list=document.querySelectorAll(selector2)
+    for(let i=0;i<links.length;i++){
+        links[i].onclick=function () {
+            for(let j=0;j<list.length;j++){
+                list[j].style.display="none"
+                links[j].style.color="#999"
+            }
+            list[i].style.display="block"
+            this.style.color="#000"
+
         }
     }
 }

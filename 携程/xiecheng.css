@@ -174,8 +174,41 @@ a{
     font-size:16px;
     color: #ffffff;
     margin-right: 19px;
-    line-height: 40px;
+  margin-top: 10px;
+
+
 }
+.yin-box{
+    overflow: hidden;
+}
+.yin{
+    height: 60px;
+    width: 48px;
+    z-index: 2;
+    font-size: 10px;
+    display: none;
+    background: #fff;
+    float: bottom;
+    position: absolute;
+
+}
+.yin>span{
+    color: #2d2d2d;
+
+    line-height: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.yin-box:hover{
+    background: #ffffff;
+    color: #2d2d2d;
+}
+.yin-box:hover .yin{
+    display: block;
+
+}
+
+
 
 .jian{
 
@@ -434,7 +467,7 @@ a{
     width: 490px;
     background: #ffffff;
     z-index: 999;
-    position: relative;
+    position: absolute;
     left: 100px;
     left: 167px;
     top: 20px;
@@ -444,6 +477,7 @@ a{
     height: 100%;
     background: #0EABD7;
     float: left;
+
     }
 .biao-left ul li{
     height: 42.85px;
@@ -471,7 +505,7 @@ a{
     font-size: 13px;
     margin-left: 8px;
     font-weight: bold;
-
+    overflow: hidden;
 }
 .biao-right{
     float: left;
@@ -529,12 +563,26 @@ a{
 
     margin: auto;
     margin-top: 20px;
+    overflow: hidden;
 }
 .remen-top{
     height: 40px;
     width: 100%;
     border-bottom: 2px solid #0EABD7;
+    overflow: hidden;
 
+}
+.remen-top1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid #0EABD7;
+    overflow: hidden;
+
+}
+.con{
+    overflow: hidden;
+    height: 360px;
+    width: 100%;
 }
 .remen-top ul li{
     float: left;
@@ -639,6 +687,11 @@ a{
 
 
 }
+.car1{
+    height: 180px;
+    float: left;
+    width:240px;
+}
 .yuan1{
     padding: 30px 5px;
     width: 102px;
@@ -674,6 +727,7 @@ a{
 .hai-bottom{
     height: 380px;
     width: 100%;
+    overflow: hidden;
 
 }
 .hai-bottom-left{
@@ -689,6 +743,7 @@ a{
     height: 100%;
 
     float: right;
+    overflow: hidden;
 }
 .back-back2{
     background: url("https://images3.c-ctrip.com/overseas/city/singapore256-256.jpg");
