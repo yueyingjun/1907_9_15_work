@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="xiecheng.css">
+
+    <script src="C-4xuanxinagka.js"></script>
+    <script>
+        window.onload=function () {
+            C4xuanxiangka(".ck-left .left-mulu",".main .box")
+            for (let i=1;i<=9;i++) {
+                C4xuanxiangka(".box:nth-child(" + i + ") .bt a", ".box:nth-child(" + i + ") .item1")
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+
+
+<div class="dt">
+    <div class="chuangkou">
+        <div class="ck-left">
+            <div class="left-mulu">酒店</div>
+            <div class="left-mulu">机票</div>
+            <div class="left-mulu">旅游</div>
+            <div class="left-mulu">跟团游</div>
+            <div class="left-mulu">自由游</div>
+            <div class="left-mulu">火车</div>
+            <div class="left-mulu">用车</div>
+        </div>
+
+        <div class="main" style="overflow: hidden">
+            <div class="box">
+                <div style="border: 1px solid red;" class="bt">
+                    <div><a href="javascript:;">国内酒店</a></div>
+                    <div><a href="javascript:;">海外酒店</a></div>
+                    <div><a href="javascript:;">民宿</a></div>
+                    <div><a href="javascript:;">酒店团购</a></div>
+                    <div> <a href="javascript:;">酒店+景点</a></div>
+                    <div> <a href="javascript:;">会议·团房</a></div>
+                </div >
+                <div class="ii" style="border: 1px solid red;">
+                    <div class="item1">
+                        <div class="item"> 目&nbsp;&nbsp;的&nbsp;&nbsp;地 <input type="text" placeholder="中文/拼音"></div>
+                        <div class="item">入住日期&nbsp;&nbsp;<input type="text" placeholder="2019-9-8"></div>
+                        <div class="item"> 房&nbsp;&nbsp;间&nbsp;&nbsp;数 <input type="text" placeholder="1间"></div>
+                        <div class="item">酒店级别&nbsp;&nbsp;<input type="text" placeholder="不限"></div>
+                        <div class="an">搜索</div>
+                    </div>
+                    <div class="item1">
+
+                        <div class="item"> 123123 <input type="text" placeholder="中文/拼音"></div>
+                        <div class="item">入住日期&nbsp;&nbsp;<input type="text" placeholder="2019-9-8"></div>
+                        <div class="item"> 房&nbsp;&nbsp;间&nbsp;&nbsp;数 <input type="text" placeholder="1间"></div>
+                        <div class="item">酒店级别&nbsp;&nbsp;<input type="text" placeholder="不限"></div>
+                        <div class="an">搜索</div>
+                    </div>
+                    <div class="item1">
+
+                        <div class="item">11111 <input type="text" placeholder="中文/拼音"></div>
+                        <div class="item">入住日期&nbsp;&nbsp;<input type="text" placeholder="2019-9-8"></div>
+                        <div class="item"> 房&nbsp;&nbsp;间&nbsp;&nbsp;数 <input type="text" placeholder="1间"></div>
+                        <div class="item">酒店级别&nbsp;&nbsp;<input type="text" placeholder="不限"></div>
+                        <div class="an">搜索</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
