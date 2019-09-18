@@ -293,7 +293,7 @@ p{
 .lbt-centertop{
     width: 450px;
     height: 27px;
-
+    overflow: hidden;
     float: left;
     margin-top: 10px;
     margin-left: 20px;
@@ -386,10 +386,12 @@ p{
     width: 1180px;
     height: 38px;
     margin: 0 auto;
-    margin-top: 50px;
+
     border-bottom: #0070c9 solid 2px;
     line-height: 38px;
+    background: #f6f6f6;
 }
+
 .dhl a{
     color: #000;
     text-decoration: none;
@@ -401,16 +403,63 @@ p{
 .dhl a:hover{
     color: #0070c9;
 }
+
+.dhl3{
+    width: 1180px;
+    height: 38px;
+    margin: 0 auto;
+    border-bottom: #0070c9 solid 2px;
+    line-height: 38px;
+    background: #f6f6f6;
+}
+
+.dhl3 a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 15px;
+
+}
+.dhl3 a:hover{
+    color: #0070c9;
+}
+
+.dhl_guoji a:hover{
+    color: #0070c9;
+}
 .bottom_neirong{
-    width: 1178px;
-    height: 390px;
+    width: 1180px;
+    height: 420px;
     background: white;
     margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.bottom_neirong3{
+    width: 1180px;
+    height: 420px;
+    background: white;
+    margin: auto;
+    overflow: hidden;
+
+}
+.bottom_neirong4{
+    width: 1180px;
+    height: 420px;
+    background: white;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+
 }
 .bottom_xiaobiaoti{
-    width: 1140px;
+    width: 1180px;
     height: 20px;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-left: 10px;
+    float: left;
 }
 .bottom_xiaobiaoti a{
     text-decoration: none;
@@ -421,9 +470,9 @@ p{
     margin-top: 10px;
 }
 .tupian{
-    width: 920px;
-    height: 340px;
-    margin: 10px;
+    width: 1180px;
+    height: 360px;
+
     margin-top: 20px;
     float: left;
 }
@@ -434,11 +483,16 @@ p{
     float: left;
     position: relative;
 }
+.tupian_neirong{
+    height: 340px;
+}
+
 .tupian2{
     width: 220px;
     height: 330px;
-    float: left;
-    margin-top: 24px;
+    float: right;
+    margin-right: 25px;
+    margin-top: 5px;
 }
 .yuanxing{
     width: 112px;
@@ -449,6 +503,8 @@ p{
     left: 25%;
     top: 25%;
 }
+
+
 .tupian .yuanxing p{
     color: white;
     font-weight: bold;
@@ -917,6 +973,7 @@ p{
     height: 290px;
     float: left;
     margin: auto;
+    overflow: hidden;
 
 }
 .lbt-centertop a:hover{
@@ -932,9 +989,105 @@ p{
 }
 .lbt-neirong{
     width: 100%;
-    height: 240px;
-    overflow: hidden;
+    height: 280px;
+    float: left;
 }
 .lbt-left{
     overflow: hidden;
+}
+.dhl_guoji{
+    width: 1180px;
+    height: 38px;
+    margin: 0 auto;
+
+    border-bottom: #0070c9 solid 2px;
+    line-height: 38px;
+    background: #f6f6f6;
+}
+.dhl_guoji a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 15px;
+
+}
+.bottom_xiaobiaoti_guoji{
+    width: 1180px;
+    height: 20px;
+    margin-top: 10px;
+    float: left;
+}
+.bottom_xiaobiaoti_guoji a{
+    color: #2691fd;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 15px;
+    font-size: 13px;
+}
+.tupian_guoji{
+    width: 1180px;
+    height: 360px;
+    float: left;
+}
+
+
+
+.view{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+.box{
+    width: 500%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.box div{
+    width: 20%;
+    height: 100%;
+}
+.box a:nth-child(1) div{
+    float: left;
+    background: url("../../java script/image/1.jpg") no-repeat center;
+}
+.box a:nth-child(5) div{
+    float: left;
+    background: url("../../java script/image/1.jpg") no-repeat center;
+}
+.box a:nth-child(2) div{
+    float: left;
+    background: url("../../java script/image/2.jpg") no-repeat center;
+}
+.box a:nth-child(3) div{
+    float: left;
+    background: url("../../java script/image/3.jpg") no-repeat center;
+}
+.box a:nth-child(4) div{
+    float: left;
+    background: url("../../java script/image/4.jpg") no-repeat center;
+}
+.bnts{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+
+}
+.bnts .bnt{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    float: left;
+    margin: 3px 20px 0 15px;
+;
+
+}
+.bnts .bnt:nth-child(1){
+    background: #000;
 }
