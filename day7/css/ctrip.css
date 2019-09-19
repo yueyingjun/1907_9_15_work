@@ -144,7 +144,6 @@ header{
     height: 100%;
     background-color: #a4cbff;
     float: right;
-    border-radius: 5px
 }
 .sousuo .button:hover{
     color: #6da5ef;
@@ -179,13 +178,16 @@ header{
     height: 100%;
     margin: auto;
     text-align: center;
+    position: relative;
 }
 .nav .nav-content>li{
     line-height: 40px;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     float: left;
     position: relative;
+    cursor: pointer;
+    padding: 0 1px;
 }
 .nav .nav-content>li:hover{
     background-color: #1c88f6;
@@ -199,9 +201,33 @@ header{
     height: 6px;
     margin-top: 19px;
     background: url("../img/spring.png") no-repeat -100px -155px;
-   position: absolute;
+    position: absolute;
     right: 3px;
     top: 0;
+}
+.nav .nav-content .liss{
+    width: 1180px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    display: none;
+    background-color: white;
+    color: #333333;
+    border: 1px solid #1c88f6;
+}
+.nav .nav-content .liss span{
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 14px;
+    height: 20px;
+    margin-top: 10px;
+    border-right: 1px solid #cccccc;
+    float: left;
+}
+.nav .nav-content .liss span:last-child{
+    border: 0;
 }
 .nav-content-dropdown{
     width: 1180px;
@@ -231,7 +257,6 @@ header{
     float: left;
 }
 .nav-content-dropdown>ul>li .icon{
-    /*display: inline-block;*/
     width: 16px;
     height: 16px;
     margin-top: 12px;
@@ -282,9 +307,74 @@ header{
     height: 380px;
     position: relative;
 }
-.lunbotu img{
+.view{
     width: 100%;
     height: 340px;
+    position: absolute;
+    top: 40px;
+    overflow: hidden;
+}
+.box1{
+    width: 1000%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box1 a{
+    width: 10%;
+    height: 100%;
+    float: left;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+}
+.box1 a:nth-child(1){
+    background: url("../img/1.jpg") center no-repeat;
+}
+.box1 a:nth-child(2){
+    background: url("../img/2.jpg") center no-repeat;
+}
+.box1 a:nth-child(3){
+    background: url("../img/3.jpg") center no-repeat;
+}
+.box1 a:nth-child(4){
+    background: url("../img/4.jpg") center no-repeat;
+}
+.box1 a:nth-child(5){
+    background: url("../img/5.jpg") center no-repeat;
+}
+.box1 a:nth-child(6){
+    background: url("../img/6.jpg") center no-repeat;
+}
+.box1 a:nth-child(7){
+    background: url("../img/7.jpg") center no-repeat;
+}
+.box1 a:nth-child(8){
+    background: url("../img/8.jpg") center no-repeat;
+}
+.box1 a:nth-child(9){
+    background: url("../img/9.jpg") center no-repeat;
+}
+.box1 a:nth-child(10){
+    background: url("../img/1.jpg") center no-repeat;
+}
+.btns{
+    width: 230px;
+    height: 20px;
+    position: absolute;
+    bottom: 50px;
+    right:200px;
+    z-index: 10;
+}
+.btns .btn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
 }
 .search{
     width: 560px;
@@ -407,6 +497,9 @@ header{
     line-height: 33px;
     border: 1px solid orange;
     border-radius: 5px;
+}
+.search-one .right-one:nth-child(4) .search-right-center>p{
+    height: 20px;
 }
 .right-two{
     display: none;
@@ -664,11 +757,16 @@ header{
     position: relative;
     background: white;
     width: 221px;
+    overflow: hidden;
 }
 .content-one .small-content .small-one>img{
     width: 100%;
     height: 120px;
     margin-bottom: 5px;
+    transition: transform 1s ease;
+}
+.content-one .small-content .small-one>img:hover{
+    transform: scale(1.1);
 }
 .content-one .small-content .small-one>p{
     display: block;
@@ -703,6 +801,97 @@ header{
     width: 100%;
     height: 60px;
 }
+.contentt{
+    width: 100%;
+    height: 390px;
+    padding: 0;
+    background-color: white;
+}
+.contento .contentt .cleft{
+    width: 227px;
+    height: 375px;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    border-right: 1px dashed #cccccc;
+}
+.contento .contentt .cleft ul>li{
+    float: left;
+    height: 10px;
+    padding: 5px 18px;
+    margin: 5px 0;
+    background: white;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    line-height: 10px;
+}
+.contento .contentt .cleft ul>li:first-child{
+    display: block;
+    height: 20px;
+    width: 210px;
+    font-weight: bolder;
+    text-align: left;
+    border: 0px;
+    line-height: 20px;
+}
+.contento .contentt .cleft ul>li:nth-child(3n+1){
+    border: 0;
+}
+.contentt .cright{
+    width: 930px;
+    float: left;
+    height: 380px;
+    overflow: hidden;
+}
+.contentt .cright .title{
+    margin: 5px 0;
+    width: 100%;
+}
+.contentt .cright .small-content{
+    width: 920px;
+    height: 340px;
+    margin: auto;
+}
+.contentt .cright .small-content .left{
+    margin: 0;
+}
+.contentt .cright .small-content .right{
+    width: 220px;
+    height: 330px;
+    float: left;
+    margin-left: 10px;
+}
+.contentt .cright .small-content>ul>li{
+    width: 220px;
+    height: 168px;
+    float: left;
+    margin: 3px 5px;
+}
+.contentt .cright .small-content>ul>li>.small-one>img{
+    width: 220px;
+    height: 125px;
+}
+.contentt .cright .small-content>ul>li>.small-one>div{
+    width: 220px;
+    height: 55px;
+}
+.contentt .cright .small-content>ul>li>.small-one>div>p{
+    width: 210px;
+    margin: auto;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.contentt .cright .small-content>ul>li>.small-one>div>span:nth-of-type(2){
+    color: orange;
+    font-size: 14px;
+}
+.contentt .cright .small-content>ul>li>.small-one>div>span:nth-of-type(2)>i{
+    color: black;
+    font-size: 12px;
+}
 .content-two{
     width: 100%;
     height: 392px;
@@ -721,6 +910,10 @@ header{
     height: 186px;
     width: 187px;
     padding: 10px 0;
+}
+.content-two .left-part ul li:hover{
+    color: #01b5ff;
+    cursor: pointer;
 }
 .content-two .left-part .cuxiao li{
     font-size: 13px;
