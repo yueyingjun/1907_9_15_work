@@ -1,0 +1,2072 @@
+
+body,ul,li,h1,h2,h3,h4,h5,h6,p,a{
+    margin: 0;padding: 0;
+    list-style: none;
+
+}
+.one{
+    width: 100%;height: 36px;
+    background: #F4F4F4;
+    margin: auto;
+    position: relative;
+}
+.one .main{
+    width: 1013px;height: 36px;
+    margin: auto;
+    position: relative;
+}
+.one .left{
+    width: 90px;height: 18px;
+    font-size: 12px;
+    position: absolute;
+    left: 35px;
+    top: -1px;
+    line-height: 36px;
+
+
+}
+.one .mid{
+    width: 120px;height: 36px;
+    position: relative;
+    position: absolute;
+    left: 130px;
+    display: inline-flex;
+}
+.one .mid:hover{
+    width: 120px;height: 36px;
+    background: white;
+}
+.one .mid .logo{
+
+    width: 18px;height: 18px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-7px -7px;
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+
+}
+.logo1{
+    width: 10px;height: 10px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-45px -55px;
+    margin-left: 90px;
+    margin-top: 14px;
+}
+.one .mid .en{
+    font-size: 12px;
+    position: absolute;
+    left: 30px;
+    bottom: 11px;
+}
+.en-con{
+    width: 616px;height: 303px;
+    background: white;
+    position: absolute;
+    left: 130px;
+    top: 36px;
+    z-index: 1;
+    float: left;
+}
+.en-con .en-type{
+    width: 190px;height: 34px;
+    font-size: 11px;
+    position: relative;
+    float: left;
+}
+.en-con .en-type:hover{
+    width: 190px;height: 34px;
+   background: gainsboro;
+}
+.en-con .en-type .left-tu{
+    width: 20px;height: 13px;
+    border: 1px solid whitesmoke;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/un_header_language_1807.png");
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: 11px;
+
+}
+.en-con .en-type:nth-of-type(1) .left-tu{
+    background-position: 0px -2.8px;
+}
+.en-con .en-type:nth-of-type(2)  .left-tu{
+    background-position: 0px -280px;
+}
+.en-con .en-type:nth-of-type(3)  .left-tu{
+    background-position: 0px -400px;
+}
+.en-con .en-type:nth-of-type(4)  .left-tu{
+    background-position: 0px -29px;
+}
+.en-con .en-type:nth-of-type(5)  .left-tu{
+    background-position: 0px -29px;
+}
+.en-con .en-type:nth-of-type(6)  .left-tu{
+    background-position: 0px -54px;
+}
+.en-con .en-type:nth-of-type(7)  .left-tu{
+    background-position: 0px -78px;
+}
+.en-con .en-type:nth-of-type(8)  .left-tu{
+    background-position: 0px -103px;
+}
+.en-con .en-type:nth-of-type(9)  .left-tu{
+    background-position: 0px -325px;
+}
+.en-con .en-type:nth-of-type(10)  .left-tu{
+    background-position: 0px -129px;
+}
+.en-con .en-type:nth-of-type(11)  .left-tu{
+    background-position: 0px -153px;
+}
+.en-con .en-type:nth-of-type(12)  .left-tu{
+    background-position: 0px -178px;
+}
+.en-con .en-type:nth-of-type(13)  .left-tu{
+    background-position: 0px -375px;
+}
+.en-con .en-type:nth-of-type(14)  .left-tu{
+    background-position: 0px -204px;
+}
+.en-con .en-type:nth-of-type(15)  .left-tu{
+    background-position: 0px -253px;
+}
+.en-con .en-type:nth-of-type(16)  .left-tu{
+    background-position: 0px -228px;
+}
+.en-con .en-type:nth-of-type(17)  .left-tu{
+    background-position: 0px -278px;
+}
+.en-con .en-type:nth-of-type(18)  .left-tu{
+    background-position: 0px -278px;
+}
+.en-con .en-type:nth-of-type(19)  .left-tu{
+    background-position: 0px -423px;
+}
+.en-con .en-type:nth-of-type(20)  .left-tu{
+    background-position: 0px -448px;
+}
+.en-con .en-type:nth-of-type(21)  .left-tu{
+    background-position: 0px -228px;
+}
+.en-con .en-type:nth-of-type(22)  .left-tu{
+    background-position: 0px -495px;
+}
+.en-con .en-type:nth-of-type(23)  .left-tu{
+    background-position: 0px -520px;
+}
+.en-con .en-type:nth-of-type(24)  .left-tu{
+    background-position: 0px -543px;
+}
+.en-con .en-type .right-zi{
+    width: 152px;height: 20px;
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    color: #4c4c4c;
+}
+
+
+
+
+
+
+.one .right{
+    width: 900px;height: 36px;
+    position: relative;
+    position: absolute;
+    left: 360px;top:-3px ;
+    display: inline-flex;
+    font-size: 12px;
+}
+.one .right .con1{
+    width: 100px;height: 100%;
+    /* border: 1px solid blue;*/
+}
+.one .right .con1 .zi1{
+    line-height: 36px;
+    color:blue;
+}
+.one .right .con2{
+    width: 100px;height: 100%;
+}
+.zhuce{
+    float: left;
+    line-height: 36px;
+}
+.one .right .con3{
+    width: 100px;height: 100%;
+    border-left: 1px solid gainsboro;
+    margin-left: -30px;
+}
+.one .right .con3 .tubiao1{
+    width: 20px;height: 20px;
+
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-5px -60px;
+
+}
+.one .right .con3 .zi3{
+    line-height: 36px;
+    margin-left: 44px;
+}
+.one .right .con4{
+    width: 110px;height: 100%;
+    border-left: 1px solid gainsboro;
+    margin-left: 0
+}
+.one .right .con4:hover{
+    width: 110px;height: 38px;
+    background: white;
+}
+.one .right .con4 .hide-wdxc{
+    width: 111px;height: 110px;
+    background: white;
+   border-left:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+   position: absolute;
+    top: 37px;
+    left: 271px;
+    z-index: 1;
+}
+.one .right .con4 .hide-wdxc .hide-con{
+    width: 80px;height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.one .right .con4 .xc{
+    line-height: 36px;
+    margin-left: 20px;
+    float: left;
+}
+.tubiao2{
+    width: 10px;height: 10px;
+    margin-left: 83px;
+    margin-top: 12px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-45px -55px;
+
+}
+.one .right .con5{
+    width: 110px;height: 100%;
+    border-left: 1px solid gainsboro;
+    margin-left: 0
+}
+.one .right .con5:hover{
+    width: 110px;height: 38px;
+    background: white;
+}
+
+.one .right .con5 .hide-wddd{
+    width: 135px;height: 180px;
+    background: white;
+    border-left:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+    position: absolute;
+    top: 37px;
+    left: 382px;
+    z-index: 1;
+}
+.one .right .con5 .hide-wddd .hide-con{
+    width: 90px;height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+.one .right .con5 .hide-wddd .hide-con:nth-of-type(6){
+    width: 100px;height: 30px;
+    border-top: 1px solid gainsboro;
+    line-height: 28px;
+    margin-left: 13px;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+
+
+.one .right .con5 .zi5{
+    line-height: 36px;
+    margin-left: 20px;
+    float: left;
+}
+.tubiao3{
+    width: 10px;height: 10px;
+    margin-left: 83px;
+    margin-top: 12px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-45px -55px;
+
+}
+.one .right .con6{
+    width: 100px;height: 100%;
+    border-left: 1px solid gainsboro;
+    margin-left: 0
+}
+.one .right .con6 .zi6{
+    line-height: 36px;
+    margin-left: 20px;
+    float: left;
+}
+.one .right .con7{
+    width: 130px;height: 100%;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    margin-left: 0
+}
+.one .right .con7:hover{
+    width: 130px;height: 38px;
+    background: white;
+}
+.one .right .con7 .hide-xcsl{
+    width: 130px;height: 100px;
+    background: white;
+    border-left:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+    position: absolute;
+    top: 37px;
+    left: 594px;
+    z-index: 1;
+}
+.one .right .con7 .hide-xcsl .hide-con{
+    width: 90px;height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.one .right .con7 .zi7{
+    line-height: 36px;
+    margin-left: 5px;
+    float: left;
+}
+
+.one .right .con8{
+    width: 40px;height: 100%;
+    margin-left: 20px;
+
+}
+.one .right .con8:hover{
+    width: 40px;height: 38px;
+    background: white;
+}
+.con8 .hide-sj{
+    width: 146px;height: 200px;
+    background: white;
+    border-left:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+    position: absolute;
+    top: 37px;
+    left: 619px;
+    z-index: 1;
+}
+.con8 .hide-sj img{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+.con8 .hide-sj .hide-con:nth-of-type(1){
+    margin-left: 25px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.con8 .hide-sj .hide-con:nth-of-type(2){
+  width: 100%;height: 30px;
+    background: blue;
+    margin-top:19px;
+
+    position: relative;
+}
+.con8 .hide-sj .hide-con:nth-of-type(2) .zi{
+    color: white;
+  position: absolute;
+    left: 28px;
+    top: 8px;
+}
+
+
+.one .right .con9{
+    width: 40px;height: 100%;
+
+}
+.one .right .con9:hover{
+    height: 38px;
+    background: white;
+}
+
+
+.con9 .hide-wx{
+    width: 146px;height: 200px;
+    background: white;
+    border-left:1px solid gainsboro;
+    border-right:1px solid gainsboro;
+    border-bottom:1px solid gainsboro;
+    position: absolute;
+    top: 37px;
+    left: 659px;
+    z-index: 1;
+}
+.con9 .hide-wx img{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+.con9 .hide-wx .hide-con:nth-of-type(1){
+    margin-left: 15px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.con9 .hide-wx .hide-con:nth-of-type(2){
+    width: 100%;height: 20px;
+
+    margin-top:2px;
+    position: relative;
+}
+.con9 .hide-wx .hide-con:nth-of-type(2) .zi{
+    font-size: 12px;
+    position: absolute;
+    left:23px;
+    float: left;
+}
+.con9 .hide-wx .hide-con:nth-of-type(2) .zi-right{
+   width: 60px;height: 20px;
+    font-size: 12px;
+    position: absolute;
+    left:45px;
+    top: 1px;
+    color: red;
+}
+
+.tubiao4{
+    width: 16px;height: 16px;
+
+    margin-left: 15px;
+    margin-top: 10px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-97px -37px;
+    float: left;
+}
+.tubiao5{
+    width: 10px;height: 10px;
+    margin-left: -30px;
+    margin-top: 14px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-45px -55px;
+
+}
+.tubiao6{
+    width: 12px;height: 21px;
+    margin-left:15px;
+    margin-top: 7px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-99px -65px;
+
+
+}
+.tubiao7{
+    width: 18px;height: 18px;
+    background-image: url(//pic.c-ctrip.com/platform/online/home/sprite2019527.png);
+    background-position:-43px -35px;
+    margin-left:12px;
+    margin-top: 10px;
+
+
+}
+.two{
+    width: 100%;height: 80px;
+    /* border: 1px solid red;*/
+    background: white;
+    margin: auto;
+    position: relative;
+}
+.two .main{
+    width: 1013px;height: 80px;
+    /* border: 1px solid red;*/
+    margin: auto;
+    position: relative;
+}
+.two .left{
+    width: 126px;height: 43px;
+    background-image: url("https://pic.c-ctrip.com/common/c_logo2013.png") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.two .mid{
+    width: 327px;height: 30px;
+    border: 1px solid #a4cbff;
+    border-radius: 4px;
+    position: relative;
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+.two .mid .con1{
+    position: absolute;
+    left: 10px;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Tahoma;
+}
+.two .mid .con2{
+    width: 42px;height: 30px;
+    background:#299cff ;
+    float: right;
+    position: relative;
+}
+.two .mid .con2 .zi{
+    width: 15px;height: 16px;
+
+    background-image: url("//pic.c-ctrip.com/platform/online/home/un_header_footer20160610.png");
+    background-position: -65px 48px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.two .right{
+    width: 180px;height: 40px;
+    /* border: 1px solid red;*/
+    position: relative;
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Tahoma;
+    line-height: 20px;
+}
+.two .right .con1{
+    position: absolute;
+    left: 9px;
+}
+.three{
+    width:100%;height:40px;
+    background: #4a78c2;
+    margin: auto;
+
+}
+.three .main{
+    width:100%;height:40px;
+    margin: auto;
+    margin-left: 180px;
+    font-size: 15px;
+}
+.three div{
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+    color: white;
+}
+.three .main .con:nth-of-type(2){
+    width: 60px;height: 30px;
+    margin-top: 0px;
+   padding-top: 8px;
+}
+.three .xiala{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    margin-left: 15px;
+    vertical-align: middle;
+    border-top: 3px solid #fff;
+    border-bottom: 0 none;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    float: right;
+}
+
+.four{
+    width: 100%;height: 50px;
+    /*border: 1px solid red;*/
+    margin: auto;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Tahoma;
+    position: relative;
+}
+.four .main{
+    width: 100%;height: 50px;
+    /* border: 1px solid red;*/
+    margin: auto;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Tahoma;
+    position: relative;
+}
+.four .con1{
+    width: 83px;height: 27px;
+    background: #74a8ed;
+    position: relative;
+    position: absolute;
+    left:195px ;
+    top: 10px;
+    border-radius:2px ;
+
+
+}
+.four .con1 .zi{
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Times New Roman", Simsun;
+}
+.four .con2 {
+    width: 1068px;height: 50px;
+    position: absolute;
+    left: 280px;
+}
+li{
+    float: left;
+    margin-left: 12px;
+    line-height: 45px;
+}
+li div{
+    float: left;
+}
+.icon1{
+    width: 18px;height: 18px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -25px 0;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon2{
+    width: 18px;height: 18px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: 0  0;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon3{
+    width: 18px;height: 18px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -129px  0;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon4{
+    width: 18px;height: 18px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -50px  0;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon5{
+    width: 18px;height: 18px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -25px  -52px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon6{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -103px  -26px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon7{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -26px  -26px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon8{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: 0px  -52px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon9{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -78px  -26px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon10{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -130px  -26px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon11{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type.png");
+    background-position: -26px  -78px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+.icon12{
+    width: 18px;height: 19px;
+    /*border: 1px solid red;*/
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png");
+    background-position: -23px  -78px;
+    margin-top: 15px;
+    margin-right:3px ;
+}
+a:hover{
+    color: #2691fd;
+    text-decoration: none;
+}
+.five{
+    width: 100%;height: 340px;
+    background:gainsboro;
+}
+.five .view{
+    min-width: 1280px;height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+.five .view .boxbox{
+    width: 500%;height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.five .view .boxbox a{
+    width: 20%;height: 100%;
+    float: left;
+}
+.five .view .boxbtns{
+    width: 235px;height: 40px;
+    position: absolute;
+    right: 280px;bottom: 30px;
+}
+.five .view .boxbtns .boxbtn{
+    float: left;
+    width: 15px;height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-left: 30px;
+    box-shadow: 0 0 8px black;
+    cursor: pointer;
+}
+.five .view .boxbox a:nth-of-type(1){
+    background: url("https://dimg04.c-ctrip.com/images/zg0q180000013glp36BF1.jpg") no-repeat center;
+}
+.five .view .boxbox a:nth-of-type(2){
+    background: url("https://dimg04.c-ctrip.com/images/zg0t180000013ffm1DEE4.jpg") no-repeat center;
+}
+.five .view .boxbox a:nth-of-type(3){
+    background: url("https://dimg04.c-ctrip.com/images/zg07170000013qd2aCA36.jpg") no-repeat center;
+}
+.five .view .boxbox a:nth-of-type(4){
+    background: url("https://dimg04.c-ctrip.com/images/zg0k1700000130bhaCA00.jpg") no-repeat center;
+}
+.five .view .boxbox a:nth-of-type(5){
+    background: url("https://dimg04.c-ctrip.com/images/zg0q180000013glp36BF1.jpg") no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.six{
+    width: 100%;height: 4800px;
+    background: #F4F4F4;
+    position: relative;
+
+}
+
+.six-one1{
+    width: 1108px;height: 350px;
+    /*border: 1px solid red;*/
+    margin: auto;
+    overflow: hidden;
+    margin-top: 1000px;
+}
+.six-one1 .top{
+    width: 100%;height: 35px;
+    border-bottom: 2px solid blue;
+    margin-top: 50px;
+    margin-left: 24px;
+    position: relative;
+}
+.six-one1 .top .left{
+    width: 900px;height: 100%;
+    float: left;
+}
+.six-one1 .top .left .zi{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+.price .right h2{
+    font-weight: normal;
+    color: white;
+    margin-left: 15px;
+}
+
+.playbottom{
+    width: 1082px;height: 250px;
+    background: white;
+    margin-left: 25px;
+    position: relative;
+}
+
+.playbottom .left{
+    width: 280px;height: 250px;
+    border-right:1px solid #c9c9c9;
+    float: left;
+}
+.playbottom .left .left-top{
+    width: 100px;height: 40px;
+    /*border: 1px solid blue;*/
+    margin-left: 30px;
+    margin-top: 10px;
+    font:700 14px/34px "Microsoft yahei"
+
+}
+.playbottom .left .left-bottom{
+    width: 220px;height: 180px;
+    /*  border: 1px solid black;*/
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.playbottom .left .left-bottom .place{
+    width: 43px;height: 20px;
+    border-right: 1px solid #c9c9c9;
+    padding-left: 2px;
+}
+.playbottom .left .left-bottom .place h6{
+    color: grey;
+    font-weight: normal;
+}
+.playbottom .left .left-bottom .place h6:hover{
+    color: blue;
+}
+
+.playbottom .right{
+    width: 770px;height: 250px;
+    /*  border: 1px solid blue;*/
+    position: absolute;
+    left: 305px;
+}
+
+.playbottom .right .top1{
+    width: 740px;height: 20px;
+    /* border: 1px solid red;*/
+    margin-top: 20px;
+}
+.playbottom .right .top1 .top-left{
+    width: 500px; height: 100%;
+    /*border: 1px solid yellowgreen;*/
+    float: left;
+}
+.playbottom .right .top1 .top-left .zi{
+    float: left;
+    margin-left: 20px;
+    color: #3983e5;
+    font-size: 13px;
+
+}
+.playbottom .right .top1 .top-left .zi1{
+    width: 75px;height: 100%;
+    background: #3983e5;
+    color: white;
+    /* border: 1px solid #3983e5;*/
+    border-radius: 3px;
+}
+
+.playbottom .right .top1 .top-left .zi:hover{
+    width: 75px;height: 100%;
+    background: #3983e5;
+    color: white;
+    /* border: 1px solid #3983e5;*/
+    border-radius: 3px;
+
+}
+.playbottom .right .top1 .top-right{
+    color: #3983e5;
+    font-size: 13px;
+    float: right;
+}
+.bot{
+    width: 745px; height: 205px;
+    /* border: 1px solid red;*/
+    margin: auto;
+    margin-left: 23px;
+    margin-top: 13px;
+}
+.bot-top{
+    width: 730px;height: 150px;
+    /*border: 1px solid black;*/
+    margin-left: -11px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.bot-top .tu{
+    width: 230px;height: 150px;
+    /*border: 1px solid red;*/
+    margin-left: 10px;
+}
+.bot-top .tu:nth-of-type(1){
+    background-image: url("https://images4.c-ctrip.com/target/zd0d0i00000097qa9955E_C_570_285.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bot-top .tu:nth-of-type(2){
+    background-image: url("https://images4.c-ctrip.com/target/zd0d0f0000007ckfk0B0C_C_570_285.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bot-top .tu:nth-of-type(3){
+    background-image: url("https://images4.c-ctrip.com/target/zd0w0j000000b7c8g09C8_C_570_285.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bot-bot{
+    width: 730px;height: 50px;
+    /*border: 1px solid yellowgreen;*/
+    margin-left: -10px;
+}
+.bot-bot .shang{
+    width: 100%;height: 19px;
+    /* border: 1px solid rebeccapurple;*/
+}
+.bot-bot .xia{
+    width: 100%;height: 50%;
+    /*border: 1px solid blue;*/
+
+}
+
+.bot-bot .shang .intro{
+    width:230px;height: 18px;
+    /*  border: 1px solid black;*/
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+.bot-bot .xia .place{
+    width:230px;height: 30px;
+    /* border: 1px solid black;*/
+    float: left;
+    margin-left: 10px;
+    font-size: 11px;
+    line-height: 30px;
+    color: #999;
+}
+
+.tj{
+    width: 300px;height: 30px;
+    /*border: 1px solid rebeccapurple;*/
+    font-size: 13px;
+    font-weight: normal;
+    color: darkgray;
+    letter-spacing: 1px;
+}
+
+.tj h6:hover{
+    color: blue;
+}
+
+.bt1{
+    color: blue;
+}
+
+.bt2:hover{
+    color: blue;
+}
+.bot1{
+    width: 745px; height: 200px;
+    /*     border: 1px solid red;*/
+    margin: auto;
+    margin-left: 23px;
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.bot1 .bot-top{
+    width: 100%;height: 100%;
+    /*border: 1px solid black;*/
+    margin-left: -11px;
+
+}
+.bot1 .bot-top .tu{
+    width: 230px;height: 190px;
+    /*border: 1px solid red;*/
+    margin-left: 10px;
+}
+.bot1 .bot-top .tu:nth-of-type(1){
+    background-image: url("https://dimg06.c-ctrip.com/images/100k0w000000kgkgfC8BA_R_220_160.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bot1 .bot-top .tu:nth-of-type(2){
+    background-image: url("https://dimg02.c-ctrip.com/images/100e0w000000kfb626E83_R_220_160.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bot1 .bot-top .tu:nth-of-type(3){
+    background-image: url("https://dimg01.c-ctrip.com/images/100m0w000000kuq4eB05F_R_220_160.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sm{
+    width: 100%;height: 30px;
+    background: rgba(0,0,1,0.5);
+    margin-top: 160px;
+    position: relative;
+}
+.sm .zi1{
+    color: white;
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 4px;
+}
+.sm .zi2{
+    color: white;
+    display: block;
+    position: absolute;
+    left: 75px;
+    font-size: 15px;
+    top: 5px;
+}
+.sm .zi3{
+    color: white;
+    display: block;
+    position: absolute;
+    left: 19px;
+    font-size: 15px;
+    top: 5px;
+}
+
+
+
+.qsbottom{
+    width: 1080px;height: 150px;
+    /* border: 1px solid rebeccapurple;*/
+    margin: auto;
+    margin-left: 24px;
+    margin-top: 20px;
+    position: relative;
+
+}
+.qsbottom-l{
+    width: 345px;height: 150px;
+    background: white;
+    float: left;
+    position: relative;
+}
+.qsbottom-m{
+    width: 345px;height: 150px;
+    background: white;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+.qsbottom-r{
+    width: 345px;height: 150px;
+    background: white;
+    float: right;
+    position: relative;
+}
+
+.logol{
+    width: 110px;height: 110px;
+    /*  border: 1px solid blue;*/
+    border-radius: 50%;
+    background: pink;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.logo11{
+    width: 60px;
+    height: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: 5px -137px;
+    margin-left: 23px;
+    margin-top:33px;
+
+}
+.logo2{
+    width: 110px;height: 110px;
+    /*   border: 1px solid blue;*/
+    border-radius: 50%;
+    background: orange;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.logo22{
+    width: 55px;
+    height: 45px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: 0px -185px;
+    margin-left: 23px;
+    margin-top:33px;
+
+}
+.logo3{
+    width: 110px;height: 110px;
+    /*  border: 1px solid blue;*/
+    border-radius: 50%;
+    background: blue;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.logo33{
+    width: 55px;
+    height: 45px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: 0px -236px;
+    margin-left: 33px;
+    margin-top:33px;
+
+}
+.js{
+    display: inline-block;
+    position: absolute;
+    left: 140px;top: 10px;
+}
+.jst{
+    font-size: 19px;
+    line-height: 50px;
+}
+.jsb{
+    color: gray;
+}
+
+
+
+
+.lvbottom{
+    width: 1080px;height: 240px;
+    /*   border: 1px solid rebeccapurple;*/
+    margin: auto;
+    margin-left: 24px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+
+.tu1{
+    width: 110px;height: 110px;
+    /* border: 1px solid blue;*/
+    border-radius: 50%;
+    background: #a4cbff;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.tu11{
+    width: 52px;
+    height: 40px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: -1px 1.5px;
+    margin-left: 33px;
+    margin-top:37px;
+}
+.tu2{
+    width: 110px;height: 110px;
+    /* border: 1px solid blue;*/
+    border-radius: 50%;
+    background: darkseagreen;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.tu22{
+    width: 54px;
+    height: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: -1px -38px;
+    margin-left: 32px;
+    margin-top:35px;
+}
+
+.tu3{
+    width: 110px;height: 110px;
+    /* border: 1px solid blue;*/
+    border-radius: 50%;
+    background: burlywood;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.tu33{
+    width: 54px;
+    height: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/un_index_supply.png");
+    background-position: -1px -90px;
+    margin-left: 32px;
+    margin-top:35px;
+}
+
+.js{
+    display: inline-block;
+    position: absolute;
+    left: 140px;top: 10px;
+}
+.jst{
+    font-size: 19px;
+    line-height: 50px;
+}
+.jsb{
+    color: gray;
+}
+
+.xia{
+    width: 100%;height: 60px;
+    border-top: 1px solid gray;
+    margin-top: 160px;
+}
+.xia1{
+    width: 100%;height: 60px;
+    border-top: 1px solid gray;
+    margin-top: 160px;
+}
+
+.xial{
+    width: 100px;height: 100%;
+    /* border-left: 1px solid gray;*/
+    float: left;
+}
+.xial1{
+    width: 100px;height: 100%;
+    float: left;
+}
+.xiam{
+    width: 100px;height: 100%;
+    border-left: 1px solid gray;
+    margin-left: 20px;
+    float: left;
+}
+.xiar{
+    width: 100px;height: 100%;
+    border-left: 1px solid gray;
+    margin-left:240px;
+}
+.xiar1{
+    width: 100px;height: 100%;
+    border-left: 1px solid gray;
+    margin-left:180px;
+}
+
+
+.ll{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.ll1{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.rr{
+    width: 100px;height: 50px;
+    /*  border: 1px solid red;*/
+    margin-left: 20px;
+    padding-left: 20px;
+    line-height: 65px;
+}
+.rr1{
+    width: 100px;height: 50px;
+    /* border: 1px solid red;*/
+    margin-left: 20px;
+    padding-left: 20px;
+    line-height: 65px;
+}
+
+.six-one2{
+    width: 1080px;height: 400px;
+    background: white;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.six-one2 .top{
+    width: 100%;height: 100px;
+    /* border: 1px solid gray;*/
+    position: relative;
+}
+.top-top1{
+    width: 250px;height: 100%;
+    border: 1px solid gainsboro;
+    position: relative;
+    float: left;
+}
+
+.top-top1-l{
+    width: 100px;height: 40px;
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.top-top1-r{
+    position: absolute;
+    left: 190px;
+    color: #c9c9c9;
+    top: 20px;
+}
+.top  .top-top2{
+    width: 200px;height: 50px;
+    /* border: 1px solid red;*/
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: gray;
+
+}
+.six-one2 .bottom{
+    width: 100%;height: 300px;
+    /*border: 1px solid red;*/
+}
+
+.top-topr{
+    width: 830px;height: 100px;
+    border: 1px solid gainsboro;
+    margin-left: 250px;
+}
+.top-topr .top{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.top-topr .bottom11{
+    width: 800px;height: 50px;
+    /* border: 1px solid red;*/
+    margin-top: -70px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.brand{
+    width: 65px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-15px 0;
+    margin-top: 80px;
+
+}
+.brand:nth-of-type(2){
+    width: 78px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-5px -32px;
+    margin-top: 80px;
+}
+.brand:nth-of-type(3){
+    width: 78px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-5px -60px;
+    margin-top: -5px;
+    margin-top: 80px;
+}
+.brand:nth-of-type(4){
+    width: 78px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-4px -95px;
+    margin-top: -5px;
+    margin-top: 80px;
+}
+.brand:nth-of-type(5){
+    width: 78px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-4px -130px;
+    margin-top: -5px;
+    margin-top: 80px;
+}
+.brand:nth-of-type(6){
+    width: 78px;height: 34px;
+    margin-left: 50px;
+    background: url("https://pic.c-ctrip.com/platform/online/home/pic_partner.png");
+    background-position:-4px -166px;
+    margin-top: -5px;
+    margin-top: 80px;
+}
+.six-one2 .bottom{
+    width:100%;height: 300px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+}
+.hang{
+    width: 1020px;height: 30px;
+    border-bottom: 1px dotted gainsboro;
+    font-size: 13px;
+    margin-left: 40px;
+    color: #888888;
+    margin-top: 15px;
+
+}
+.hang div{
+    float: left;
+}
+.lie{
+    width:100px;height: 100%;
+    /* border:1px solid gainsboro ;*/
+}
+.lie1{
+    width:100px;height: 100%;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.six-one3{
+    margin-top: 60px;
+    width: 100%;height: 500px;
+    background: white ;
+}
+.end{
+    width: 1080px;height: 100%;
+    position: relative;
+    margin-left: 200px;
+}
+.end  .top .one1{
+    width: 330px;height: 200px;
+    border-right: 1px solid gainsboro;
+    position: absolute;
+    top: 40px;
+}
+.one1-top{
+    width: 100%;height: 35px;
+
+    font-size: 20px;
+}
+.one1-bottom{
+    width: 100%;height: 160px;
+
+}
+
+.one1-bottom-top{
+    width: 100%;
+    height: 60px;
+
+}
+
+.one1-bottom-top .left{
+    width: 60px;height: 60px;
+    border-radius:50%;
+    background: #2691fd;
+    float: left;
+}
+.big1{
+    color: #2691fd;
+}
+
+
+.one1-bottom-top .right{
+    width: 250px;height: 100%;
+    margin-left: 80px;
+}
+
+.one1-bottom-top .left1{
+    width: 60px;height: 60px;
+    border-radius:50%;
+    background: orange;
+    float: left;
+}
+.big2{
+    color: orange;
+    font-size: 25px;
+}
+
+.one1-bottom-top .right1{
+    width: 250px;height: 100%;
+   margin-left: -960px;
+    margin-top: 80px;
+}
+
+.two1{
+    width: 200px;height: 200px;
+    border-right: 1px solid gainsboro;
+
+    position: absolute;
+    left: 350px;
+    top: 40px;
+}
+.two1-top{
+    font-size: 18px;
+
+}
+.hang1{
+    width: 230px;height: 20px;
+    font-size: 11px;
+    margin-top: 10px;
+
+
+}
+
+.hang1 div{
+    float: left;
+    color: gray;
+}
+
+.three1{
+    width: 220px;height: 200px;
+    border-right: 1px solid gainsboro;
+    position: absolute;
+    left: 570px;
+    top: 40px;
+}
+.three1 div{
+    font-size: 5px;
+}
+.four1{
+    width: 150px;height: 200px;
+    position: absolute;
+    left: 820px;
+    top: 40px;
+}
+.four1 .top{
+    font-size: 11px;
+    color: #888888;
+    margin-left: 40px;
+}
+
+.four1 .ma{
+    width: 120px;height: 180px;
+
+    margin-left: 17px;
+    margin-top: 10px;
+}
+.four1 .bottom{
+    font-size: 11px;
+    color: #888888;
+    margin-top: 10px;
+
+}
+.end .below11{
+    width: 1080px;height: 220px;
+    position: absolute;
+    left: 0px;
+    top: 280px;
+
+}
+.end .below11 .o{
+    margin-left: 330px;
+    font-size: 11px;
+    color: #888888;
+}
+.police{
+    width:20px;
+    height: 25px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -230px;
+    margin-left: -25px;
+    float: left;
+    margin-top: -7px;
+
+}
+.tt{
+    font-size: 13px;
+    margin-left: 460px;
+    color: #888888;
+    margin-top: 15px;
+}
+
+.tt1{
+    font-size: 13px;
+    margin-left: -180px;
+    color: #888888;
+    margin-top: 15px;
+}
+
+.f{
+    width:1080px;height: 50px;
+    /* border: 1px solid red;*/
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+.f1{
+    width: 90px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -47px;
+    margin-left: 25px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(2){
+    width: 90px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -385px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(3){
+    width: 90px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -115px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(4){
+    width: 110px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -425px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(5){
+    width: 100px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -190px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(6){
+    width: 115px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -150px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(7){
+    width: 50px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -475px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(8){
+    width: 130px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -345px;
+    margin-left:15px;
+    border: 1px solid gray;
+}
+.f1:nth-of-type(9){
+    width: 110px;height: 39px;
+    background-image: url("https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png");
+    background-position: 0px -425px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}
+
+.listss-top{
+    width: 450px;height: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.listss-top .top-left{
+    width: 70px;height: 100%;
+    float: left;
+}
+.listss-top .top-right{
+    width: 350px;height: 25px;
+   border: 1px solid gainsboro;
+   margin-left: 70px;
+    font-size: 14px;
+    color: #c9c9c9;
+}
+.listss-bottom{
+    width: 450px;height: 200px;
+
+    margin-left: 5px;
+margin-top: 15px;
+}
+
+.listss-bottom .bottom-left{
+    width: 70px;height: 30px;
+   text-align: center;
+ }
+.listss-bottom .bottom-right{
+    width: 130px;height: 30px;
+    border: 1px solid gainsboro;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #666666;
+}
+.listss-rightdown{
+    width: 148px;height: 35px;
+    background: orange;
+    border-radius: 5px;
+    margin-top: -70px;
+    float: right;
+    margin-right: 50px;
+}
+
+.listss-rightdown .zi{
+    font-size: 18px;
+    color: white;
+    margin-left: 50px;
+    letter-spacing: 7px;
+    margin-top: 5px;
+}
+
+.remencity{
+    width: 450px;height: 20px;
+
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.remencity .left{
+    width: 70px;height: 100%;
+    float: left;
+    font-size: 12px;
+}
+.remencity .right{
+    width: 400px;height: 100%;
+
+    margin-left: 20px;
+    color: #2691fd;
+    font-size: 12px;
+}
+.tuangou{
+    width: 450px;height: 20px;
+
+    margin-left: 30px;
+}
+.tuangou .left{
+    width: 70px;height: 100%;
+    float: left;
+    font-size: 12px;
+}
+.tuangou .right{
+    width: 400px;height: 100%;
+
+    margin-left: 20px;
+    color: #2691fd;
+    font-size: 12px;
+}
+.mudidi{
+    width: 450px;height: 50px;
+    border-top: 1px dotted grey;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.mudi-left{
+    width: 70px;height: 25px;
+    font-size: 13px;
+    margin-top: 30px;
+    float: left;
+}
+.mudi-right{
+    width: 400px;height: 20px;
+    border: 1px solid gainsboro;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.guanjian{
+    width: 450px;height: 25px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.guanjian-left{
+    width: 70px;height: 25px;
+    font-size: 13px;
+    float: left;
+}
+.guanjian-right{
+    width: 400px;height: 20px;
+    border: 1px solid gainsboro;
+    font-size: 13px;
+    margin-left: 50px;
+}
+.jiudiantuangou-rightdown{
+    width: 148px;height: 35px;
+    background: orange;
+    border-radius: 5px;
+    margin-top: 25px;
+    float: right;
+    margin-right: 50px;
+}
+
+.jiudiantuangou-rightdown .zi{
+    font-size: 18px;
+    color: white;
+    margin-left: 50px;
+    letter-spacing: 7px;
+    margin-top: 5px;
+}
+.listss-rightdown .zi-jj{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.type{
+    width: 30px;height: 20px;
+
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+}
+.type-select{
+    width: 174px;height: 104px;
+    margin-left: 90px;
+   font-size: 13px;
+    padding-top: 20px;
+    position: relative;
+}
+.tf{
+    width: 100%;height: 20px;
+
+}
+.quan{
+    width: 10px;height: 10px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: #c9c9c9;
+    float: left;
+    margin-top: 5px;
+}
+.xiaoquan{
+    width: 4px;height: 4px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: grey;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.tf-zi1{
+    width: 30px;height: 15px;
+    margin-left: 5px;
+    float: left;
+    margin-top: 1px;
+}
+.tf-zi2{
+    width: 150px;height: 100%;
+    font-size: 11px;
+    color: #666666;
+    position: absolute;
+    left: 60px;
+    top: 22px;
+}
+.czf-zi1{
+    width: 40px;height: 15px;
+
+    margin-left: 5px;
+    float: left;
+    margin-top: 1px;
+}
+.czf-zi2{
+    width: 150px;height: 100%;
+    position: absolute;
+    left: 70px;
+    top: 42px;
+    color: #666666;
+    font-size: 11px;
+}
+.hycd-zi1{
+    width: 60px;height: 15px;
+    float: left;
+   position: absolute;
+ left: 17px;
+    top: 63px;
+}
+.quan-hycd{
+    width: 10px;height: 10px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: #c9c9c9;
+    float: left;
+    position: absolute;
+    top:66px;
+}
+.hytf-bottom{
+    width: 450px;height: 100px;
+
+    margin-left: 30px;
+    position: relative;
+}
+.hytf-bottom1{
+    width: 450px;height: 20px;
+
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+}
+.hytf-bottom1-left{
+    width: 50px;height: 20px;
+
+    font-size: 15px;
+    float: left;
+
+}
+
+.hytf-bottom1-right{
+    width: 350px;height: 100%;
+    border: 1px solid #c9c9c9;
+    position: absolute;
+    left: 80px;
+    color: gray;
+
+}
+
+.hytf-bottom2{
+    width: 450px;height: 20px;
+
+    font-size: 15px;
+    position: absolute;
+    top: 40px;
+}
+.hytf-bottom2-left{
+    width: 50px;height: 20px;
+
+    font-size: 15px;
+    float: left;
+}
+
+.listss-rightdown1{
+    width: 130px;height: 30px;
+    border-radius: 10px;
+    background: orange;
+    position:absolute;
+    left: 300px;
+    top: 80px;
+
+}
+
+.hytf-bottom2-right{
+    width: 350px;height: 100%;
+    border: 1px solid #c9c9c9;
+    position: absolute;
+    left: 80px;
+    color: grey;
+}
+
+.zi-hytf{
+    color: white;
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 7px;
+    margin-top: 2px;
+}
+.all-top{
+    width: 450px;height: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.all-top .all-left{
+    width: 180px;height: 100%;
+
+    float: left;
+}
+
+.all-left .left{
+    float: left;
+}
+.all-left .right{
+    width: 100px;height: 100%;
+    border: 1px solid gainsboro;
+    margin-left: 60px;
+    color: #c9c9c9;
+    font-size: 13px;
+}
+.all-top .right-right{
+    width: 80px;height: 100%;
+    border-radius: 7px;
+    background: orange;
+    float: right;
+}
+.all-top .right-right .right-zi{
+    color: white;
+    margin-left: 25px;
+}
+
+.all-bottom{
+    width: 450px;height: 172px;
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.all-bottom .right{
+    width: 400px;height: 140px;
+
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.all-bottom .right .kuang{
+    width: 74px;height: 30px;
+    background: gainsboro;
+    border-radius: 30px;
+    position: relative;
+}
+.all-bottom .right .zi{
+    font-size: 14px;
+    position: absolute;
+    left: 23px;
+    top: 5px;
+
+}
