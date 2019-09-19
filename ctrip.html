@@ -254,9 +254,18 @@
 
                 btn[i].onclick=function () {
                     num=i
-                    animate(box,{
-                        left:-num*clientw
-                    })
+                    if(num>3) {
+                        animate1(box, {
+                            left: -num * clientw
+                        }, function () {
+                            box.style.left = 0;
+                        })
+                        num = 0
+                    }else{
+                        animate1(box,{
+                            left:-num*clientw
+                        })
+                    }
 
                     for(var j=0;j<btn.length;j++){
                         btn[j].style.background=""
