@@ -43,9 +43,9 @@ window.onload=function () {
     var link3=document.querySelectorAll(".contento .content-title>span")
     var list3=document.querySelectorAll(".content-ones .content-one")
     abc(link3,list3)
-    var link2=document.querySelectorAll(".content-one .title li")
-    var list2=document.querySelectorAll(".content-one .small-content")
-    function f() {
+    function f(select1,select2) {
+        var link2=document.querySelectorAll(select1)
+        var list2=document.querySelectorAll(select2)
         for (let i=0;i<link2.length;i++){
             link2[i].onclick=function () {
                 for (var j=0;j<list2.length;j++){
@@ -59,5 +59,76 @@ window.onload=function () {
             }
         }
     }
-
+    f(".content-one .title li",".content-one .small-content")
+    for (var i=0;i<=9;i++){
+        f(".content-one:nth-child("+i+") .title li",".content-one:nth-child("+i+")  .small-content")
+    }
+    // for (var i=2;i<=8;i++){
+    //     f(".content-one:nth-child("+i+") .cright .title li",".content-one:nth-child("+i+") .cright .small-content")
+    // }
+    var lis=document.querySelectorAll(".nav .nav-content .lis")
+    var liss=document.querySelectorAll(".nav .nav-content>.liss")
+    for (let i=0;i<lis.length;i++) {
+        lis[i].onmouseover = function () {
+            liss[i].style.display = "block"
+        }
+        lis[i].onmouseout= function () {
+            liss[i].style.display = "none"
+        }
+    }
+    var box1=document.querySelector(".box1")
+    var lists=document.querySelectorAll(".box1 a")
+    var view=document.querySelector(".view")
+    var btn=document.querySelectorAll(".btns .btn")
+    var clientW=document.documentElement.clientWidth
+    var num=0
+    function move() {
+        num++
+        if(num>8){
+            animate2(box1,{left:-num*clientW},function (){
+                box1.style.left=0+"px"
+                console.log(box1.offsetLeft)
+            })
+        }
+        // if (num>3){
+        //     num=0
+        // }
+        // for (var i=0;i<lists.length;i++){
+        //     lists[i].style.opacity=0
+        // }
+        // lists[num].style.opacity=1
+        animate2(box1, {left: -num * clientW})
+        for (var j = 0; j < btn.length; j++) {
+            btn[j].style.backgroundColor = ""
+        }
+        if (num>8){
+            num=0
+        }
+        btn[num].style.backgroundColor = "#000"
+    }
+    var t1=setInterval(move,2000)
+    view.onmouseover=function () {
+        clearInterval(t1)
+    }
+    view.onmouseout=function () {
+        t1=setInterval(move,2000)
+    }
+    for (let i=0;i<btn.length;i++){
+        btn[i].onclick=function () {
+            num=i
+            // for (var j=0;j<lists.length;j++){
+            //     lists[j].style.opacity=0
+            // }
+            // lists[num].style.opacity=1
+            // for (var j=0;j<btn.length;j++){
+            //     btn[j].style.backgroundColor=""
+            // }
+            // btn[num].style.backgroundColor="#000"
+            animate2(box1,{left:-num*clientW})
+            for (var j=0;j<btn.length;j++){
+                btn[j].style.backgroundColor=""
+            }
+            btn[i].style.backgroundColor="#000"
+        }
+    }
 }
