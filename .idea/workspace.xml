@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text/opt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="938" column="14" lean-forward="true" selection-start-line="938" selection-start-column="14" selection-end-line="938" selection-end-column="14" />
+            <state relative-caret-position="319">
+              <caret line="174" column="36" lean-forward="true" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,6 +75,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +102,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,17 +142,18 @@
       <workItem from="1568597442675" duration="355000" />
       <workItem from="1568854073861" duration="1935000" />
       <workItem from="1568856947237" duration="451000" />
+      <workItem from="1568858161481" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2741000" />
+    <option name="totallyTimeSpent" value="2818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-47" y="13" width="1346" height="722" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2643857" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2682737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,8 +200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text/opt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="938" column="14" lean-forward="true" selection-start-line="938" selection-start-column="14" selection-end-line="938" selection-end-column="14" />
+        <state relative-caret-position="319">
+          <caret line="174" column="36" lean-forward="true" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
