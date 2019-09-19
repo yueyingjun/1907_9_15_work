@@ -124,6 +124,47 @@
                 })(i)
             }
 
+            //目的地攻略动画
+            var mudicontlist = document.querySelectorAll(".mudi-cont>li")
+            var mudi = document.querySelectorAll(".mudi")
+
+            for (var i = 0; i < mudicontlist.length; i++) {
+                (function (i) {
+                    mudicontlist[i].onmouseover = function () {
+                        
+                        animate(mudi[i], { marginTop: 110 })
+                        animate(mudicontlist[i], { backgroundSize: 220 })
+                    }
+                })(i)
+            }
+            for (var i = 0; i < mudicontlist.length; i++) {
+                (function (i) {
+                    mudicontlist[i].onmouseout = function () {
+                        animate(mudi[i], { marginTop: 120 })
+                        animate(mudicontlist[i], { backgroundSize: 210 })
+                    }
+                })(i)
+            }
+            //旅游旗舰店动画
+            var jingxuanlist = document.querySelectorAll(".jingxuan-bottom>div")
+            var jingxuan = document.querySelectorAll(".jingxuan-bottom>div p")
+            for (var i = 0; i < jingxuanlist.length; i++) {
+                (function (i) {
+                    jingxuanlist[i].onmouseover = function () {
+                        
+                        animate(jingxuan[i], { marginTop: 130 })
+                        animate(jingxuanlist[i], { backgroundSize: 230 })
+                    }
+                })(i)
+            }
+            for (var i = 0; i < jingxuanlist.length; i++) {
+                (function (i) {
+                    jingxuanlist[i].onmouseout = function () {
+                        animate(jingxuan[i], { marginTop: 150 })
+                        animate(jingxuanlist[i], { backgroundSize: 220 })
+                    }
+                })(i)
+            }
         }
     </script>
 </head>
@@ -2956,19 +2997,35 @@
                     </div>
                     <div class="jingxuan-bottom">
                         <div>
-                            <p>韶关旅游体验馆</p>
+                            <p>
+                                <span>韶关旅游体验馆</span>
+                                <span class="huoli">活力之旅，善美韶关</span>
+                            </p>
+
                         </div>
                         <div>
-                            <p>嘉兴旅游体验馆</p>
+                            <p>
+                                <span>嘉兴旅游体验馆</span>
+                                <span class="huoli">红船启梦，心游嘉兴：江南水乡、历史文化名城，以“潮、河、湖、海”为特色，正全力打造运河国际旅游休闲城市</span>
+                            </p>
                         </div>
                         <div>
-                            <p>广州南沙邮轮旅游体验馆</p>
+                            <p>
+                                <span>广州南沙邮轮旅游体验馆</span>
+                                <span class="huoli">广州心城南沙，开“驶”邮轮旅游新时代</span>
+                            </p>
                         </div>
                         <div>
-                            <p>西班牙旅游体验馆</p>
+                            <p>
+                                <span>西班牙旅游体验馆</span>
+                                <span class="huoli">西班牙不缺阳光，不缺美食，不缺文化，不缺历史，缺的就是你的身影.</span>
+                            </p>
                         </div>
                         <div>
-                            <p>以色列国家旅游体验馆</p>
+                            <p>
+                                <span>以色列国家旅游体验馆</span>
+                                <span class="huoli">一面蔚蓝，一面神秘，应许之地与海滨之城的完美结合！</span>
+                            </p>
                         </div>
                     </div>
                 </div>

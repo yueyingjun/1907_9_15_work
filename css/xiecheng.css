@@ -792,7 +792,9 @@
     height: 32px;
     line-height: 32px;
 }
-
+.seven-bottom-left>li:hover {
+    color: #3983e5;
+}
 .seven-bottom-left li:nth-child(1) {
     color: #333333;
     font-size: 14px;
@@ -854,7 +856,6 @@
 }
 .seven-bottom-right-left>li:hover {
    transform: scale(1.05,1.05);
-  
    box-shadow: 0px 0px 5px #a3a3a3;
 }
 .seven-bottom-right-left li:nth-child(1) {
@@ -1072,36 +1073,56 @@
     height: 100%;
     float: left;
     margin-right: 10px;
+    overflow: hidden;
+    
 }
 .jingxuan-bottom>div p{
     width: 100%;
-    height: 20px;
+    height: 80px;
+    font-size: 14px;
     text-align: center;
     color: #fff;
     background:rgba(0, 0, 0, 0.5);
-    margin-top: 160px;
-   
+    margin-top: 150px;
+    padding:5px 10px 0;
+    box-sizing: border-box; 
+    
+    
+}
+.jingxuan-bottom>div p span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+ 
+}
+.huoli{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+
 }
 .jingxuan-bottom div:nth-child(1){
-  background: url(https://images3.c-ctrip.com/dj/201808/mdd/qjd/sgpc.jpg) no-repeat center /auto 100% ;
+  background: url(https://images3.c-ctrip.com/dj/201808/mdd/qjd/sgpc.jpg) no-repeat center /220px auto ;
 }
 .jingxuan-bottom div:nth-child(2){
-  background: url(https://images4.c-ctrip.com/target//100t0i0000009mrsd86B4.jpg) no-repeat center /auto 100% ;
+  background: url(https://images4.c-ctrip.com/target//100t0i0000009mrsd86B4.jpg) no-repeat center /220px auto ;
 }
 .jingxuan-bottom div:nth-child(3){
-  background: url(https://dimg20.c-ctrip.com/images/70060s000000hvfh86FE6.jpg) no-repeat center /auto 100%;
+  background: url(https://dimg20.c-ctrip.com/images/70060s000000hvfh86FE6.jpg) no-repeat center /220px auto;
 }
 .jingxuan-bottom div:nth-child(4){
-  background: url(https://dimg20.c-ctrip.com/images/70030o000000en99jDA68.jpg) no-repeat center /auto 100%;
+  background: url(https://dimg20.c-ctrip.com/images/70030o000000en99jDA68.jpg) no-repeat center /220px auto;
 }
 .jingxuan-bottom div:nth-child(5){
-  background: url(https://dimg20.c-ctrip.com/images/70030n000000e34vwB318.jpg) no-repeat center /auto 100% ;
+  background: url(https://dimg20.c-ctrip.com/images/70030n000000e34vwB318.jpg) no-repeat center /220px auto;
 }
 .nine-bottom-left {
     width: 227px;
     height: 100%;
     padding: 0 20px 15px;
     float: left;
+    
     border-right: 1px dotted #a3a3a3;
 }
 
@@ -1115,7 +1136,9 @@
     padding: 0 5px;
     color: #666666;
 }
-
+.nine-bottom-left>li:hover {
+    color: #3983e5;
+}
 .nine-bottom-left li:nth-child(1) {
     width: 100%;
     height: 38px;
@@ -1186,31 +1209,31 @@
 
 
 .ten-bottom-right-bottom li:nth-child(1) {
-    background: url(https://dimg06.c-ctrip.com/images/100k0w000000kgkgfC8BA_R_220_160.jpg)no-repeat center /100%  auto ;
+    background: url(https://dimg06.c-ctrip.com/images/100k0w000000kgkgfC8BA_R_220_160.jpg)no-repeat center /210px  auto ;
 }
 
 .ten-bottom-right-bottom li:nth-child(2) {
-    background: url(https://dimg02.c-ctrip.com/images/100e0w000000kfb626E83_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg02.c-ctrip.com/images/100e0w000000kfb626E83_R_220_160.jpg)no-repeat center /210px  auto;
 }
 
 .ten-bottom-right-bottom li:nth-child(3) {
-    background: url(https://dimg01.c-ctrip.com/images/100m0w000000kuq4eB05F_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg01.c-ctrip.com/images/100m0w000000kuq4eB05F_R_220_160.jpg)no-repeat center /210px  auto;
 }
 
 .ten-bottom-right-bottom li:nth-child(4) {
-    background: url(https://dimg04.c-ctrip.com/images/10030v000000k4kfb4E3C_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg04.c-ctrip.com/images/10030v000000k4kfb4E3C_R_220_160.jpg)no-repeat center /210px  auto;
 }
 #wenquan1{
-    background: url(https://dimg04.c-ctrip.com/images/fd/tg/g3/M09/46/F5/CggYG1ZucFWALuPjAAAu62TVM5A595_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg04.c-ctrip.com/images/fd/tg/g3/M09/46/F5/CggYG1ZucFWALuPjAAAu62TVM5A595_R_220_160.jpg)no-repeat center /210px  auto;
 }
 #wenquan2{
-    background: url(https://dimg01.c-ctrip.com/images/fd/tg/g3/M02/60/28/CggYGVbX65iATNdVAAA7LewgnC4836_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg01.c-ctrip.com/images/fd/tg/g3/M02/60/28/CggYGVbX65iATNdVAAA7LewgnC4836_R_220_160.jpg)no-repeat center /210px  auto;
 }
 #wenquan3{
-    background: url(https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/04/29/CggYHVaEmsCAcVPBAAAyJM7bRE0393_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/04/29/CggYHVaEmsCAcVPBAAAyJM7bRE0393_R_220_160.jpg)no-repeat center /210px auto;
 }
 #wenquan4{
-    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g3/M05/67/2C/CggYG1Z7XuuAPszkAABAZUwefFE594_R_220_160.jpg)no-repeat center /100% auto;
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g3/M05/67/2C/CggYG1Z7XuuAPszkAABAZUwefFE594_R_220_160.jpg)no-repeat center /210px  auto;
 }
 .mudi {
     width: 100%;
