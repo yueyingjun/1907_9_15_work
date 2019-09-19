@@ -121,7 +121,7 @@
             color: white;
         }
         .sign2 b{
-        color: orange
+            color: orange
         }
         .right{
             float: right;
@@ -208,21 +208,21 @@
                 tabs(".box:nth-child("+i+") .in-opts"," .box:nth-child("+i+") .list")
             }
             var k=0
-            function move() {
-                k++
-                if(k>3){
-                    k=0
-                }
-                anim3(div,{left:-1366*k},2000)
-                for(var i=0;i<bt.length;i++){
-                    for(var j=0;j<bt.length;j++){
-                        bt[j].style.backgroundColor="white"
-                    }
-                    bt[k].style.backgroundColor="black"
-                }
-
-            }
-            function move2() {
+            // function move() {
+            //     k++
+            //     if(k>3){
+            //         k=0
+            //     }
+            //     anim3(div,{left:-1366*k},2000)
+            //     for(var i=0;i<bt.length;i++){
+            //         for(var j=0;j<bt.length;j++){
+            //             bt[j].style.backgroundColor="white"
+            //         }
+            //         bt[k].style.backgroundColor="black"
+            //     }
+            //
+            // }
+            function move2(){
                 k++
                 if(k>3){
                     anim3(div,{left:-1366*k},2000,function () {
@@ -241,7 +241,7 @@
                 }
 
             }
-           t=setInterval(move2,3000)
+            t=setInterval(move2,3000)
             for(let i=0;i<bt.length;i++){
                 bt[i].onclick=function () {
                     for(var j=0;j<bt.length;j++){
@@ -257,7 +257,7 @@
                 clearInterval(t)
             }
             p.onmouseout=function () {
-                t=setInterval(move,3000)
+                t=setInterval(move2,3000)
             }
             window.onfocus=function () {
                 t=setInterval(move,3000)
@@ -299,230 +299,230 @@
             <li class="out-opts">主题游</li>
             <li class="out-opts">高端游</li>
         </ul>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts" style="color: white;background-color: #1b79ff">境内</div>
+            <div class="in-opts">日本</div>
+            <div class="in-opts">东南亚</div>
+            <div class="in-opts">欧洲</div>
+            <div class="in-opts">美洲</div>
+            <div class="in-opts">奥中东非</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts" style="color: white;background-color: #1b79ff">境内</div>
-                <div class="in-opts">日本</div>
-                <div class="in-opts">东南亚</div>
-                <div class="in-opts">欧洲</div>
-                <div class="in-opts">美洲</div>
-                <div class="in-opts">奥中东非</div>
-            </div>
         <div class="con">
             <div class="list">
-                    <div class="left">
-                        <div>
-                            <img src="//dimg02.c-ctrip.com/images/1004180000013o0jn6633_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">北京</div>
-                                <div class="sign2">￥<b>604</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">三亚</div>
-                                <div class="sign2">￥<b>1341</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">桂林</div>
-                                <div class="sign2">￥<b>1020</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">重庆</div>
-                                <div class="sign2">￥<b>898</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">上海</div>
-                                <div class="sign2">￥<b>974</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100b11000000qcd4zEAD7_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">丽江</div>
-                                <div class="sign2">￥<b>1400</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg07.c-ctrip.com/images/100h180000013qm0m8FCA_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">杭州</div>
-                                <div class="sign2">￥<b>960</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100d0500000013vhc2FAB_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">西安</div>
-                                <div class="sign2">￥<b>477</b>/人起</div>
-                            </div>
+                <div class="left">
+                    <div>
+                        <img src="//dimg02.c-ctrip.com/images/1004180000013o0jn6633_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">北京</div>
+                            <div class="sign2">￥<b>604</b>/人起</div>
                         </div>
                     </div>
-                    <div class="right">
-                        <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">三亚</div>
+                            <div class="sign2">￥<b>1341</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">桂林</div>
+                            <div class="sign2">￥<b>1020</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">重庆</div>
+                            <div class="sign2">￥<b>898</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">上海</div>
+                            <div class="sign2">￥<b>974</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100b11000000qcd4zEAD7_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">丽江</div>
+                            <div class="sign2">￥<b>1400</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg07.c-ctrip.com/images/100h180000013qm0m8FCA_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">杭州</div>
+                            <div class="sign2">￥<b>960</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100d0500000013vhc2FAB_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">西安</div>
+                            <div class="sign2">￥<b>477</b>/人起</div>
+                        </div>
                     </div>
                 </div>
+                <div class="right">
+                    <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                </div>
+            </div>
             <div class="list">
-                    <div class="left">
-                        <div>
-                            <img src="//dimg08.c-ctrip.com/images/100v0p000000gamlgE533_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">大阪</div>
-                                <div class="sign2">￥<b>2761</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg06.c-ctrip.com/images/10070s000000hypymAAE6_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">东京</div>
-                                <div class="sign2">￥<b>2761</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg08.c-ctrip.com/images/100c0z000000nt6ja25B8_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">名古屋</div>
-                                <div class="sign2">￥<b>4099</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg01.c-ctrip.com/images/100b08000000360497DB3_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">冲绳</div>
-                                <div class="sign2">￥<b>2302</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg07.c-ctrip.com/images/10040x000000ld3wx40AB_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">福冈</div>
-                                <div class="sign2">￥<b>3432</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg06.c-ctrip.com/images/100g12000000rxyvl9084_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">京都</div>
-                                <div class="sign2">￥<b>2761</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/1001080000003605k45B7_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">那霸</div>
-                                <div class="sign2">￥<b>2302</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M08/6B/BA/CggYsFcV18aACjyiABjE_uBHFyE920_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">箱根</div>
-                                <div class="sign2">￥<b>2767</b>/人起</div>
-                            </div>
+                <div class="left">
+                    <div>
+                        <img src="//dimg08.c-ctrip.com/images/100v0p000000gamlgE533_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">大阪</div>
+                            <div class="sign2">￥<b>2761</b>/人起</div>
                         </div>
                     </div>
-                    <div class="right">
-                        <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                    <div>
+                        <img src="//dimg06.c-ctrip.com/images/10070s000000hypymAAE6_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">东京</div>
+                            <div class="sign2">￥<b>2761</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg08.c-ctrip.com/images/100c0z000000nt6ja25B8_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">名古屋</div>
+                            <div class="sign2">￥<b>4099</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg01.c-ctrip.com/images/100b08000000360497DB3_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">冲绳</div>
+                            <div class="sign2">￥<b>2302</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg07.c-ctrip.com/images/10040x000000ld3wx40AB_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">福冈</div>
+                            <div class="sign2">￥<b>3432</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg06.c-ctrip.com/images/100g12000000rxyvl9084_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">京都</div>
+                            <div class="sign2">￥<b>2761</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/1001080000003605k45B7_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">那霸</div>
+                            <div class="sign2">￥<b>2302</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M08/6B/BA/CggYsFcV18aACjyiABjE_uBHFyE920_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">箱根</div>
+                            <div class="sign2">￥<b>2767</b>/人起</div>
+                        </div>
                     </div>
                 </div>
+                <div class="right">
+                    <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                </div>
+            </div>
             <div class="list">
-                    <div class="left">
-                        <div>
-                            <img src="//dimg01.c-ctrip.com/images/100810000000perhu90FB_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">普吉岛</div>
-                                <div class="sign2">￥<b>2504</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg03.c-ctrip.com/images/fd/tg/g1/M02/79/29/CghzfVWwp1SAD5gHACTpIEDO0sk435_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">巴厘岛</div>
-                                <div class="sign2">￥<b>2603</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg03.c-ctrip.com/images/100s0y000000mc3qf0838_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">芽庄</div>
-                                <div class="sign2">￥<b>1480</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg02.c-ctrip.com/images/10010s000000hwbcj4F64_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">曼谷</div>
-                                <div class="sign2">￥<b>2600</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg02.c-ctrip.com/images/fd/tg/g4/M05/B2/24/CggYHFZ4wWiAKCnuADUUoCnU8w4935_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">新加坡</div>
-                                <div class="sign2">￥<b>1568</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg03.c-ctrip.com/images/fd/tg/g2/M04/68/0B/Cghzf1Wkv2iAF916ABXwhHhXujI000_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">清迈</div>
-                                <div class="sign2">￥<b>2101</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg01.c-ctrip.com/images/100u0y000000lzko9F7A8_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">长滩岛</div>
-                                <div class="sign2">￥<b>1900</b>/人起</div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M04/6E/D3/CggYsFbvxkWAW8azAApi7j9YZzA868_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                            <div class="sign">
-                                <div class="sign1">塞班岛</div>
-                                <div class="sign2">￥<b>4660</b>/人起</div>
-                            </div>
+                <div class="left">
+                    <div>
+                        <img src="//dimg01.c-ctrip.com/images/100810000000perhu90FB_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">普吉岛</div>
+                            <div class="sign2">￥<b>2504</b>/人起</div>
                         </div>
                     </div>
-                    <div class="right">
-                        <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                    <div>
+                        <img src="//dimg03.c-ctrip.com/images/fd/tg/g1/M02/79/29/CghzfVWwp1SAD5gHACTpIEDO0sk435_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">巴厘岛</div>
+                            <div class="sign2">￥<b>2603</b>/人起</div>
+                        </div>
                     </div>
-               </div>
+                    <div>
+                        <img src="//dimg03.c-ctrip.com/images/100s0y000000mc3qf0838_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">芽庄</div>
+                            <div class="sign2">￥<b>1480</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg02.c-ctrip.com/images/10010s000000hwbcj4F64_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">曼谷</div>
+                            <div class="sign2">￥<b>2600</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg02.c-ctrip.com/images/fd/tg/g4/M05/B2/24/CggYHFZ4wWiAKCnuADUUoCnU8w4935_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">新加坡</div>
+                            <div class="sign2">￥<b>1568</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg03.c-ctrip.com/images/fd/tg/g2/M04/68/0B/Cghzf1Wkv2iAF916ABXwhHhXujI000_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">清迈</div>
+                            <div class="sign2">￥<b>2101</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg01.c-ctrip.com/images/100u0y000000lzko9F7A8_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">长滩岛</div>
+                            <div class="sign2">￥<b>1900</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M04/6E/D3/CggYsFbvxkWAW8azAApi7j9YZzA868_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">塞班岛</div>
+                            <div class="sign2">￥<b>4660</b>/人起</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                </div>
+            </div>
             <div class="list">
                 <div class="left">
                     <div>
@@ -596,71 +596,71 @@
             </div>
             <div class="list">
                 <div class="left">
-                <div>
-                    <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M04/6E/D3/CggYsFbvxkWAW8azAApi7j9YZzA868_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">塞班岛</div>
-                        <div class="sign2">￥<b>4660</b>/人起</div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/fd/tg/g5/M04/6E/D3/CggYsFbvxkWAW8azAApi7j9YZzA868_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">塞班岛</div>
+                            <div class="sign2">￥<b>4660</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg08.c-ctrip.com/images/10090e00000076pky1B52_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">纽约</div>
+                            <div class="sign2">￥<b>4243</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg03.c-ctrip.com/images/100q0p000000fh5w1FE3C_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">洛杉矶</div>
+                            <div class="sign2">￥<b>3718</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg04.c-ctrip.com/images/100e0g00000086sw680C8_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">多伦多</div>
+                            <div class="sign2">￥<b>7644</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg07.c-ctrip.com/images/fd/tg/g3/M01/21/7D/CggYGVZpIXaAeScrAC0i40kYG9E450_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">旧金山</div>
+                            <div class="sign2">￥<b>3718</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg06.c-ctrip.com/images/fd/tg/g3/M04/BB/BB/CggYGVaMcXuAHn8cACGBzc2mJR0522_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">西雅图</div>
+                            <div class="sign2">￥<b>2007</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg07.c-ctrip.com/images/fd/tg/g3/M07/0A/92/CggYGlZpRPGAH07wAC6RHv-hh2g451_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">拉斯维加斯</div>
+                            <div class="sign2">￥<b>3178</b>/人起</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="//dimg08.c-ctrip.com/images/fd/tg/g1/M05/7C/E9/CghzfFWwy5WAGoGaAB-GeixEcy4050_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                        <div class="sign">
+                            <div class="sign1">芝加哥</div>
+                            <div class="sign2">￥<b>5516</b>/人起</div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="//dimg08.c-ctrip.com/images/10090e00000076pky1B52_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">纽约</div>
-                        <div class="sign2">￥<b>4243</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg03.c-ctrip.com/images/100q0p000000fh5w1FE3C_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">洛杉矶</div>
-                        <div class="sign2">￥<b>3718</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg04.c-ctrip.com/images/100e0g00000086sw680C8_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">多伦多</div>
-                        <div class="sign2">￥<b>7644</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg07.c-ctrip.com/images/fd/tg/g3/M01/21/7D/CggYGVZpIXaAeScrAC0i40kYG9E450_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">旧金山</div>
-                        <div class="sign2">￥<b>3718</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg06.c-ctrip.com/images/fd/tg/g3/M04/BB/BB/CggYGVaMcXuAHn8cACGBzc2mJR0522_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">西雅图</div>
-                        <div class="sign2">￥<b>2007</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg07.c-ctrip.com/images/fd/tg/g3/M07/0A/92/CggYGlZpRPGAH07wAC6RHv-hh2g451_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">拉斯维加斯</div>
-                        <div class="sign2">￥<b>3178</b>/人起</div>
-                    </div>
-                </div>
-                <div>
-                    <img src="//dimg08.c-ctrip.com/images/fd/tg/g1/M05/7C/E9/CghzfFWwy5WAGoGaAB-GeixEcy4050_C_221_166.jpg" alt="">
-                    <span>月销42500笔</span>
-                    <div class="sign">
-                        <div class="sign1">芝加哥</div>
-                        <div class="sign2">￥<b>5516</b>/人起</div>
-                    </div>
-                </div>
-            </div>
                 <div class="right">
                     <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
                 </div></div>
@@ -734,218 +734,218 @@
                 <div class="right">
                     <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
                 </div></div>
-            </div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-                <div class="in-opts">三亚</div>
-                <div class="in-opts">云南</div>
-                <div class="in-opts">厦门</div>
-                <div class="in-opts">桂林</div>
-                <div class="in-opts">东南亚</div>
-                <div class="in-opts">泰国</div>
-                <div class="in-opts">欧洲</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">
-                    <div class="left1">
-                        <div>
-                            <img src="https://dimg04.c-ctrip.com/images/300s15000000xkbd8630A_C_500_280.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100b11000000qcd4zEAD7_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg07.c-ctrip.com/images/100h180000013qm0m8FCA_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
-                        <div>
-                            <img src="//dimg05.c-ctrip.com/images/100d0500000013vhc2FAB_C_221_166.jpg" alt="">
-                            <span>月销42500笔</span>
-                        </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+            <div class="in-opts">三亚</div>
+            <div class="in-opts">云南</div>
+            <div class="in-opts">厦门</div>
+            <div class="in-opts">桂林</div>
+            <div class="in-opts">东南亚</div>
+            <div class="in-opts">泰国</div>
+            <div class="in-opts">欧洲</div>
+            <div class="in-opts">更多</div>
+        </div>
+        <div class="con">
+            <div class="list">
+                <div class="left1">
+                    <div>
+                        <img src="https://dimg04.c-ctrip.com/images/300s15000000xkbd8630A_C_500_280.jpg" alt="">
+                        <span>月销42500笔</span>
                     </div>
-                    <div class="right">
-                        <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100b11000000qcd4zEAD7_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg07.c-ctrip.com/images/100h180000013qm0m8FCA_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
+                    </div>
+                    <div>
+                        <img src="//dimg05.c-ctrip.com/images/100d0500000013vhc2FAB_C_221_166.jpg" alt="">
+                        <span>月销42500笔</span>
                     </div>
                 </div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-                <div class="list">9</div>
+                <div class="right">
+                    <img src="https://dimg04.c-ctrip.com/images/zg0w180000014izk4EF2D.jpg" alt="">
+                </div>
             </div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+            <div class="list">9</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-                <div class="in-opts">日本</div>
-                <div class="in-opts">泰国</div>
-                <div class="in-opts">马尔代夫</div>
-                <div class="in-opts">巴厘岛</div>
-                <div class="in-opts">新加坡</div>
-                <div class="in-opts">普吉岛</div>
-                <div class="in-opts">俄罗斯</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-                <div class="list">9</div>
-            </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+            <div class="in-opts">日本</div>
+            <div class="in-opts">泰国</div>
+            <div class="in-opts">马尔代夫</div>
+            <div class="in-opts">巴厘岛</div>
+            <div class="in-opts">新加坡</div>
+            <div class="in-opts">普吉岛</div>
+            <div class="in-opts">俄罗斯</div>
+            <div class="in-opts">更多</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-                <div class="in-opts">太原</div>
-                <div class="in-opts">五台山</div>
-                <div class="in-opts">西安</div>
-                <div class="in-opts">三亚</div>
-                <div class="in-opts">云南</div>
-                <div class="in-opts">成都</div>
-                <div class="in-opts">北京</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-                <div class="list">9</div>
-            </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+            <div class="list">9</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-                <div class="in-opts">太原</div>
-                <div class="in-opts">大同</div>
-                <div class="in-opts">平遥</div>
-                <div class="in-opts">长治</div>
-                <div class="in-opts">石家庄</div>
-                <div class="in-opts">临汾</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-            </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+            <div class="in-opts">太原</div>
+            <div class="in-opts">五台山</div>
+            <div class="in-opts">西安</div>
+            <div class="in-opts">三亚</div>
+            <div class="in-opts">云南</div>
+            <div class="in-opts">成都</div>
+            <div class="in-opts">北京</div>
+            <div class="in-opts">更多</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">日本</div>
-                <div class="in-opts">东南亚</div>
-                <div class="in-opts">港奥台</div>
-                <div class="in-opts">阿拉斯加</div>
-                <div class="in-opts">河轮</div>
-                <div class="in-opts">加勒比海</div>
-                <div class="in-opts">爱情海</div>
-                <div class="in-opts">北欧</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-                <div class="list">9</div>
-            </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+            <div class="list">9</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">山西</div>
-                <div class="in-opts">河北</div>
-                <div class="in-opts">北京</div>
-                <div class="in-opts">天津</div>
-                <div class="in-opts">辽宁</div>
-                <div class="in-opts">山东</div>
-                <div class="in-opts">港澳台</div>
-                <div class="in-opts">日韩</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-            </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+            <div class="in-opts">太原</div>
+            <div class="in-opts">大同</div>
+            <div class="in-opts">平遥</div>
+            <div class="in-opts">长治</div>
+            <div class="in-opts">石家庄</div>
+            <div class="in-opts">临汾</div>
+            <div class="in-opts">更多</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-                <div class="in-opts">港澳台</div>
-                <div class="in-opts">日本</div>
-                <div class="in-opts">泰国</div>
-                <div class="in-opts">新马</div>
-                <div class="in-opts">西安</div>
-                <div class="in-opts">成都</div>
-                <div class="in-opts">上海</div>
-                <div class="in-opts">更多</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-                <div class="list">2</div>
-                <div class="list">3</div>
-                <div class="list">4</div>
-                <div class="list">5</div>
-                <div class="list">6</div>
-                <div class="list">7</div>
-                <div class="list">8</div>
-                <div class="list">9</div>
-            </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
         </div>
-        <div class="box">
-            <div class="dh2">
-                <div class="in-opts">精选</div>
-            </div>
-            <div class="con">
-                <div class="list">1</div>
-            </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">日本</div>
+            <div class="in-opts">东南亚</div>
+            <div class="in-opts">港奥台</div>
+            <div class="in-opts">阿拉斯加</div>
+            <div class="in-opts">河轮</div>
+            <div class="in-opts">加勒比海</div>
+            <div class="in-opts">爱情海</div>
+            <div class="in-opts">北欧</div>
+            <div class="in-opts">更多</div>
         </div>
-      </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+            <div class="list">9</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">山西</div>
+            <div class="in-opts">河北</div>
+            <div class="in-opts">北京</div>
+            <div class="in-opts">天津</div>
+            <div class="in-opts">辽宁</div>
+            <div class="in-opts">山东</div>
+            <div class="in-opts">港澳台</div>
+            <div class="in-opts">日韩</div>
+        </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+            <div class="in-opts">港澳台</div>
+            <div class="in-opts">日本</div>
+            <div class="in-opts">泰国</div>
+            <div class="in-opts">新马</div>
+            <div class="in-opts">西安</div>
+            <div class="in-opts">成都</div>
+            <div class="in-opts">上海</div>
+            <div class="in-opts">更多</div>
+        </div>
+        <div class="con">
+            <div class="list">1</div>
+            <div class="list">2</div>
+            <div class="list">3</div>
+            <div class="list">4</div>
+            <div class="list">5</div>
+            <div class="list">6</div>
+            <div class="list">7</div>
+            <div class="list">8</div>
+            <div class="list">9</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="dh2">
+            <div class="in-opts">精选</div>
+        </div>
+        <div class="con">
+            <div class="list">1</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
